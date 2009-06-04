@@ -1,0 +1,127 @@
+                        
+
+                         Release Notes
+    
+                        caTissue Suite 1.0
+                         Version 1.0 RC2
+                           2008-04-15     
+
+
+
+================================================================
+                            Contents
+================================================================
+    
+1.0 caTissue Suite Introduction
+2.0 Release History
+3.0 New Features and Updates
+4.0 Known Issues/Defects
+5.0 Bug Reports and Support
+6.0 Documentation
+7.0 References
+
+
+================================================================
+                      1.0 caTissue Suite Introduction
+================================================================
+
+This document contains the release notes for the caTissue Suite v1.0 Release Candidate 2.  
+
+Where caTissue core system is a tissue banking system that can accommodate biospecimen transaction data,
+caTissue Suite is an extention of catissue core with following enhancements.
+
+Following are the main enhancements in caTissue Suite:
+
+• Load, de-identify, view, and query on free-text surgical pathology reports.
+• Record discrete clinical annotations and CAP (College of American Pathologists) based checklists and clinical annotations 
+• Add new classes and attributes dynamically to record new annotations.
+• Record and track consent.
+• Order biospecimens.
+• Define collection protocols including information about specimens collected per protocol.
+• Perform bulk data entry based on the protocol definition.
+• Query any caTissue Suite object and save queries.
+• Perform bulk operations on specimens. For example, transfer and bulk edit.
+
+  
+
+Demo site details:
+URL - http://catissuecore.wustl.edu/catissuecore
+Login - admin@admin.com
+Password - Login123
+
+================================================================
+                      2.0 Release History
+================================================================
+caTissue suite v1.0 RC3 release made on 2008-04-10
+To download Installable zip:
+https://gforge.nci.nih.gov/frs/download.php/3877/caTissue_Suite_Installable_v1.0.zip
+Code base:
+https://gforge.nci.nih.gov/frs/download.php/3881/catissuecore.zip
+
+
+
+caTissue Core v1.2 RC2 release made on 2007-05-21
+To download Installable zip:
+http://cabigcvs.nci.nih.gov/viewcvs/viewcvs.cgi/catissuecore/CODE%20AND%20TESTING/Latest%20Code/Installable%20zip/caTissue_Core_Installable_v1.2.zip
+
+
+caTissue Core v1.1 release made 2007-05-07
+caTissue Core v1.1. 
+Installable zip can be downloaded from: 
+http://cabigcvs.nci.nih.gov/viewcvs/viewcvs.cgi/catissuecore/CODE%20AND%20TESTING/Latest%20Code/Installable%20zip/caTissue_Core_Installable_v1.1.zip
+
+
+
+caTissue Core v1.0 made on 2006-03-24
+Installable zip for this release is located at:
+http://cabigcvs.nci.nih.gov/viewcvs/viewcvs.cgi/catissuecore/CODE%20AND%20TESTING/Release/Final_V_1.0_24_Mar_06/caTissue_Core_Installable.zip
+
+
+================================================================
+                      3.0 New Features and Updates
+================================================================
+
+caTissue Suite is the next-generation tissue banking application which integrates the functionality of the existing caBIG™ TBPT (Tissue bank and pathology Tools) and enables data sharing over the caGrid infrastructure. The following three applications developed by the TBPT Workspace are integrated in this release of caTissue Suite:
+caTissue Core v1.2: caTissue Core provides the central biospecimen management functionalities needed in biobanking facilities.
+cancer Text Information Extraction System (caTIES) v3.0: caTIES provides a means to automate the process of coding, de-identifying, storing and retrieving data from free-text pathology reports.
+Clinical Annotations:  CA allows for the annotation of biospecimen with anatomical and clinical pathology, and cancer registry/outcomes data (annotation types).
+In addition to integrating the functionality of caTIES and CAE within caTissue Core, there are many new features which are listed below:
+1.	Load, view and query on free-text surgical pathology reports
+2.	Ability to record discrete CAP based clinical and pathology reports for some common cancer types.
+3.	Ability to dynamically add new classes and attributes to record boutique annotations.
+4.	Record and track consent.
+5.	Biospecimen ordering system.
+6.	Define collection protocols including information about specimens collected per protocol and perform bulk data entry based on the protocol definition.
+7.	New query interface with ability to query any caTissue object and save queries.
+8.	Bulk operations on specimens, for example: transfer and bulk edit.
+    
+
+
+
+================================================================
+                     4.0 Known Issues Not Yet Fixed
+================================================================
+
+<TBD>
+
+================================================================
+                	5.0 Bug Reports and Support
+================================================================
+
+Bugs can be reported using the Bugzilla. The URL to access it is http://nagarajanlab.wustl.edu/bugs/
+
+Forum for caTissue Core support is https://gforge.nci.nih.gov/forum/forum.php?forum_id=766 
+
+
+================================================================
+                     	6.0 Documentation
+================================================================
+For all the documentation related to caTissue Suite v1.0, please refer to:
+http://cabigcvs.nci.nih.gov/viewcvs/viewcvs.cgi/catissuecore/caTissueSuite%20Phase%202/WashU%20Deliverables/
+
+================================================================
+                    	7.0 References
+================================================================
+    
+For all the documentation related to caTissue Suite v1.0, please refer to:
+http://cabigcvs.nci.nih.gov/viewcvs/viewcvs.cgi/catissuecore/caTissueSuite%20Phase%202/WashU%20Deliverables/
