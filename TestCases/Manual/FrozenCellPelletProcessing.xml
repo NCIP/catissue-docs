@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SOPTest>
+<SOP>
+		<event name ="Spun">
+			<barCode>1</barCode>
+			<order>1</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>10</unique_id>
+		</event>
+		<event name ="RemoveSupernatant">
+			<barCode>2</barCode>
+			<order>2</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>11</unique_id>
+		</event>
+		<event name ="SnapFreeze">
+			<barCode>3</barCode>
+			<order>3</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>12</unique_id>
+		</event>
+		<event name ="Frozen">
+			<barCode>4</barCode>
+			<order>4</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>13</unique_id>
+		</event>
+				</SOP>
+</SOPTest>

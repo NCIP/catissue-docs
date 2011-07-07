@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SOPTest>
+<SOP>
+		<event name ="Spun">
+			<barCode>1</barCode>
+			<order>1</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>10</unique_id>
+		</event>
+		<event name ="IsolateBuffyCoat">
+			<barCode>2</barCode>
+			<order>2</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>11</unique_id>
+		</event>
+		<event name ="LyseRBC">
+			<barCode>3</barCode>
+			<order>3</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>12</unique_id>
+		</event>
+		<event name ="Incubation">
+			<barCode>4</barCode>
+			<order>4</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>13</unique_id>
+		</event>
+		<event name ="Resuspension">
+			<barCode>5</barCode>
+			<order>5</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>14</unique_id>
+		</event>
+		<event name ="Aliquot">
+			<barCode>6</barCode>
+			<order>6</order>
+			<entityGroupName>Event</entityGroupName>
+			<unique_id>15</unique_id>
+		</event>
+		</SOP>
+</SOPTest>
