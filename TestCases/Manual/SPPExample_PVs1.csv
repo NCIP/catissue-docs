@@ -1,0 +1,9 @@
+Entity_Group,
+Event1,
+,
+AnestheticAdministration:agent,Permissible_Values~Propofol:Isoflurane:Ketamine:Midazolam
+ArterialLigationAndOopherectomy:artery,Permissible_Values~Left Ovarian Artery:Right Ovarian Artery
+VenousBloodDraw:collectionContainer,Permissible_Values~ACD Vacutainer:CPT:Citrate Vacutainer:EDTA Vacutainer:Heparin Vacutainer:No Additive Vacutainer:Not Specified:Paxgene:Sterile Specimen Container:Serum Separator Vacutainer
+LongTermStorage:medium,Permissible_Values~Dry Ice:Liquid Nitrogen
+SnapFreeze:freezingMedium,Permissible_Values~Dry Ice:Liquid Nitrogen
+Resuspension:solution,Permissible_Values~PBS

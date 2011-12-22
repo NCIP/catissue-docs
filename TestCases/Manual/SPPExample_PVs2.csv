@@ -1,0 +1,13 @@
+Entity_Group,
+Event2,
+,
+GlucoseStimulation:source,Permissible_Values~IV Glucose:Oral Glucose:Candy
+ExerciseStimulation:method,Permissible_Values~Walk:Run:Stairmaster
+PeripheralBloodDraw:location,Permissible_Values~Left Arm:Right Arm
+CellCryopreservation:media,Permissible_Values~None:RPMI:DMEM
+CellCryopreservation:method,Permissible_Values~Controlled:Freezer
+Anesthesia:volatileClass,Permissible_Values~Isoflurane:Desflurane:Sevoflurane:N2O
+Anesthesia:type,Permissible_Values~Local:Regional:Spinal:General
+Resection:resectionType,Permissible_Values~TURP:Retropubic:Peritoneal:Suprapubic:Laproscopic
+TissueFreeze:medium,Permissible_Values~OCT:none:other
+TissueFreeze:method,Permissible_Values~LN2:Dry Ice:Isopentane:Cryostat
