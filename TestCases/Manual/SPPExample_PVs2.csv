@@ -1,5 +1,5 @@
 Entity_Group,
-Event2,
+Test_Event2,
 ,
 GlucoseStimulation:source,Permissible_Values~IV Glucose:Oral Glucose:Candy
 ExerciseStimulation:method,Permissible_Values~Walk:Run:Stairmaster

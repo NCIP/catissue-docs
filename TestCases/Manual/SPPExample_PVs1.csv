@@ -1,5 +1,5 @@
 Entity_Group,
-Event1,
+Test_Event1,
 ,
 AnestheticAdministration:agent,Permissible_Values~Propofol:Isoflurane:Ketamine:Midazolam
 ArterialLigationAndOopherectomy:artery,Permissible_Values~Left Ovarian Artery:Right Ovarian Artery
