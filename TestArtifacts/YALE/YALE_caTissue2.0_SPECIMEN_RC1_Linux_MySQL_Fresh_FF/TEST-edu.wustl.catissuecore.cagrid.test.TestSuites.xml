@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="schist.med.yale.edu" name="edu.wustl.catissuecore.cagrid.test.TestSuites" tests="1" time="2.488" timestamp="2012-05-18T15:03:52">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+    <property name="test.src.dir" value="test/src" />
+    <property name="env.DISPLAY" value="/tmp/launch-rtKskx/org.x:0" />
+    <property name="useLocalApiFlag" value="false" />
+    <property name="decodegen.dir" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/../DECodeGen" />
+    <property name="env.SECURITYSESSIONID" value="186a4" />
+    <property name="applicationHostName" value="localhost" />
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+    <property name="service.url" value="https://catissuesvc.wustl.edu:443/wsrf/services/cagrid/Catissue_cacore" />
+    <property name="env.LOGNAME" value="jpm78" />
+    <property name="src.dir" value="src" />
+    <property name="useGridIdentityLogin" value="true" />
+    <property name="ext.globus.dir" value="/Users/jpm78/opt/caGrid/ws-core-4.0.3" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vendor.url" value="http://www.apple.com/" />
+    <property name="env.TERM_PROGRAM_VERSION" value="303" />
+    <property name="java.version" value="1.6.0_31" />
+    <property name="ant.file.Developer Modified Build File" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/dev-build.xml" />
+    <property name="ant.contrib.location" value="tools/lib/ant-contrib-1.0b3.jar" />
+    <property name="jikes.class.path" value=":/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/alt-rt.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/alt-string.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/charsets.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/dt.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/jconsole.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/management-agent.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/../Classes/ui.jar" />
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
+    <property name="javadoc.dir" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/javadoc" />
+    <property name="env.Apple_Ubiquity_Message" value="/tmp/launch-VsFPIb/Apple_Ubiquity_Message" />
+    <property name="introduce.skeleton.namespace.domain" value="http://domain.catissuecore.wustl.edu/Catissue_cacore" />
+    <property name="test.lib.dir" value="test/lib" />
+    <property name="introduce.ns.excludes" value=" -x gme://caCORE.caCORE/3.2/edu.common.dynamicextensions.domain.integration -x gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain.shippingtracking -x gme://caGrid.caBIG/1.0/gov.nih.nci.cagrid.metadata.service -x gme://caGrid.caBIG/1.0/gov.nih.nci.cagrid.metadata.security -x http://gov.nih.nci.cagrid.data/DataServiceExceptions -x http://org.cagrid.dataservice.cql/QueryLanguageSupport -x gme://caGrid.caBIG/1.0/gov.nih.nci.cagrid.metadata -x gme://caGrid.caBIG/1.0/gov.nih.nci.cagrid.metadata.common -x http://CQL.caBIG/2/org.cagrid.cql2 -x gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain -x gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain.processingprocedure -x gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain.pathology -x http://CQL.caBIG/2/org.cagrid.cql2.results -x gme://caCORE.caCORE/3.2/edu.wustl.common.domain -x gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain.deintegration" />
+    <property name="user.name" value="jpm78" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="env.CVS_RSH" value="ssh" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="MacRoman" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="schema.dest" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/schema" />
+    <property name="lib.dir" value="lib" />
+    <property name="tools.lib.dir" value="tools/lib" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="test.jar.name" value="Catissue_cacore-tests.jar" />
+    <property name="user.timezone" value="" />
+    <property name="isUnix" value="true" />
+    <property name="path.separator" value=":" />
+    <property name="client.jar.name" value="Catissue_cacore-client.jar" />
+    <property name="env.com.apple.java.jvmTask" value="CommandLine_Manual.java" />
+    <property name="file.encoding" value="MacRoman" />
+    <property name="jar.prefix" value="Catissue_cacore" />
+    <property name="junit.results.dir" value="test/logs/junit" />
+    <property name="env.HOME" value="/Users/jpm78" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.wustl.catissuecore.cagrid.test.TestSuites filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/test/logs/junit/TEST-edu.wustl.catissuecore.cagrid.test.TestSuites.xml crashfile=/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/junitvmwatcher1937646359.properties propsfile=/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/junit34178157.properties" />
+    <property name="introduce.soap.binding.excludes" value=" http://CQL.caBIG/2/org.cagrid.cql2 gme://caCORE.caCORE/3.2/edu.common.dynamicextensions.domain.integration gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain.shippingtracking gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain.processingprocedure http://CQL.caBIG/2/org.cagrid.cql2.results gme://caGrid.caBIG/1.0/gov.nih.nci.cagrid.metadata.security gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain.pathology gme://caCORE.caCORE/3.2/edu.wustl.common.domain gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain.deintegration" />
+    <property name="env.TERM_SESSION_ID" value="EE0AB285-043F-47D9-8A5D-9DDE3FB59360" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.file" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build.xml" />
+    <property name="staticLoginPass" value="Aa_111111" />
+    <property name="test.log.dir" value="test/logs" />
+    <property name="java.io.tmpdir" value="/var/folders/wm/8lsq3thn4_b051w82rshhbxr0000gn/T/" />
+    <property name="user.language" value="en" />
+    <property name="line.separator" value="
+" />
+    <property name="garjars.id" value="garjars" />
+    <property name="java.debug" value="on" />
+    <property name="staticLoginUser" value="admin@admin.com" />
+    <property name="ant.file.build-deploy file" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build-deploy.xml" />
+    <property name="introduce.skeleton.service.name" value="Catissue_cacore" />
+    <property name="tools.dir" value="tools" />
+    <property name="schema.src" value="/Users/jpm78/opt/caGrid/ws-core-4.0.3/share/schema" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.run-tools file" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/run-tools.xml" />
+    <property name="common.jar.name" value="Catissue_cacore-common.jar" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0:0" />
+    <property name="ant.file.Introduce Master Build File" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build.xml" />
+    <property name="build.stubs" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build-stubs.xml" />
+    <property name="useStaticLogin" value="false" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="introduce.skeleton.timestamp" value="1334715306068" />
+    <property name="stubs.src" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/stubs-Catissue_cacore/src" />
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="build.dest" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/classes" />
+    <property name="test.build.dest" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/test/classes" />
+    <property name="ant.version" value="Apache Ant version 1.7.0 compiled on December 13 2006" />
+    <property name="gopherProxySet" value="false" />
+    <property name="contrib.tasks.defined" value="true" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="stubs.dest" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/stubs-Catissue_cacore/classes" />
+    <property name="mrj.build" value="11M3646" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="mrj.version" value="1070.1.6.0_31-415" />
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="env.PATH" value="/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Users/jpm78/opt/apache-maven-3.0.3/bin:/sw/bin:/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin" />
+    <property name="ant.file.developers-build-deploy file" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/dev-build-deploy.xml" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="basedir" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService" />
+    <property name="java.class.version" value="50.0" />
+    <property name="env.SHLVL" value="1" />
+    <property name="env.JAVA_MAIN_CLASS_29237" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="ant.home" value="/Users/jpm78/opt/caGrid/apache-ant-1.7.0" />
+    <property name="introduce.skeleton.services.list" value="Catissue_cacore" />
+    <property name="build.packages" value="/Users/jpm78/opt/caGrid/ws-core-4.0.3/share/globus_wsrf_common/build-packages.xml" />
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+    <property name="build.dir" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+    <property name="stubs.jar.name" value="Catissue_cacore-stubs.jar" />
+    <property name="env.USER" value="jpm78" />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="env.COMMAND_MODE" value="unix2003" />
+    <property name="ant.project.name" value="Introduce Master Build File" />
+    <property name="schema.dir" value="schema" />
+    <property name="GT4.ns.excludes" value="-x http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-BaseFaults-1.2-draft-01.xsd -x http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-BaseFaults-1.2-draft-01.wsdl -x http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ResourceLifetime-1.2-draft-01.xsd -x http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ResourceLifetime-1.2-draft-01.wsdl -x http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ResourceProperties-1.2-draft-01.xsd -x http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ResourceProperties-1.2-draft-01.wsdl -x http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ServiceGroup-1.2-draft-01.xsd -x http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ServiceGroup-1.2-draft-01.wsdl -x http://docs.oasis-open.org/wsn/2004/06/wsn-WS-BaseNotification-1.2-draft-01.xsd -x http://docs.oasis-open.org/wsn/2004/06/wsn-WS-BaseNotification-1.2-draft-01.wsdl -x http://schemas.xmlsoap.org/ws/2004/04/trust -x http://schemas.xmlsoap.org/ws/2002/12/policy -x http://schemas.xmlsoap.org/ws/2002/07/utility -x http://schemas.xmlsoap.org/ws/2004/04/sc -x http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd -x http://www.w3.org/2000/09/xmldsig# -x http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd -x http://schemas.xmlsoap.org/ws/2004/09/enumeration" />
+    <property name="introduce.skeleton.destination.dir" value="C:\caTissueStaticDataService" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="env.GLOBUS_LOCATION" value="/Users/jpm78/opt/caGrid/ws-core-4.0.3" />
+    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="introduce.skeleton.extensions" value="cagrid_metadata,data" />
+    <property name="build.lib.dir" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/lib" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
+    <property name="garschema.id" value="garschema" />
+    <property name="os.version" value="10.7.3" />
+    <property name="user.home" value="/Users/jpm78" />
+    <property name="java.vm.vendor" value="Apple Inc." />
+    <property name="mappings.file" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/namespace2package.mappings" />
+    <property name="garetc.id" value="garetc" />
+    <property name="env.JAVA_HOME" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home" />
+    <property name="stubs.dir" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/stubs-Catissue_cacore" />
+    <property name="user.dir" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService" />
+    <property name="schema.path" value="Catissue_cacore" />
+    <property name="env.PWD" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService" />
+    <property name="test.dir" value="test" />
+    <property name="tomcat.dir" value="/Users/jpm78/MelaGrid/jakarta-tomcat-5.0.28" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env.TMPDIR" value="/var/folders/wm/8lsq3thn4_b051w82rshhbxr0000gn/T/" />
+    <property name="applicationName" value="catissuecore" />
+    <property name="env.com.apple.java.jvmMode" value="client" />
+    <property name="java.vm.version" value="20.6-b01-415" />
+    <property name="java.class.path" value="/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/test/classes:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/classes:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/build/stubs-Catissue_cacore/classes:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/DAO-1.1.9.5.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/DynamicExtensions.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/ParticipantManager.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/SimpleQuery-1.1.9.2.2.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/acegi-security-1.0.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/ant-contrib.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/antlr-2.7.6.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/asm-1.5.3.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/axis-1.2RC2.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/bulkoperator.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-CQL-cql.1.0-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-CQL-cql.2.0-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-CQL-dcql.2.0-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-CQL-mappings-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-CQL-utils-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-Introduce-serviceTools-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-ServiceSecurityProvider-client-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-ServiceSecurityProvider-common-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-ServiceSecurityProvider-service-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-ServiceSecurityProvider-stubs-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-advertisement-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-caDSR-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-caDSR-tests-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-core-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-core-resources-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-data-common-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-data-cql-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-data-service-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-data-stubs-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-data-tools-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-data-utils-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-data-validation-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-gridgrouper-auth-extension-Service-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-gridgrouper-client-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-gridgrouper-common-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-gridgrouper-stubs-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-metadata-common-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-metadata-data-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-metadata-security-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-metadata-validator-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-metadatautils-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-mms-client-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-mms-common-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-mms-stubs-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-sdk4xCQL2-processor-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-sdkQuery42-processor-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-sdkQuery42-style-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/caGrid-sdkQuery42-tests-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/castor-1.0.2.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/catissue_cacore-beans.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/catissue_cacore-config.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/catissue_cacore-orm.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/catissue_cacore-schema.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/catissuecore.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/cglib-2.1_3.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/commonpackage-1.1.8.3.7.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/commons-codec-1.3.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/commons-io-1.2.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/commons-lang.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/commons-logging-1.1.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/dom4j-1.4.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/dozer-5.3.2.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/ejb3-persistence-1.0.1.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/globus_wsrf_mds_aggregator.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/globus_wsrf_mds_aggregator_stubs.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/globus_wsrf_servicegroup.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/globus_wsrf_servicegroup_stubs.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/grouper.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/hibernate-annotations-3.2.0.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/hibernate-validator-3.0.0.GA.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/hibernate3.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/jaxen-1.1.1.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/jaxrpc-1.1.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/jdom-1.0.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/jdom-1.1.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/log4j-1.2.8.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/mysql-connector-java-5.0.8-bin.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/query-1.0-SNAPSHOT.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/relaxngDatatype.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/resolver.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/sdk-client-framework-4.2.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/sdk-grid-remoting-4.2.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/sdk-security-client-4.2.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/sdk-writable-api-client-4.2.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/slf4j-api-1.4.0.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/slf4j-nop-1.4.3.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/spring-2.5.6.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/spring-aop-2.5.6.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/spring-aspects-2.5.6.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/spring-beans-2.5.6.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/spring-context-1.2.9.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/spring-context-2.5.6.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/spring-context-support-2.5.6.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/spring-core-2.5.6.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/spring.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/subject-0.2.1.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/washu-commons-1.1.8.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/xercesImpl-2.7.1.jar:/Users/jpm78/src/catissue-suite-2/software/caTissue/modules/caTissueStaticDataService/lib/xsom14.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/addressing-1.0.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/axis-url.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/axis.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/bootstrap.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/cog-axis.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/cog-jglobus.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/cog-tomcat.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/cog-url.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/commonj.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/commons-beanutils.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/commons-cli-2.0.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/commons-collections-3.0.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/commons-digester.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/commons-discovery.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/commons-logging.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/concurrent.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/cryptix-asn1.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/cryptix.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/cryptix32.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/globus_resolution_service.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/globus_resolution_stubs_java.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/globus_resolution_test.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/globus_transfer_service.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/globus_transfer_stubs_java.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/globus_transfer_test.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/globus_usage_core.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/globus_usage_packets_common.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/globus_wsrf_tools_test.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/jaxrpc.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/jce-jdk13-125.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/jgss.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/junit.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/log4j-1.2.8.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/naming-common.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/naming-factory.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/naming-java.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/naming-resources.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/opensaml.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/puretls.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/resolver.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/saaj.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/servlet.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsdl4j.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_common.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core_registry.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core_registry_stubs.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core_samples_authzService.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core_samples_authzService_stubs.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core_samples_counter.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core_samples_counter_stubs.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core_samples_mgmt.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core_samples_mgmt_stubs.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_core_stubs.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_provider_jce.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_test.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_test_interop.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_test_interop_stubs.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_test_unit.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_test_unit_stubs.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wsrf_tools.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/wss4j.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/xalan.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/xercesImpl.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/xml-apis.jar:/Users/jpm78/opt/caGrid/ws-core-4.0.3/lib/xmlsec.jar:/Users/jpm78/opt/caGrid/apache-ant-1.7.0/lib/ant-launcher.jar:/Users/jpm78/opt/caGrid/apache-ant-1.7.0/lib/ant.jar:/Users/jpm78/opt/caGrid/apache-ant-1.7.0/lib/ant-junit.jar" />
+    <property name="ant.library.dir" value="/Users/jpm78/opt/caGrid/apache-ant-1.7.0/lib" />
+    <property name="os.arch" value="x86_64" />
+    <property name="useHttpsUrl" value="false" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-IK57wE/Render" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="ant.core.lib" value="/Users/jpm78/opt/caGrid/apache-ant-1.7.0/lib/ant.jar" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="file.separator" value="/" />
+    <property name="introduce.skeleton.resource.options" value="main,singleton,identifiable,resourcePropertyManagement" />
+    <property name="java.runtime.version" value="1.6.0_31-b04-415-11M3646" />
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/launch-sJWbIG/Listeners" />
+    <property name="applicationHostPort" value="8080" />
+    <property name="user.country" value="US" />
+    <property name="etc.dir" value="etc" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="service.jar.name" value="Catissue_cacore-service.jar" />
+    <property name="service.name" value="Catissue_cacore" />
+    <property name="java.vendor" value="Apple Inc." />
+    <property name="awt.nativeDoubleBuffering" value="true" />
+    <property name="env.CATALINA_HOME" value="/Users/jpm78/MelaGrid/jakarta-tomcat-5.0.28" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="jboss.dir" value="${env.JBOSS_HOME}" />
+    <property name="sun.arch.data.model" value="64" />
+  </properties>
+  <testcase classname="edu.yale.med.krauthammerlab.catissuecore.cagrid.test.CreateStorageContainer" name="testCreateStorageContainer" time="2.366">
+    <error type="gov.nih.nci.cagrid.data.faults.QueryProcessingExceptionType">AxisFault
+ faultCode: {http://schemas.xmlsoap.org/soap/envelope/}Server.generalException
+ faultSubcode: 
+ faultString: java.lang.NullPointerException
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{http://gov.nih.nci.cagrid.data/DataServiceExceptions}QueryProcessingException:&lt;ns2:Timestamp xmlns:ns2=&quot;http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-BaseFaults-1.2-draft-01.xsd&quot;&gt;2012-05-18T15:03:54.666Z&lt;/ns2:Timestamp&gt;&lt;ns3:Originator xmlns:ns3=&quot;http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-BaseFaults-1.2-draft-01.xsd&quot;&gt;&lt;ns4:Address xmlns:ns4=&quot;http://schemas.xmlsoap.org/ws/2004/03/addressing&quot;&gt;https://catissuesvc.wustl.edu:443/wsrf/services/cagrid/Catissue_cacore&lt;/ns4:Address&gt;&lt;ns5:ReferenceProperties xmlns:ns5=&quot;http://schemas.xmlsoap.org/ws/2004/03/addressing&quot;/&gt;&lt;ns6:ReferenceParameters xmlns:ns6=&quot;http://schemas.xmlsoap.org/ws/2004/03/addressing&quot;/&gt;&lt;/ns3:Originator&gt;
+	{http://xml.apache.org/axis/}exceptionName:gov.nih.nci.cagrid.data.faults.QueryProcessingExceptionType
+	{http://xml.apache.org/axis/}stackTrace:
+	at edu.wustl.catissuecore.domain.service.Catissue_cacoreImpl.getError(Catissue_cacoreImpl.java:24)
+	at edu.wustl.catissuecore.domain.service.Catissue_cacoreImpl.insert(Catissue_cacoreImpl.java:37)
+	at edu.wustl.catissuecore.domain.service.globus.Catissue_cacoreProviderImpl.insert(Catissue_cacoreProviderImpl.java:31)
+	at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:384)
+	at org.globus.axis.providers.RPCProvider.invokeMethodSub(RPCProvider.java:107)
+	at org.globus.axis.providers.PrivilegedInvokeMethodAction.run(PrivilegedInvokeMethodAction.java:42)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.globus.gsi.jaas.GlobusSubject.runAs(GlobusSubject.java:55)
+	at org.globus.gsi.jaas.JaasSubject.doAs(JaasSubject.java:90)
+	at org.globus.axis.providers.RPCProvider.invokeMethod(RPCProvider.java:97)
+	at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:281)
+	at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:319)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:450)
+	at org.apache.axis.server.AxisServer.invoke(AxisServer.java:285)
+	at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:172)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.globus.tomcat.coyote.valves.HTTPSValve55.invoke(HTTPSValve55.java:45)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:875)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+
+	{http://xml.apache.org/axis/}hostname:jbso1m1.deid.cbmi.wucon.wustl.edu
+
+java.lang.NullPointerException
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at org.apache.axis.encoding.ser.BeanDeserializer.&lt;init&gt;(BeanDeserializer.java:90)
+	at org.apache.axis.encoding.ser.BeanDeserializer.&lt;init&gt;(BeanDeserializer.java:76)
+	at gov.nih.nci.cagrid.data.faults.QueryProcessingExceptionType.getDeserializer(QueryProcessingExceptionType.java:90)
+	at org.apache.axis.encoding.ser.BaseDeserializerFactory.getSpecialized(BaseDeserializerFactory.java:154)
+	at org.apache.axis.encoding.ser.BaseDeserializerFactory.getDeserializerAs(BaseDeserializerFactory.java:84)
+	at org.apache.axis.encoding.DeserializationContext.getDeserializer(DeserializationContext.java:464)
+	at org.apache.axis.encoding.DeserializationContext.getDeserializerForType(DeserializationContext.java:547)
+	at org.apache.axis.message.SOAPFaultDetailsBuilder.onStartChild(SOAPFaultDetailsBuilder.java:157)
+	at org.apache.axis.encoding.DeserializationContext.startElement(DeserializationContext.java:1035)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:395)
+	at org.apache.axis.encoding.DeserializationContext.parse(DeserializationContext.java:227)
+	at org.apache.axis.SOAPPart.getAsSOAPEnvelope(SOAPPart.java:645)
+	at org.apache.axis.Message.getSOAPEnvelope(Message.java:424)
+	at org.apache.axis.message.addressing.handler.AddressingHandler.processClientResponse(AddressingHandler.java:305)
+	at org.apache.axis.message.addressing.handler.AddressingHandler.invoke(AddressingHandler.java:110)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:190)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2727)
+	at org.apache.axis.client.Call.invoke(Call.java:2710)
+	at org.apache.axis.client.Call.invoke(Call.java:2386)
+	at org.apache.axis.client.Call.invoke(Call.java:2309)
+	at org.apache.axis.client.Call.invoke(Call.java:1766)
+	at edu.wustl.catissuecore.domain.stubs.bindings.Catissue_cacorePortTypeSOAPBindingStub.insert(Catissue_cacorePortTypeSOAPBindingStub.java:1473)
+	at edu.wustl.catissuecore.domain.client.Catissue_cacoreClient.insert(Catissue_cacoreClient.java:249)
+	at edu.yale.med.krauthammerlab.catissuecore.cagrid.test.TestBase.makeContainer(TestBase.java:107)
+	at edu.yale.med.krauthammerlab.catissuecore.cagrid.test.CreateStorageContainer.testCreateStorageContainer(CreateStorageContainer.java:40)
+</error>
+  </testcase>
+  <system-out><![CDATA[11:03:52,744 WARN  [JavaUtils] Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
