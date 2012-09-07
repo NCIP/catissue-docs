@@ -1,0 +1,30 @@
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/test.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=annotations
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations1.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Aannotations1
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations2.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Bannotations2
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations3.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Cannotations3
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations4.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Dannotations4
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations5.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Eannotations5
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations6.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Fannotations6
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations7.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Gannotations7
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations8.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Hannotations8
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations9.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Iannotations9
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations10.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Jannotations10
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations11.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Kannotations11
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations12.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Lannotations12
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations13.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Mannotations13
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations14.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Nannotations14
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations15.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Oannotations15
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations16.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Pannotations16
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations17.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Qannotations17
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations18.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Rannotations18
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations19.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Sannotations19
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations20.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Tannotations20
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations21.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Uannotations21
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations22.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Vannotations22
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations23.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Wannotations23
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations24.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Xannotations24
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations25.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Yannotations25
+ant -f deploy.xml import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/original/tempXMIs/Testannotations26.xmi -DmainContainerList=CPUML/TestModels/TestModel_withTags/original/main.csv -Dpackage=Zannotations26
+
+ant -f deploy.xml import_permissible_values -Dpv.dir=CPUML/ -DpermissibleValuesFile=CPUML/TestModels/TestModel_withTags/original/TestModel_pv.csv
+ant -f deploy.xml create_category -DcategoryFileDir=CPUML/ -DcategoryFormNamesFile=CPUML/TestModels/TestModel_withTags/original/cat_list_for_original_test_model.txt

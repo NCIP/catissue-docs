@@ -1,0 +1,23 @@
+Form_Definition
+
+TestCase43
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+
+Display_Label:Single Lne Display,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+
+SingleLineDisplay:start
+NOTE~Individual UI Controls for attributes
+VitalInformation:bp,textField,Blood Pressure,options~Columns=5
+VitalInformation:height,textField,Height,options~Columns=10
+SingleLineDisplay:end
+
+
+Display_Label:Test Case 43,show=true
+instance:PatientInformation[1]
+subcategory:Single Lne Display:single
+PatientInformation:name,textField,Name of the testcase

@@ -1,0 +1,1193 @@
+--Select--
+Good Pasteur's
+Anti-GBM GN
+Perihilar
+Tip lesion
+Cellular
+Collapsing
+NOS
+Cryoglobulinemia
+Monoclonal gammopathy
+Light chain deposit disease
+Chronic lymphocytic leukemia
+SLE
+Immunotactoid
+HSP
+Lupus Nephritis
+Acute Postinfectious GN
+MPGN Type I
+MPGN Type II
+Membranous GN
+Fibrillary GN
+IgA
+Class I (minimal mesangial)
+Class II (mesangial proliferative)
+Class III (Focal)
+Class IV (Diffuse)
+Class V (Membranous)
+Class VI (Advanced sclerosing)
+Type I
+Type II
+Type III
+Diabetes mellitus
+Nail-patella syndrome
+Fibrin
+Fibronectin glomerulopathy
+Collagenofibrotic glomerulopathy
+ANCA GN
+Microscopic polyangiitis
+Wegener's granulomatosis
+Churg-Strauss Syndrome
+Glomerular
+Tubular
+Collecting duct
+Polycystic
+Multilocular
+Medullary
+Simple cortical
+Thin membrane disease
+ATN
+Tubular atrophy
+Hydropic change
+Hyaline droplet change
+Fatty change
+Foam cells
+Hypokalemic nephropathy
+Pigment deposition
+Viral inclusion
+Tubulitis
+Arteritis
+Venulitis
+Sclerosis
+Hyalinized
+Thrombotic microangiopathy
+HUS
+TTP
+Cardiovascular Angina
+Cardiovascular Congestive Heart Failure
+Cardiovascular Hypertension
+Cardiovascular Myocardial infarction
+Cerebrovascular Disease CVA with minor or no residual effect
+Cerebrovascular Disease CVA with residual deficit
+Cerebrovascular Disease TIA
+Connective Tissue Disorder
+Dementia
+Diabetes treated with diet alone
+Diabetes treated with oral hypoglycemic agents
+Diabetes treated with oral hypoglycemic agents or insulin
+Diabetes with end organ disease
+Diabetes with end organ disease nephropathy
+Diabetes with end organ disease neuropathy
+Diabetes with end organ disease retinopathy
+Endocrine hyperparathyroid
+Endocrine hyperthyroid
+Endocrine hypoparathyroid
+Endocrine hypothyroid
+Hyperlipidemia
+Immunesuppressed AIDS
+Immunesuppressed HIV
+Immunesuppressed On immunosuppression
+Immunesuppressed On immunosuppression Heart
+Immunesuppressed On immunosuppression Kidney transplant
+Immunesuppressed On immunosuppression Liver
+Immunesuppressed On immunosuppression Lung
+Immunesuppressed On immunosuppression Other
+Immunesuppressed Other Immunecompromised state
+Liver Disease Cirrhosis
+Liver Disease Encephalopathy
+Liver Disease Hepatitis
+Lupus
+Neoplasia Benign
+Neoplasia Malignant Leukemia
+Neoplasia Malignant Lymphoma
+Neoplasia Malignant solid tumor with metastasis
+Neoplasia Malignant solid tumor without metastasis
+Peptic Ulcer Disease
+Peripheral Vascular Disease
+Renal AKI
+Renal CKD
+Renal congenital anomaly
+Renal ESRD
+Renal renal transplant
+Respiratory Asthma
+Respiratory COPD
+Respiratory Emphysema
+Respiratory Sleep apnea
+Rheumatoid Arthritis
+Prenatal Hydronephrosis
+DevelopmentalDelay
+Low BirthWeight
+Multiple Urinary Tract Infections
+Anemia
+Endocrine secondary hyperparathyroidism
+Neoplasia
+Multiple myeloma
+Cardiomyopathy
+Persistent cloaca
+Congenital fistulae between uterus and digestive and urinary tracts
+Other congenital malformations of female genitalia
+Congenital absence of vagina
+Doubling of vagina
+Congenital rectovaginal fistula
+Imperforate hymen
+Other congenital malformations of vagina
+Fusion of labia
+Congenital malformation of clitoris
+Other congenital malformations of vulva
+Other specified congenital malformations of female genitalia
+Congenital malformation of female genitalia - unspecified
+Undescended testicle
+Hypospadias
+Hypospadias - balanic
+Hypospadias - penile
+Hypospadias - penoscrotal
+Hypospadias - perineal
+Congenital chordee
+Other hypospadias
+Hypospadias - unspecified
+Other congenital malformations of male genital organs
+Absence and aplasia of testis
+Monorchism
+Hypoplasia of testis and scrotum
+Other congenital malformations of testis and scrotum
+Atresia of vas deferens
+Other malformations of vas deferens - epididymis - seminal vesicles and prostate
+Congenital absence and aplasia of penis
+Other congenital malformations of penis
+Other specified congenital malformations of male genital organs
+Congenital malformation of male genital organ - unspecified
+Indeterminate sex and pseudohermaphroditism
+Hermaphroditism - not elsewhere classified
+Male pseudohermaphroditism - not elsewhere classified
+Female pseudohermaphroditism - not elsewhere classified
+Pseudohermaphroditism - unspecified
+Indeterminate sex - unspecified
+urinary system
+Renal agenesis and other reduction defects of kidney
+Renal agenesis - unilateral
+Renal agenesis - bilateral
+Renal agenesis - unspecified
+Renal hypoplasia - unilateral
+Renal hypoplasia - bilateral
+Renal hypoplasia - unspecified
+Potter's syndrome
+Cystic kidney disease
+Congenital single renal cyst
+Polycystic kidney - autosomal recessive
+Polycystic kidney - autosomal dominant
+Polycystic kidney - unspecified
+Renal dysplasia
+Medullary cystic kidney
+Other cystic kidney diseases
+Cystic kidney disease - unspecified
+Meckel-Gruber syndrome
+Obstructive defects of renal pelvis and malformations of ureter
+Congenital hydronephrosis
+Atresia and stenosis of ureter
+Congenital megaloureter (megaureter)
+Congenital hydroureter
+Other obstructive defects of renal pelvis and ureter
+CAKUT
+UPJ
+Multiple myeloma (cast nephropathy)
+Congenital hydronephrosis
+Agenesis of ureter
+Duplication of ureter
+Malposition of ureter
+Congenital vesico-uretero-renal reflux (VUR)
+Other congenital malformations of ureter
+Other congenital malformations of kidney
+Accessory kidney
+Lobulated - fused and horseshoe kidney
+Ectopic kidney
+Hyperplastic and giant kidney
+Other specified congenital malformations of kidney
+Congenital malformation of kidney - unspecified
+Other congenital malformations of urinary system
+Epispadias
+Exstrophy of urinary bladder
+Congenital posterior urethral valves
+Other atresia and stenosis of urethra and bladder neck
+Malformation of urachus
+Cyst of urachus
+Patent urachus
+Prolapse of urachus
+Congenital absence of bladder and urethra
+Congenital diverticulum of bladder
+Other congenital malformations of bladder and urethra
+Other specified congenital malformations of urinary system
+Congenital malformation of urinary system - unspecified
+Nervous system
+Anencephaly and similar malformations
+Anencephaly
+Acephaly
+Acrania
+Amyelencephaly
+Hemianencephaly
+Hemicephaly
+Craniorachischisis
+Iniencephaly
+Encephalocele
+Microcephaly
+Congenital hydrocephalus
+Malformations of aqueduct of Sylvius
+Atresia of foramina of Magendie and Luschka Dandy-Walker syndrome
+Other congenital hydrocephalus
+Congenital hydrocephalus - unspecified
+Other congenital malformations of brain
+Congenital malformations of corpus callosum
+Arhinencephaly
+Holoprosencephaly
+Other reduction deformities of brain
+Agyria and Lissencephaly (EUROCAT Q04.33)
+Microgyria and Pachygyria (EUROCAT Q04.34)
+Hydranencephaly (EUROCAT Q04.35)
+Septo-optic dysplasia
+Megalencephaly
+Congenital cerebral cysts
+Porencephaly
+Schizencephaly
+Other specified congenital malformations of brain
+Congenital malformation of brain - unspecified
+Spina bifida
+hydromeningocele (spinal)
+meningocele(spinal)
+meningomyelocele
+myelocele
+myelomeningocele
+rachischisis
+syringomyelocele
+Other congenital malformations of spinal cord
+Amyelia
+Hypoplasia and dysplasia of spinal cord
+Diastematomyelia
+Other congenital cauda equina malformations
+Hydromyelia
+Oligohydraminos
+Other specified congenital malformations of spinal cord
+Congenital malformation of spinal cord - unspecified
+Other congenital malformations of nervous system
+Arnold-Chiari syndrome
+Other specified congenital malformations of nervous system
+Congenital malformation of nervous system - unspecified
+eye - ear - face and neck
+Congenital malformations of eyelid - lacrimal apparatus and orbit
+Congenital ptosis
+Congenital ectropion
+Congenital entropion
+Other congenital malformations of eyelid
+Ablepharon
+Blepharophimosis - congenital
+Coloboma of eyelid
+Absence and agenesis of lacrimal apparatus
+Congenital stenosis and stricture of lacrimal duct
+Other congenital malformations of lacrimal apparatus
+Congenital malformation of orbit
+Anophthalmos - microphthalmos and macrophthalmos
+Cystic eyeball
+Other anophthalmos
+Microphthalmos
+Macrophthalmos
+Congenital lens malformations
+Congenital cataract
+Congenital displaced lens
+Coloboma of lens
+Congenital aphakia
+Spherophakia
+Other congenital lens malformations
+Congenital lens malformation - unspecified
+Congenital malformations of anterior segment of eye
+Coloboma of iris
+Absence of iris
+Aniridia
+Other congenital malformations of iris
+Congenital corneal opacity
+Other congenital corneal malformations
+Blue sclera
+Other congenital malformations of anterior segment of eye
+Congenital malformation of anterior segment of eye - unspecified
+Congenital malformations of posterior segment of eye
+Congenital malformation of vitreous humour
+Congenital malformation of retina
+Congenital malformation of optic disc
+Coloboma of optic disc
+Congenital malformation of choroid
+Other congenital malformations of posterior segment of eye
+Coloboma of the fundus
+Congenital malformation of posterior segment of eye - unspecified
+Other congenital malformations of eye
+Congenital glaucoma
+Buphthalmos
+Glaucoma of newborn
+Hydrophthalmos
+Keratoglobus - congenital - with glaucoma
+Macrocornea with glaucoma
+Macrophthalmos in congenital glaucoma
+Megalocornea with glaucoma
+Congenital malformations of ear causing impairment of hearing
+Other congenital malformations of ear
+Accessory auricle
+Macrotia
+Microtia
+Other misshapen ear
+Misplaced ear
+Prominent ear
+Other specified congenital malformations of ear
+Congenital malformation of ear - unspecified
+Other congenital malformations of face and neck
+Sinus - fistula and cyst of branchial cleft
+Preauricular sinus and cyst
+Other branchial cleft malformations
+Otocephaly
+Webbing of neck
+Macrostomia
+Microstomia
+Macrocheilia
+Microcheilia
+Other specified congenital malformations of face and neck
+Congenital malformation of face and neck - unspecified
+circulatory system
+Congenital malformations of cardiac chambers and connections
+Common arterial trunk
+Persistent truncus arteriosus
+Double outlet right ventricle
+Taussig-Bing syndrome
+Double outlet left ventricle
+Discordant ventriculoarterial connection
+Dextrotransposition of aorta
+Transposition of great vessels (complete)
+Double inlet ventricle
+Discordant atrioventricular connection
+Corrected transposition
+Isomerism of atrial appendages
+Congenital malformations of cardiac septa
+Ventricular septal defect
+Atrial septal defect
+Atrioventricular septal defect
+Tetralogy of Fallot
+Other congenital malformations of cardiac septa
+Eisenmenger's syndrome
+Congenital malformations of pulmonary and tricuspid valves
+Pulmonary valve atresia
+Congenital pulmonary valve stenosis
+Congenital pulmonary valve insufficiency
+Other congenital malformations of pulmonary valve
+Congenital tricuspid stenosis
+Tricuspid atresia
+Ebstein's anomaly
+Hypoplastic right heart syndrome
+Other congenital malformations of tricuspid valve
+Congenital malformation of tricuspid valve - unspecified
+Congenital malformations of aortic and mitral valves
+Congenital stenosis of aortic valve
+Congenital insufficiency of aortic valve
+Congenital mitral stenosis
+Congenital mitral insufficiency
+Hypoplastic left heart syndrome
+Other congenital malformations of aortic and mitral valves
+Congenital malformation of aortic and mitral valves - unspecified
+Other congenital malformations of heart
+Dextrocardia
+Laevocardia
+Cor triatriatum
+Pulmonary infundibular stenosis
+Congenital subaortic stenosis
+Malformation of coronary vessels
+Congenital heart block
+Other specified congenital malformations of heart
+Congenital malformation of heart - unspecified
+Congenital malformations of great arteries
+Patent ductus arteriosus
+Coarctation of aorta
+Atresia of aorta
+Stenosis of aorta
+Other congenital malformations of aorta
+Overriding aorta
+Aneurysm of sinus of Valsalva (ruptured)
+Double aortic arch (vascular ring of aorta)
+Atresia of pulmonary artery
+Stenosis of pulmonary artery
+Other congenital malformations of pulmonary artery
+Congenital malformations of great veins
+Congenital stenosis of vena cava
+Persistent left superior vena cava
+Total anomalous pulmonary venous connection
+Partial anomalous pulmonary venous connection
+Anomalous pulmonary venous connection - unspecified
+Anomalous portal venous connection
+Portal vein-hepatic artery fistula
+Other congenital malformations of great veins
+Scimitar syndrome
+Congenital malformation of great vein - unspecified
+Other congenital malformations of peripheral vascular system
+Congenital absence and hypoplasia of umbilical artery
+Congenital renal artery stenosis
+Other congenital malformations of renal artery
+Peripheral arteriovenous malformation
+Congenital phlebectasia
+Other specified congenital malformations of peripheral vascular system
+Congenital malformation of peripheral vascular system - unspecified
+Other congenital malformations of circulatory system
+Arteriovenous malformation of precerebral vessels
+Other malformations of precerebral vessels
+Arteriovenous malformation of cerebral vessels
+Other malformations of cerebral vessels
+Congenital malformation of circulatory system - unspecified
+respiratory system
+Congenital malformations of nose
+Choanal atresia
+Agenesis and underdevelopment of nose
+Fissured - notched and cleft nose
+Congenital perforated nasal septum
+Other congenital malformations of nose
+Congenital malformation of nose - unspecified
+Congenital malformations of larynx
+Web of larynx
+Congenital subglottic stenosis
+Laryngeal hypoplasia
+Laryngocele
+Congenital laryngomalacia
+Other congenital malformations of larynx
+Congenital malformation of larynx - unspecified
+Congenital malformations of trachea and bronchus
+Congenital tracheomalacia
+Other congenital malformations of trachea
+Congenital bronchomalacia
+Congenital stenosis of bronchus
+Other congenital malformations of bronchus
+Congenital malformations of lung
+Congenital cystic lung
+Accessory lobe of lung
+Sequestration of lung
+Agenesis of lung
+Congenital bronchiectasis
+Ectopic tissue in lung
+Hypoplasia and dysplasia of lung
+Other congenital malformations of lung
+Congenital malformation of lung - unspecified
+Other congenital malformations of respiratory system
+Anomaly of pleura
+Congenital cyst of mediastinum
+Other specified congenital malformations of respiratory system
+Congenital malformation of respiratory system - unspecified
+digestive system
+Cleft palate
+Cleft lip
+Cleft palate with cleft lip
+Other congenital malformations of tongue - mouth and pharynx
+Congenital malformations of lips - not elsewhere classified
+Van der Woude's syndrome
+Ankyloglossia
+Macroglossia
+Other congenital malformations of tongue
+Congenital malformations of salivary glands and ducts
+Congenital malformations of palate - not elsewhere classified
+Other congenital malformations of mouth
+Pharyngeal pouch
+Congenital malformations of oesophagus
+Atresia of oesophagus without fistula
+Atresia of oesophagus with tracheo-oesophageal fistula
+Congenital tracheo-oesophageal fistula without atresia
+Congenital stenosis and stricture of oesophagus
+Oesophageal web
+Congenital dilatation of oesophagus
+Diverticulum of oesophagus
+Other congenital malformations of oesophagus
+Congenital malformation of oesophagus - unspecified
+Other congenital malformations of upper alimentary tract
+Congenital hypertrophic pyloric stenosis
+Congenital hiatus hernia
+Congenital absence - atresia and stenosis of small intestine
+Congenital absence - atresia and stenosis of duodenum
+Congenital absence - atresia and stenosis of jejunum
+Congenital absence - atresia and stenosis of ileum
+Congenital absence - atresia and stenosis of other specified parts of small intestine
+Congenital absence - atresia and stenosis of small intestine - part unspecified
+Congenital absence - atresia and stenosis of large intestine
+Congenital absence - atresia and stenosis of rectum with fistula
+Congenital absence - atresia and stenosis of rectum without fistula
+Imperforate rectum
+Congenital absence - atresia and stenosis of anus with fistula
+Congenital absence - atresia and stenosis of anus without fistula
+Imperforate anus
+Congenital absence - atresia and stenosis of other parts of large intestine
+Congenital absence - atresia and stenosis of large intestine - part unspecified
+Other congenital malformations of intestine
+Meckel's diverticulum
+Hirschsprung's disease
+Other congenital functional disorders of colon
+Congenital malformations of intestinal fixation
+Malrotation of colon
+Duplication of intestine
+Ectopic anus
+Congenital fistula of rectum and anus
+Other specified congenital malformations of intestine
+Congenital malformations of gallbladder - bile ducts and liver
+Agenesis - aplasia and hypoplasia of gallbladder
+Atresia of bile ducts
+Congenital stenosis and stricture of bile ducts
+Choledochal cyst
+Other congenital malformations of bile ducts
+Cystic disease of liver
+Other congenital malformations of liver
+Accessory liver
+Alagille's syndrome
+Other congenital malformations of digestive system
+Agenesis - aplasia and hypoplasia of pancreas
+Annular pancreas
+Congenital pancreatic cyst
+Other congenital malformations of pancreas and pancreatic duct
+Accessory pancreas
+Other specified congenital malformations of digestive system
+Congenital malformation of digestive system - unspecified]]
+genital organs
+Congenital malformations of ovaries - fallopian tubes and broad ligaments
+Congenital malformations of uterus and cervix
+Agenesis and aplasia of uterus
+Doubling of uterus with doubling of cervix and vagina
+Other doubling of uterus
+Bicornate uterus
+Unicornate uterus
+Agenesis and aplasia of cervix
+Embryonic cyst of cervix
+Other congenital malformations of uterus and cervix
+Congenital malformation of uterus and cervix - unspecified
+musculoskeletal system
+Congenital deformities of hip
+Congenital dislocation of hip - unilateral
+Congenital dislocation of hip - bilateral
+Congenital dislocation of hip - unspecified
+Congenital subluxation of hip - unilateral
+Congenital subluxation of hip - bilateral
+Congenital subluxation of hip - unspecified
+Unstable hip
+Other congenital deformities of hip
+Congenital deformity of hip - unspecified
+Congenital deformities of feet
+Talipes equinovarus
+Talipes calcaneovarus
+Metatarsus varus
+Other congenital varus deformities of feet
+Talipes calcaneovalgus
+Congenital pes planus
+Other congenital valgus deformities of feet
+Pes cavus
+Other congenital deformities of feet
+Congenital deformity of feet - unspecified
+Congenital musculoskeletal deformities of head - face/spine/chest
+Facial asymmetry
+Compression facies
+Dolichocephaly
+Plagiocephaly
+Other congenital deformities of skull - face and jaw
+Congenital deformity of spine
+Pectus excavatum
+Pectus carinatum
+Other congenital deformities of chest
+Other congenital musculoskeletal deformities
+Congenital deformity of sternocleidomastoid muscle
+Congenital deformity of hand
+Congenital deformity of knee
+Congenital bowing of femur
+Congenital bowing of tibia and fibula
+Congenital bowing of long bones of leg - unspecified
+Other specified congenital musculoskeletal deformities
+Polydactyly
+Accessory finger(s)
+Accessory thumb(s)
+Accessory toe(s)
+Polydactyly - unspecified
+Syndactyly
+Fused fingers
+Webbed fingers
+Fused toes
+Webbed toes
+Polysyndactyly
+Syndactyly - unspecified
+Reduction defects of upper limb
+Congenital complete absence of upper limb(s)
+Congenital absence of upper arm and forearm with hand present
+Congenital absence of both forearm and hand
+Congenital absence of hand and finger(s)
+Longitudinal reduction defect of radius
+Longitudinal reduction defect of ulna
+Lobster-claw hand
+Other reduction defects of upper limb(s)
+Reduction defect of upper limb - unspecified
+Reduction defects of lower limb
+Congenital complete absence of lower limb(s)
+Congenital absence of thigh and lower leg with foot present
+Congenital absence of both lower leg and foot
+Congenital absence of foot and toe(s)
+Longitudinal reduction defect of femur
+Longitudinal reduction defect of tibia
+Longitudinal reduction defect of fibula
+Split foot
+Other reduction defects of lower limb(s)
+Reduction defect of lower limb - unspecified
+Reduction defects of unspecified limb
+Congenital absence of unspecified limb(s)
+Amelia NOS
+Phocomelia - unspecified limb(s)
+Other reduction defects of unspecified limb(s)
+Other congenital malformations of limb(s)
+Other congenital malformations of upper limb(s) - including shoulder girdle
+Accessory carpal bones
+Cleidocranial dysostosis
+Congenital pseudarthrosis of clavicle
+v Macrodactylia (fingers)
+Madelung's deformity
+Radioulnar synostosis
+Sprengel's deformity
+Triphalangeal thumb
+Congenital malformation of knee
+genu valgum
+genu varum
+Other congenital malformations of lower limb(s) - including pelvic girdle
+Arthrogryposis multiplex congenita
+Other specified congenital malformations of limb(s)
+Unspecified congenital malformation of limb(s)
+Other congenital malformations of skull and face bones
+Craniosynostosis
+Craniofacial dysostosis
+Hypertelorism
+Macrocephaly
+Mandibulofacial dysostosis
+Franceschetti syndrome
+Treacher-Collins syndrome
+Oculomandibular dysostosis
+Other specified congenital malformations of skull and face bones
+Absence of skull bone - congenital
+Congenital deformity of forehead
+Platybasia
+Congenital malformation of skull and face bones - unspecified
+Congenital malformations of spine and bony thorax
+Spina bifida occulta
+Klippel-Feil syndrome
+Congenital spondylolisthesis
+Congenital scoliosis due to congenital bony malformation
+Other congenital malformations of spine - not associated with scoliosis
+Cervical rib
+Other congenital malformations of ribs
+Congenital malformation of sternum
+Congenital absence of sternum
+QSternum bifidum
+Other congenital malformations of bony thorax
+Congenital malformation of bony thorax - unspecified
+Osteochondrodysplasia with defects of growth of tubular bones and spine
+Achondrogenesis
+Hypochondrogenesis
+Thanatophoric short stature
+Short rib syndrome
+Asphyxiating thoracic dysplasia (Jeune)
+Chondrodysplasia punctata
+Achondroplasia
+Hypochondroplasia
+Osteosclerosis congenita
+Dystrophic dysplasia
+Chondroectodermal dysplasia
+Ellis-van Creveld syndrome
+Spondyloepiphyseal dysplasia
+Other osteochondrodysplasia with defects of growth of tubular bones and spine
+Osteochondrodysplasia with defects of growth of tubular bones and spine - unspecified
+Other osteochondrodysplasias
+Osteogenesis imperfecta
+Fragilitas ossium
+Osteopsathyrosis
+Polyostotic fibrous dysplasia
+Albright(-McCune)(-Sternberg) syndrome
+Osteopetrosis
+Albers-Schonberg syndrome
+Progressive diaphyseal dysplasia
+Camurati-Engelmann syndrome
+Enchondromatosis
+Maffucci's syndrome
+Ollier's disease
+Metaphyseal dysplasia
+Pyle's syndrome
+Multiple congenital exostoses
+Diaphyseal aclasis
+Other specified osteochondrodysplasias
+Osteopoikilosis
+Osteochondrodysplasia - unspecified
+Chondrodystrophy NOS
+Osteodystrophy NOS
+Congenital malformations of the musculoskeletal system - not elsewhere classified
+Congenital diaphragmatic hernia
+Other congenital malformations of diaphragm
+Exomphalos
+Omphalocele
+Gastroschisis
+Prune belly syndrome
+Other congenital malformations of abdominal wall
+Ehlers-Danlos syndrome
+Other congenital malformations of musculoskeletal system
+Accessory muscle
+Amyotrophia congenita
+Poland's syndrome
+Congenital malformation of musculoskeletal system - unspecified
+Congenital ichthyosis
+Ichthyosis vulgaris
+X-linked ichthyosis
+Lamellar ichthyosis
+Congenital bullous ichthyosiform erythroderma
+Harlequin fetus
+Other congenital ichthyosis
+Congenital ichthyosis - unspecified
+Epidermolysis bullosa
+Epidermolysis bullosa simplex
+Epidermolysis bullosa letalis
+Epidermolysis bullosa dystrophica
+Other epidermolysis bullosa
+Epidermolysis bullosa - unspecified
+Other congenital malformations of skin
+Hereditary lymphoedema
+(Xeroderma pigmentosum
+Mastocytosis
+Urticaria pigmentosa
+Incontinentia pigmenti
+Ectodermal dysplasia (anhidrotic)
+Congenital non-neoplastic naevus
+Birthmark NOS
+naevus flammeus / Port-wine stain
+sanguineous naevus
+strawberry naevus
+vascular naevus NOS
+verrucous naevus
+Other specified congenital malformations of skin
+Abnormal palmar creases
+Accessory skin tags
+Benign Familial pemphigus (Hailey-Hailey)
+Cutis laxa (hyperelastica)
+Dermatoglyphic anomalies
+Inherited keratosis palmaris et plantaris
+Keratosis follicularis (Darier-White) (ILDS Q82.868)
+Congenital malformation of skin - unspecified
+Congenital malformations of breast
+Accessory breast
+Accessory nipple
+Supernumerary nipple
+Other congenital malformations of integument
+Congenital alopecia
+Congenital morphological disturbances of hair - not elsewhere classified
+Beaded hair
+Monilethrix
+Pili annulati
+Trichothiodystrophy (ILDS Q84.169)
+Other congenital malformations of hair
+Anonychia
+Congenital leukonychia
+Enlarged and hypertrophic nails
+Other congenital malformations of nails
+Other specified congenital malformations of integument
+Congenital malformation of integument - unspecified
+Phakomatoses - not elsewhere classified
+Neurofibromatosis (nonmalignant)
+Von Recklinghausen's disease (ILDS Q85.010)
+Neurofibromatosis II (ILDS Q85.020)
+Neurofibromatosis - segmental (ILDS Q85.030)
+Tuberous sclerosis
+Bourneville's disease
+Other phakomatoses - not elsewhere classified
+Sturge-Weber syndrome (EUROCAT Q85.81)
+von Hippel-Lindau disease (EUROCAT Q85.82)
+Phakomatosis - unspecified
+Hamartosis NOS
+Congenital malformation syndromes due to known exogenous causes - not elsewhere classified
+Fetal alcohol syndrome (dysmorphic)
+Other specified congenital malformation syndromes affecting multiple systems
+Congenital malformation syndromes predominantly affecting facial appearance
+Acrocephalopolysyndactyly
+Acrocephalosyndactyly (Apert)
+Cryptophthalmos syndrome
+Cyclopia
+Goldenhar syndrome
+Moebius syndrome
+oro-facial-digital syndrome
+Robin syndrome
+Whistling face
+Congenital malformation syndromes predominantly associated with short stature
+Aarskog syndrome
+Cockayne syndrome (ILDS Q87.110)
+De Lange syndrome (ILDS Q87.170)
+Dubowitz syndrome
+Noonan syndrome
+Prader-Willi syndrome
+Robinow-Silverman-Smith syndrome
+Silver-Russell syndrome (ILDS Q87.114)
+Seckel syndrome
+Smith-Lemli-Opitz syndrome
+Sjogren-Larsson syndrome (ILDS Q87.136)
+Congenital malformation syndromes predominantly involving limbs
+Holt-Oram syndrome
+Klippel-Trenaunay-Weber (EUROCAT Q87.21 - ILDS Q87.210)
+Nail-patella syndrome (ILDS Q87.230)
+Rubinstein-Taybi syndrome (EUROCAT Q87.23)
+sirenomelia
+thrombocytopenia with absent radius syndrome
+VATER syndrome
+Congenital malformation syndromes involving early overgrowth
+Beckwith-Wiedemann syndrome
+Sotos syndrome
+Weaver syndrome
+Marfan's syndrome
+Other congenital malformation syndromes with other skeletal changes
+Other specified congenital malformation syndromes - not elsewhere classified
+Alport syndrome (EUROCAT Q87.80)
+Bardet-Biedl syndrome (EUROCAT Q87.81)
+Zellweger's syndrome (EUROCAT Q87.83)
+William's syndrome (EUROCAT Q87.84)
+Angelman's syndrome (Happy puppet syndrome) (EUROCAT Q87.85)
+Other congenital malformations - not elsewhere classified
+Congenital malformations of spleen
+Asplenia (congenital)
+Congenital splenomegaly
+Congenital malformations of adrenal gland
+Congenital malformations of other endocrine glands
+Congenital malformation of parathyroid or thyroid gland
+Persistent thyroglossal duct
+Thyroglossal cyst
+Situs inversus
+Conjoined twins
+Multiple congenital malformations - not elsewhere classified
+Other specified congenital malformations
+Congenital malformation - unspecified
+Chromosomal abnormalities - not elsewhere classified
+Down's syndrome
+Trisomy 21 - meiotic nondisjunction
+Trisomy 21 - mosaicism (mitotic nondisjunction)
+Trisomy 21 - translocation
+Down's syndrome - unspecified
+Trisomy 18 and Trisomy 13
+Trisomy 18 - meiotic nondisjunction
+Trisomy 18 - mosaicism (mitotic nondisjunction)
+Trisomy 18 - translocation
+Edwards' syndrome - unspecified
+Trisomy 13 - meiotic nondisjunction
+Trisomy 13 - mosaicism (mitotic nondisjunction)
+Trisomy 13 - translocation
+Patau's syndrome - unspecified
+Other trisomies and partial trisomies of the autosomes - not elsewhere classified
+Trisomy 9
+Warkany syndrome 2
+Whole chromosome trisomy - meiotic nondisjunction
+Whole chromosome trisomy - mosaicism (mitotic nondisjunction)
+Major partial trisomy
+Minor partial trisomy
+Duplications seen only at prometaphase
+Duplications with other complex rearrangements
+Extra marker chromosomes
+Triploidy and polyploidy
+Other specified trisomies and partial trisomies of autosomes
+Trisomy and partial trisomy of autosomes - unspecified
+Monosomies and deletions from the autosomes - not elsewhere classified
+Whole chromosome monosomy - meiotic nondisjunction
+Whole chromosome monosomy - mosaicism (mitotic nondisjunction)
+Chromosome replaced with ring or dicentric
+Deletion of short arm of chromosome 4
+Wolff-Hirschorn syndrome
+Deletion of short arm of chromosome 5
+Cri-du-chat syndrome
+Other deletions of part of a chromosome
+Angelman syndrome
+Deletion seen only at prometaphase
+Deletions with other complex rearrangements
+Other deletions from the autosomes
+Deletion from autosomes - unspecified
+Balanced rearrangements and structural markers - not elsewhere classified
+Robertsonian and balanced reciprocal translocations and insertions
+Balanced translocation and insertion in normal individual
+Chromosome inversion in normal individual
+Balanced autosomal rearrangement in abnormal individual
+Balanced sex/autosomal rearrangement in abnormal individual
+Individuals with marker heterochromatin
+Individuals with autosomal fragile site
+Other balanced rearrangements and structural markers
+Balanced rearrangement and structural marker - unspecified
+Turner syndrome
+Karyotype 45 -X
+Karyotype 46 -X iso (Xq)
+Karyotype 46 -X with abnormal sex chromosome - except iso (Xq)
+Mosaicism - 45 -X/46 -XX or XY
+Mosaicism - 45 -X/other cell line(s) with abnormal sex chromosome
+Other variants of Turner's syndrome
+Turner's syndrome - unspecified
+Other sex chromosome abnormalities - female phenotype - not elsewhere classified
+Karyotype 47 -XXX
+Female with more than three X chromosomes
+Mosaicism - lines with various numbers of X chromosomes
+Female with 46 -XY karyotype
+Other specified sex chromosome abnormalities - female phenotype
+Sex chromosome abnormality - female phenotype - unspecified
+Other sex chromosome abnormalities - male phenotype - not elsewhere classified
+Klinefelter's syndrome karyotype 47 -XXY
+Klinefelter's syndrome - male with more than two X chromosomes
+Klinefelter's syndrome - male with 46 -XX karyotype
+Other male with 46 -XX karyotype
+Klinefelter's syndrome - unspecified
+Karyotype 47 -XYY
+Male with structurally abnormal sex chromosome
+Male with sex chromosome mosaicism
+Other specified sex chromosome abnormalities - male phenotype
+Sex chromosome abnormality - male phenotype - unspecified
+Other chromosome abnormalities - not elsewhere classified
+Chimera 46 -XX/46 -XY
+46 -XX true hermaphrodite
+46 -XX with streak gonads
+46 -XY with streak gonads
+Pure gonadal dysgenesis
+Fragile X chromosome
+Fragile X syndrome
+Other specified chromosome abnormalities
+Chromosomal abnormality - unspecified
+Etiology Glomerular Disease
+Etiology Tubular Disease
+Etiology Vascular Disease
+Etiology Interstitial Disease
+Etiology Autoimmune
+Etiology Metabolic
+Etiology Immunosuppressed
+Etiology Infectious
+Etiology Ischemic
+Etiology Nephrotoxic Acetylcysteine
+Etiology Nephrotoxic Activated Drotrecogin Alpha (Activated Protein c Xigris)
+Etiology Nephrotoxic Aldosterone Antagonist
+Etiology Nephrotoxic Aminoglycoside Antibiotics
+Etiology Nephrotoxic Amphotericin B
+Etiology Nephrotoxic ACE Inhibitors
+Etiology Nephrotoxic Angiotensin Receptor Blockers
+Etiology Nephrotoxic Cyclosporin
+Etiology Nephrotoxic Diuretics
+Etiology Nephrotoxic Erythropoietic Agents
+Etiology Nephrotoxic Fenoldopam
+Etiology Nephrotoxic NSAIDs/COX-2 Inhibitors
+Etiology Nephrotoxic Tacrolimus
+Etiology Nephrotoxic Chemotherapy Agents
+Etiology Nephrotoxic Lithium
+Etiology Nephrotoxic X-ray Contrast Media
+Etiology Nephrotoxic Other
+Etiology Sepsis
+Etiology Trauma/Rhabdomyolysis
+Etiology Pregnancy Related
+Etiology Congenital Anomaly
+Etiology Familial
+Hydronephrosis
+Increased parenchymal echogenicity
+Cystic kidney
+Poor corticomedullary differentiation
+Ureteropelvic junction obstruction
+Vesicoureteral reflux, grade1
+Vesicoureteral reflux, grade2
+Vesicoureteral reflux, grade3
+Vesicoureteral reflux, grade4
+Vesicoureteral reflux, grade5
+Vesicoureteral reflux, not specified
+Pelvicaliectasis
+Dilatation of collecting system
+Cortical atrophy
+Normal voiding cystourethrogram
+Decreased contribution of function of one kidney
+Calculi
+Absence of kidney (agenesis)
+Hydroureter
+Hypoplasia (small kidney)
+Renal hypertrophy
+Not applicable
+SLE - Class I
+SLE - Class II
+SLE - Class III
+SLE - Class IV
+SLE - Class V
+SLE - Class VI
+Rheumatoid Arthritis
+Sjogren Syndrome
+Inherited Compliment Deficiency - C2
+Inherited Compliment Deficiency - Other
+TIN with Uveitis
+Anti-TBM disease
+TBM with MGN
+IgG4
+ADPKD
+ARPKD
+Renal Cysts in Hereditary Syndromes - VHL
+Multilocular Renal Cyst
+Localized Cystic Disease
+Simple Cortical Cysts
+Acquired Cystic Kidney Disease
+Perinephric Pseudocyst
+Pyelocaliceal Diverticula
+Medullary Nephronophthisis
+Glomerular cyst
+Myeloma Cast Nephropathy
+Light Chain Fanconi Syndrome
+Amyloidosis - AL/AH
+AA Hereditary
+Dialysis
+Localized
+Systemic
+Monoclonal Immunoglobulin Deposition Disease (MIDD)
+Light Chain Deposition Disease (LCDD)
+Heavy Chain Deposition Disease (HCDD)
+Light And Heavy Chain Deposition Disease (LHCDD)
+Cryoglobulonemia - Fibrillary
+Cryoglobulonemia - Immunotactoid
+Waldenstorms Macroglobulinemia
+Essential
+Secondary - Renal Artery Stenosis
+Pheochromocytoma
+Adrenal Cortical Lesions
+Bartters Syndrome
+Oral Contraceptives
+Stage 1
+Stage 2
+Stage 3
+Stage 4
+HIV
+Obstructive Reflux
+Nonobstructive Reflux
+Lead
+Reflux NOS
+Transplant
+Analgesic
+Diabetic
+IgA
+Gouty
+Sickle cell
+Ischemic
+Hereditary or Genetic - Alport
+Congenital nephrotic syndrome
+Bartter (ascending loop of Henle)
+Gitelman (distal tubule)
+Liddle (collecting tubule Na channel)
+Mitochondrial cytopathy
+Metabolic and hematological renal disease
+Membrane transport disorders
+Purine metabolism disorders
+Sickle cell disease
+Tubular Acidosis
+Hematuria
+Hydronephrosis
+Hypercalcemia
+CKD
+ESRD
+Proteinuria
+Glomerulonephritis
+Nephrotic Syndrome
+Idiopathic
+Primary Hyperparathyroidism
+Chloride Channel Mutations
+Hyperuricosuria
+Hyperoxaluria
+Hypocitraturia
+Renal Tubular Acidosis
+Struvite Stones
+Uric acid stones
+Calcium oxalate
+Calcinosis
+Cystinuria
+Polyarteritis Nodosa
+Giant Cell Arteritis
+Takayasu Arteritis
+Kawasaki Disease
+Chronic Hypertension With Preeclampsia
+Preeclampsia
+Eclampsia
+Acute Renal Failure- Acute Pyelonephritis
+Acute Renal Failure- Uterine Hemorrhage
+Acute Renal Failure- Septic Abortion
+Acute Renal Failure- Cortical Necrosis
+Acute Renal Failure- Acute Fatty Liver of Pregnancy
+Acute Renal Failure- Postpartum Hemolytic Uremic Syndrome
+Hemolytic Uremic Syndrome (HUS)
+Thrombotic Thrombocytopenic Purpura (TTP)
+Systemic Sclerosis
+Radiation Nephropathy
+Wilms
+Congenital Mesoblastic Nephroma
+Clear Cell Sarcoma
+Rhabdoid Tumor
+Metanephric Adenoma
+Translocation Carcinoma
+Carcinoma Associated With Neuroblastoma
+Renal cortical adenoma
+Oncocytoma
+Renal Cell Carcinoma - Clear Cell
+Renal Cell Carcinoma - Papillary
+Renal Cell Carcinoma - Chromophobe
+Renal Cell Carcinoma - Other
+Collecting Duct Carcinoma
+Mucinous Tubular and Spindle Cell Carcinoma
+Medullary Tubulocystic Carcinoma
+Urothelial Carcinoma
+Mesenchymal - Angiomyolipoma
+Mesenchymal - Benign Mesenchymal Tumors
+Mesenchymal - Sarcoma
+Cystic Nephroma
+Mixed Epithelial And Stromal Tumor
+Juxtaglomerular Cell Tumor
+Renomedullary Interstitial Cell Tumor
+Lymphoreticular And Hematopoietic Tumors - Leukemia
+Lymphoreticular And Hematopoietic Tumors - Lymphoma
+Metastases
+Hygroma renalis (lymphangioma)
+Tuberous sclerosis
+Acute Pyelonephritis
+Chronic Pyelonephritis
+Cystitis
+Uretheritis
+Syphilis
+Streptococcus
+E. Coli
+Enterobacter
+Enterococcus
+Klebsiella
+Proteus Mirabilis
+Proteus Morganii
+Staph Aureus
+Staph coagulase negative
+Staph Epidermidis
+Pseudomonas Aeruginosa
+Candida Albicans
+Aspergillus Fumigatus
+Mycobacterium tuberculi
+Plasmodium
+Pneumocystis carinii
+Hepatitis A (Hep A)
+Hepatitis B (Hep B)
+Hepatitis C (Hep C)
+Hepatitis Non-A Non-B
+Cytomegalovirus  (CMV)
+HIV
+Varicella (VZV)
+BK (Polyoma)
+Adenovirus
+Epstein (EBV)
+Herpes Simplex (HSV)
+ARTERIOSCLEROSIS
+De novo GLOMERULAR DISEASE
+PTLD
+RECURRENT PRIMARY DISEASE
+Thrombosis
+Obstruction
+Urine leak
+Renal artery stenosis
+Anti-GBM in Alport's syndrome
+Nephrotic syndrome
+Anti-TBM disease in TBM antigen deficient recipients
+De novo membranous glomerulonephritis
+Anti-angiotensin II receptor autoantibody syndrome
+Acute Pyelonephritis
+Acute interstitial nephritis (AIN)
+Papillary necrosis
+Analgesic nephropathy
+Lead nephropathy
+Unremarkable
+Underweight (BMI 18.5)
+Pre-obese (BMI 25-29.9)
+Obesity class I (BMI 30-34.9)
+Obesity class 2 (BMI 35.0-39.9)
+Obesity class 3 (BMI >40)
+Failure to thrive
+Malnutrition
+Vent dependent
+Other

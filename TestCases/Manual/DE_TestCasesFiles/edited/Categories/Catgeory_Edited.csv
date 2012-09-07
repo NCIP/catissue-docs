@@ -1,0 +1,43 @@
+Form_Definition
+
+Test Category_ChemotherapyEdited
+
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,History~ClinicalAnnotations:History,Hazards~ClinicalAnnotations:History:Hazards,SmokingHistory~ClinicalAnnotations:History:Hazards:SmokingHistory,Alcohol~ClinicalAnnotations:History:Hazards:Alcohol,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,Diagnosis~ClinicalAnnotations:LabInfo:Diagnosis,PrimaryDiagnosis~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis,Infections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections,ViralInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:ViralInfections,BacterialInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:BacterialInfections,FungalInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:FungalInfections,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,Chemotherapy~ClinicalAnnotations:HealthAnnotations:Chemotherapy,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy
+
+Display_Label:Chemotherapy Duration,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->Chemotherapy[1]
+NOTE~Duration range is from 5 to 50.
+Chemotherapy:duration,textField,Duration,options~Columns=10,Rules~required
+HEADING~Specify dates in which duration is calculated.
+NOTE~Start date is Month and Year type
+NOTE~Range specified for category is Jan 2008 to May 2008
+Chemotherapy:startDate,datePicker,Start Date,Rules~range-min=01/2008&max=05/2008
+NOTE~Start date is Year Only type
+NOTE~Range specified for category is 2001 to 2010
+#Chemotherapy:dueDate,datePicker,Due Date
+Chemotherapy:endDate,datePicker,End Date
+
+Display_Label:Chemotherapy,show=false
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]
+HealthAnnotations:agent,listBox,Chemotherapy Agent,Permissible_Values~Cocaine:Heroin:Asbestos:Toxins:Volatile solvents:Aerosols:Nitous Oxide:Nitrites:Amyl Nitrite:Butyl Nitrite:Anorectic drugs:Barbiturates:Benzodiazepines:Buprenorphine:Butophanol:Cannabis:Chloral Hydrate:Club Drugs:Codeine:Depressants
+subcategory:Chemotherapy Duration:single
+
+
+Display_Label:Radiation Dose,show=false
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+HEADING~Radiation Therapy Dose
+NOTE~Precision increased from 2 to 3
+RadiationTherapy:dose,textField,Dose
+RadiationTherapy:doseUnits,textField,doseUnits,defaultValue=ml
+RadiationTherapy:duration,textField,Duration
+
+Display_Label:Chemotherapy,show=true
+instance:ClinicalAnnotations[1]
+ClinicalAnnotations:visitDate,datePicker,Visit Date
+subcategory:Chemotherapy:single
+ClinicalAnnotations:comments,textArea,Comments,options~Columns=50:Rows=5
+subcategory:Radiation Dose:single

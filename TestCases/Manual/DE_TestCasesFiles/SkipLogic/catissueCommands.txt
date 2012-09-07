@@ -1,0 +1,4 @@
+ant import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/SkipLogic/SkipLogic.xmi -Dhookentity=edu.wustl.catissuecore.domain.Participant -DmainContainerList=CPUML/TestModels/TestModel_withTags/SkipLogic/Main.csv -Dpackage=ClinicalData
+ant -f deploy.xml import_permissible_values -Dpv.dir=CPUML/ -DpermissibleValuesFile=CPUML/TestModels/TestModel_withTags/SkipLogic/PermissibleValues.csv
+ant -f deploy.xml create_category -DcategoryFileDir=CPUML/ -DcategoryFormNamesFile=CPUML/TestModels/TestModel_withTags/SkipLogic/cat_list_for_skip_logic.txt
+

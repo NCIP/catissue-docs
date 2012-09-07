@@ -1,0 +1,49 @@
+Form_Definition
+
+New Skip Logic 06
+
+SkipLogic
+
+##Controlling and dependent attributes in root entity
+##Controlling checkbox
+##Enable Disable
+
+HealthInformation~HealthInformation
+
+Display_Label:Controlling checkbox and all dependent attributes in root entity,show=true
+instance:HealthInformation[1]
+NOTE~Enable Disable
+NOTE~Patient on meds controls of all other attributes
+HealthInformation:onMedication,checkBox,Patient on meds
+HealthInformation:ageAtCheckUp,textField,Age,options~Columns=20
+HealthInformation:obese,checkBox,Obese
+HealthInformation:hypertensionSeen,radioButton,High BP,Permissible_Values~Yes:No:Unknown,PermVal_Options~IsOrdered=false
+HealthInformation:occupation,comboBox,Occupation,Permissible_Values~Job:Business:Doctor:Engineer:Plumber,PermVal_Options~IsOrdered=false,defaultValue=Job
+HealthInformation:exerciseDaily,textArea,Exercise Daily,options~Columns=20:Rows=5
+HealthInformation:checkupDate,datePicker,Check Up Date
+HealthInformation:healthChart,fileUpload,Health Chart
+HealthInformation:gymnasiumsVisited,listBox,Gyms,options~IsMultiSelect=true:IsUsingAutoCompleteDropdown=true,defaultValue=Gym 1
+HealthInformation:physiciansConsulted,multiselectCheckBox,Gyms,defaultValue=Dr. Stein
+HealthInformation:insuranceCompany,listBox,Insurance Company,options~IsMultiSelect=true:NoOfRows=5,defaultValue=LIC
+
+SkipLogicAttribute:
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:ageAtCheckUp,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:obese,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:hypertensionSeen,options~IsSelectiveReadOnly=true,defaultValue=Unknown
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:occupation,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:exerciseDaily,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:checkupDate,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:healthChart,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:gymnasiumsVisited,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:physiciansConsulted,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~HealthInformation[1]:insuranceCompany,options~IsSelectiveReadOnly=true

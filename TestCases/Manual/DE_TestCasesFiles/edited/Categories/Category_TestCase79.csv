@@ -1,0 +1,28 @@
+Form_Definition
+
+TestCase79
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy
+
+Display_Label:First Multiline,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+
+NOTE~First multiline
+
+RadiationTherapy:dose,textField,Total numner of doses
+RadiationTherapy:duration,textField, Actual duration
+
+Display_Label:Second Multiline,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[2]
+NOTE~Recommended Duration
+## this category should fail while importing
+RadiationTherapy:calculationResult,textField, Calculation,options~IsCalculated=true:IsReadOnly=false,defaultValue=((RadiationTherapy_1_dose)/(RadiationTherapy_1_duration))
+
+
+Display_Label:Treatment,show=true
+instance:ClinicalAnnotations[1]
+subcategory:First Multiline:multiline
+subcategory:Second Multiline:multiline

@@ -1,0 +1,77 @@
+<pvVersion>
+	<xmlCategory name="Test Category_Chemotherapy">
+		<class-name name="HealthAnnotations">
+		<!-- instance id can have a numeric value or can have 'ALL' for all instances-->
+			<instance id="1">
+				<xmlAttribute name="agent12312">
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>true</value>
+							</option>
+							<option>
+								<key>activationDate</key>
+								<value>01/01/2010</value>
+							</option>
+						<!--	 Optional. To be specified if activation date has to be changed.
+							Then 'activationDate' represents new Date and 'currentActivationDate' is the old one -->
+							<option>
+								<key>newActivationDate</key>
+								<value>01/10/2010</value>
+							</option>
+						</properties>
+						<default-value>Cocaine</default-value>
+						<xmlPermissible-values>
+							<value>Cocaine</value>
+							<value>Heroin</value>
+							<value>Asbestos</value>
+						</xmlPermissible-values>
+					</pvSet>
+				
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>true</value>
+							</option>
+							<option>
+								<key>activationDate</key>
+								<value>02/01/2010</value>
+							</option>
+						</properties>
+						<default-value>Heroin</default-value>
+						<xmlPermissible-values>
+							<value>Aerosols</value>
+							<value>Heroin</value>
+							<value>Nitrites</value>
+							<value>Barbiturates</value>
+							<value>Nitous Oxide</value>
+							<value>Volatile solvents</value>
+						</xmlPermissible-values>
+					</pvSet>
+				
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>true</value>
+							</option>
+							<option>
+								<key>activationDate</key>
+								<value>03/01/2010</value>
+							</option>
+						</properties>
+						<xmlPermissible-values>
+							<value>Depressants</value>
+							<value>Codeine</value>
+							<value>Club Drugs</value>
+							<value>Chloral Hydrate</value>
+							<value>Cannabis</value>
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>
+			</instance>
+		</class-name>
+	</xmlCategory>
+</pvVersion>

@@ -1,0 +1,24 @@
+Form_Definition
+
+Skip Logic 04
+
+SkipLogic
+
+HealthInformation~HealthInformation,SmokingHistory~HealthInformation:SmokingHistory
+
+Display_Label:SmokingHistory,show=false
+instance:HealthInformation[1]->SmokingHistory[1]
+SmokingHistory:smokesTobacco,radioButton,Patient smokes cigarettes,Permissible_Values~Yes:No:Unknown,defaultValue=No
+SmokingHistory:noOfCigarettesPerDay,textField,No of Cigarettes per day,options~Columns=5
+SmokingHistory:yearsQuit,textField,No of years quit,options~Columns=5
+
+Display_Label:Smoking History,show=true
+instance:HealthInformation[1]
+subcategory:SmokingHistory:single
+
+
+SkipLogicAttribute:
+instance:HealthInformation[1]->SmokingHistory[1],HealthInformation[1]->SmokingHistory[1]
+SmokingHistory[1]:smokesTobacco:Yes,dependentAttribute~SmokingHistory[1]:noOfCigarettesPerDay,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->SmokingHistory[1],HealthInformation[1]->SmokingHistory[1]
+SmokingHistory[1]:smokesTobacco:No,dependentAttribute~SmokingHistory[1]:yearsQuit,options~IsSelectiveReadOnly=true

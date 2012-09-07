@@ -1,0 +1,24 @@
+Form_Definition
+
+TestCase38
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+
+Display_Label:Single Line Display,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+
+SingleLineDisplay:start
+NOTE~Same Class and Same Instance
+VitalInformation:bp,textField,Blood Pressure,options~Columns=6
+VitalInformation:height,textField,Height,options~Columns=8
+VitalInformation:pulse,textField,Pulse Rate,options~Columns=10
+SingleLineDisplay:end
+
+Display_Label:Test Case 38,show=true
+instance:PatientInformation[1]
+subcategory:Single Line Display:single
+PatientInformation:name,textField,Name
+

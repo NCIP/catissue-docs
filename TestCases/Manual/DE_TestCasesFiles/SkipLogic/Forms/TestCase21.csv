@@ -1,0 +1,29 @@
+Form_Definition
+
+Skip Logic 21
+
+SkipLogic
+
+HealthInformation~HealthInformation,Exercise~HealthInformation:Exercise,SmokingHistory~HealthInformation:SmokingHistory
+
+Display_Label:SmokingHistory,show=false
+instance:HealthInformation[1]->SmokingHistory[1]
+SmokingHistory:smokesTobacco,comboBox,Patient smokes cigarettes,Permissible_Values~Yes but quitting now:Yes daily:No:Unknown,defaultValue=Unknown
+SmokingHistory:noOfCigarettesPerDay,textField,No of Cigarettes per day,options~Columns=5
+SmokingHistory:yearsQuit,textField,No of years quit,options~Columns=5
+
+Display_Label:Exercise History,show=false
+instance:HealthInformation[1]->Exercise[1]
+Exercise:exerciseSpecificDiet,comboBox,Exercise History,Permissible_Values~Yes:No:Unknown,defaultValue=No
+
+Display_Label:Smoking History,show=true
+instance:HealthInformation[1]
+subcategory:Exercise History:single
+subcategory:SmokingHistory:single
+
+
+SkipLogicAttribute:
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->SmokingHistory[1]
+Exercise[1]:exerciseSpecificDiet:Unknown,dependentAttribute~SmokingHistory[1]:noOfCigarettesPerDay,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->SmokingHistory[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~SmokingHistory[1]:noOfCigarettesPerDay,options~IsSelectiveReadOnly=true

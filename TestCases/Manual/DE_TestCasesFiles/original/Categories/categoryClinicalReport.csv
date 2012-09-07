@@ -1,0 +1,11 @@
+Form_Definition
+
+Category_Clinical Reports
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations
+
+Display_Label:Hazards,show=false
+instance:ClinicalAnnotations[1]
+ClinicalAnnotations:clinicalReports,fileUpload,Clinical Reports

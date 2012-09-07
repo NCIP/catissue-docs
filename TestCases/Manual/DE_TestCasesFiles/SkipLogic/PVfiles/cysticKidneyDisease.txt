@@ -1,0 +1,13 @@
+--Select--
+ADPKD
+ARPKD
+Renal Cysts in Hereditary Syndromes - VHL
+Multilocular Renal Cyst
+Localized Cystic Disease
+Simple Cortical Cysts
+Acquired Cystic Kidney Disease
+Perinephric Pseudocyst
+Pyelocaliceal Diverticula
+Medullary Nephronophthisis
+Glomerular cyst
+Other

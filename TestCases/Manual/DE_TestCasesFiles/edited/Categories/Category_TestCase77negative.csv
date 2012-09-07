@@ -1,0 +1,26 @@
+Form_Definition
+
+TestCase77 negative
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy,LabInfo~ClinicalAnnotations:LabInfo,Diagnosis~ClinicalAnnotations:LabInfo
+
+
+Display_Label:Treatment,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+RadiationTherapy:dose,textField, Dose,defaultValue=10
+RadiationTherapy:doseUnits,textField, Dose Units
+
+Display_Label:Duration Calculation,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]
+NOTE~Attribute is Boolean
+## category should fail while importing
+Diagnosis:diagnosis,checkBox,CheckBox for Calculated,options~IsCalculated=true,defaultValue=((RadiationTherapy_1_dose)/3)
+
+
+Display_Label:Other Type Attribute,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Treatment:single
+subcategory:Duration Calculation:single

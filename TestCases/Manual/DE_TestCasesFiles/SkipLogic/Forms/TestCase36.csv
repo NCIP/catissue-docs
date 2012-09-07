@@ -1,0 +1,36 @@
+Form_Definition
+
+Skip Logic 36
+
+SkipLogic
+
+HealthInformation~HealthInformation,PhysicalExamination~HealthInformation:PhysicalExamination,Exercise~HealthInformation:Exercise
+
+Display_Label:PhysicalExamination,show=false
+instance:HealthInformation[1]->PhysicalExamination[1]
+PhysicalExamination:height,textField, Enter Height (cm)
+PhysicalExamination:weight,textField, Enter Weight (Kg)
+PhysicalExamination:bmi,textField,BMI
+
+Display_Label:PhysicalExamination2,show=false
+instance:HealthInformation[1]->PhysicalExamination[2]
+PhysicalExamination:diastolicBloodPressure,textField,Diastolic Blood Pressure
+PhysicalExamination:systolicBloodPressure,textField,Systolic Blood Pressure
+PhysicalExamination:pulse,textField,Pulse
+
+
+Display_Label:Exercise History,show=false
+instance:HealthInformation[1]->Exercise[1]
+Exercise:exerciseSpecificDiet,radioButton,Exercise History,Permissible_Values~Yes:No:Unknown,defaultValue=Unknown
+
+Display_Label:Physical Examination,show=true
+instance:HealthInformation[1]
+subcategory:Exercise History:single
+subcategory:PhysicalExamination:single
+subcategory:PhysicalExamination2:single
+
+SkipLogicAttribute:
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->PhysicalExamination[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~PhysicalExamination[1]:all,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->PhysicalExamination[2]
+Exercise[1]:exerciseSpecificDiet:No,dependentAttribute~PhysicalExamination[2]:all,options~IsShowHide=true

@@ -1,0 +1,33 @@
+Form_Definition
+
+Test negative AutoComplete multiselect
+
+test
+
+##This category is expected to fail
+
+ClinicalAnnotations~ClinicalAnnotations,History~ClinicalAnnotations:History,Hazards~ClinicalAnnotations:History:Hazards,SmokingHistory~ClinicalAnnotations:History:Hazards:SmokingHistory,Alcohol~ClinicalAnnotations:History:Hazards:Alcohol,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,Diagnosis~ClinicalAnnotations:LabInfo:Diagnosis,PrimaryDiagnosis~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis,Infections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections,ViralInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:ViralInfections,BacterialInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:BacterialInfections,FungalInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:FungalInfections,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,Chemotherapy~ClinicalAnnotations:HealthAnnotations:Chemotherapy,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy,PhysicianInformation~ClinicalAnnotations:PhysicianInformation
+
+
+Display_Label:Physician Information I,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1]
+PhysicianInformation:hospitals,listBox,Hospital Name I,options~NoOfRows=5:IsUsingAutoCompleteDropdown=true,defaultValue=--Select--
+
+Display_Label:Physician Information II,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[2]
+PhysicianInformation:hospitals,listBox,Hospital Name II,options~IsMultiSelect=false:NoOfRows=4:IsUsingAutoCompleteDropdown=true,defaultValue=--Select--
+
+Display_Label:Physician Information III,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[3]
+PhysicianInformation:hospitals,listBox,Hospital Name III,options~IsMultiSelect=true:NoOfRows=3:IsUsingAutoCompleteDropdown=false,defaultValue=--Select--
+
+Display_Label:Physician Information IV,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[4]
+PhysicianInformation:hospitals,listBox,Hospital Name IV,options~IsMultiSelect=true:NoOfRows=10,defaultValue=--Select--
+
+Display_Label:Autocomplete multiselect drop down,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Physician Information I:multiline
+subcategory:Physician Information II:single
+subcategory:Physician Information III:single
+subcategory:Physician Information IV:single

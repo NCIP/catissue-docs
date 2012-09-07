@@ -1,0 +1,34 @@
+Form_Definition
+
+Edit Form Testing
+
+test
+
+PathologicalAnnotations~PathologicalAnnotations,History~PathologicalAnnotations:History,Hazards~PathologicalAnnotations:History:Hazards,Alcohol~PathologicalAnnotations:History:Hazards:Alcohol,SmokingHistory~PathologicalAnnotations:History:Hazards:SmokingHistory,PhysicianInformation~PathologicalAnnotations:PhysicianInformation,PhyContactInfo~PathologicalAnnotations:PhysicianInformation:PhyContactInfo
+
+##Add new heading
+Display_Label:Physician Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[1]
+NOTE~this is category 7
+
+PhyContactInfo:phoneType,textField,Phone type,options~Columns=10
+PhyContactInfo:phoneNumber,textField,Phone Number
+PhyContactInfo:extension,textField,Extension
+
+Display_Label:Patient Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[2]
+PhyContactInfo:phoneType,textField,Phone type
+PhyContactInfo:phoneNumber,textField,Phone Number
+PhyContactInfo:extension,textField,Extension
+
+
+Display_Label:Edit Form Testing,show=true
+instance:PathologicalAnnotations[1]
+NOTE~This is an added note
+PathologicalAnnotations:detectionDate,datePicker,Date of Detection
+PathologicalAnnotations:malignant,checkBox,Malignant
+##PathologicalAnnotations:tumorLocation,listBox,Location of Tumor
+HEADING~This is an added heading
+PathologicalAnnotations:tumorSize,listBox,Size
+subcategory:Physician Contact Information:single
+subcategory:Patient Contact Information:single

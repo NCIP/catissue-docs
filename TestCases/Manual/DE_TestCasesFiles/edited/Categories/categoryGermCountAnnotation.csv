@@ -1,0 +1,15 @@
+Form_Definition
+
+Test Germ Count Annotation
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,GermCount~ClinicalAnnotations:GermCount
+
+
+Display_Label:Patient Germ Information,show=true
+instance:ClinicalAnnotations[1],ClinicalAnnotations[1]->GermCount[1]
+GermCount:bacterialCount,comboBox,Bacterial Count
+GermCount:protozoanCount,comboBox,Protozoan Count
+GermCount:viralCount,comboBox,Viral Count
+GermCount:totalCount,comboBox,Total Count

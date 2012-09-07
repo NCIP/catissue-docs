@@ -1,0 +1,71 @@
+Form_Definition
+
+New Skip Logic 10
+
+SkipLogic
+
+##Controlling in root entity and dependent in 1st containment - one-to-one
+##Controlling radiobutton
+##Show Hide
+
+HealthInformation~HealthInformation,Exercise~HealthInformation:Exercise
+
+Display_Label:Exercise,show=true
+instance:HealthInformation[1]->Exercise[1]
+Exercise:caloriesBurntDaily,textField,Calories Burnt Daily,options~Columns=10
+Exercise:carbsBurntDaily,textField,Carbs Burnt Daily,options~Columns=10
+Exercise:comments,textArea,Comments,options~Columns=20:Rows=2
+Exercise:doesDailyWorkout,checkBox,Works out daily
+Exercise:doesWeightTraining,checkBox,Weight Training
+Exercise:exerciseConsultant,listBox,Exercise Consultant,options~IsMultiSelect=true:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseSpecificDiet,comboBox,Exercise Specific Diet
+Exercise:exerciseStartedOn,datePicker,Start Date
+Exercise:exerciseTime,listBox,Exercise Time,options~IsMultiSelect=true:NoOfRows=3
+Exercise:exerciseType,multiselectCheckBox,exercise Type
+Exercise:exercisingSince,radioButton,Exercising Since
+Exercise:fatBurntDaily,textField,Calories Burnt Daily,options~Columns=10
+Exercise:minOfExercise,textField,Calories Burnt Daily,options~Columns=10
+Exercise:prescribedDietarySupplement,radioButton,Prescribed Dietary Supplement
+Exercise:supplementRecommended,comboBox,Aupplement Recommended
+Exercise:workoutChart,fileUpload,Workout Chart
+
+Display_Label:Controlling in root entity and dependent in 1st containment,show=true
+instance:HealthInformation[1]
+NOTE~Show Hide
+NOTE~Ailment History controls of all attributes in Exercise
+HealthInformation:ailmentHistory,radioButton,Ailment History,Permissible_Values~Yes:No:Unknown,PermVal_Options~IsOrdered=false,defaultValue=Unknown
+subcategory:Exercise:single
+
+SkipLogicAttribute:
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:caloriesBurntDaily,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:carbsBurntDaily,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:comments,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:doesDailyWorkout,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseSpecificDiet,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:doesWeightTraining,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseConsultant,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseStartedOn,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseTime,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseType,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exercisingSince,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:fatBurntDaily,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:minOfExercise,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:prescribedDietarySupplement,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:supplementRecommended,options~IsShowHide=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:workoutChart,options~IsShowHide=true

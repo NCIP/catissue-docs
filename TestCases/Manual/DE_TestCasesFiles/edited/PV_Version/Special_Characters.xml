@@ -1,0 +1,45 @@
+<pvVersion>
+	<xmlCategory name="Test AutoComplete multiselect">
+		<class-name name="PhysicianInformation">
+			<instance id="All">
+				<xmlAttribute name="hospitals">
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>true</value>
+							</option>
+							<option>
+								<key>activationDate</key>
+								<value>07/01/2010</value>
+							</option>
+						</properties>
+						<default-value>Rich Hospitals,(Ravi Institute of child Health (P) Ltd)</default-value>
+						<xmlPermissible-values>
+							<value>Remedy Hospitals (~Albha Health care pvt ltd.)</value>
+							<value>Dristi Eye Centre+</value>
+							<value>Nori Mother &amp; child Hospital</value>
+							<value>Ankur%s Children Hospital</value>
+							<value>Deep ICU - Deep Intensive and Critical Care Centre</value>
+							<value>Wockhardt heart centre!</value>
+							<value>@pollo Hospitals</value>
+							<value>F.M.# Dental Hospital</value>
+							<value>Patolia Surgical Hospital [Jivandhara Hospital]</value>
+							<value>Family Hospital {P} Ltd</value>
+							<value>Aum Medical NursingHome $ I CU</value>
+							<value>Apollo Samudra^ Hospital</value>
+							<value>Raghava 24* Hours Emergency Hospital</value>
+							<value>Sri_Sai Krupa Nursing Home</value>
+							<value>Moolchand=Khairati Ram Hospital</value>
+							<value>Grace Intensive Cardiac Care Center;</value>
+							<value>Panchsheel: Hospital (P) Ltd</value>
+							<value>Vamsi Hitech Superspeciality Hospital?</value>
+							<value>Rich Hospitals,(Ravi Institute of child Health (P) Ltd)</value>
+							<value>Sindhuja Multi/Speciality Nursing Home</value>
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>
+			</instance>
+		</class-name>
+	</xmlCategory>
+</pvVersion>

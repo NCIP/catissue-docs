@@ -1,0 +1,45 @@
+<pvVersion>
+	<xmlCategory name="Skip logic for Automation">
+		<class-name name="VitalInformation">
+			<instance id="1">
+				<xmlAttribute name="pulse">
+					<pvSet>
+						<properties>
+							<option>
+								<key>activationDate</key>
+								<value>06/15/2010</value>
+							</option>
+						</properties>
+						<default-value>60</default-value>
+						<xmlPermissible-values>
+							<value>88</value>
+							<value>72</value>
+							<value>75</value>
+
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>						
+						
+						<xmlAttribute name="pulse">
+					<pvSet>
+						<properties>
+							<option>
+								<key>activationDate</key>
+								<value>06/30/2010</value>
+							</option>
+						</properties>
+						<default-value>60</default-value>
+						<xmlPermissible-values>
+							<value>88</value>
+							<value>72</value>
+							<value>10</value>
+							<value>11</value>
+							<value>12</value>
+							<value>13</value>
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>  
+			</instance>
+		</class-name>
+	</xmlCategory>
+</pvVersion>

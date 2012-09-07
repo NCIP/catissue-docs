@@ -1,0 +1,47 @@
+Form_Definition
+
+Test Category Radiation Therapy
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,History~ClinicalAnnotations:History,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,Chemotherapy~ClinicalAnnotations:HealthAnnotations:Chemotherapy,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy,PhysicianInformation~ClinicalAnnotations:PhysicianInformation
+
+Display_Label:Radiation Dose,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+##NOTE~this is a edited category
+NOTE~Duration range is from 5 to 50.
+RadiationTherapy:duration,textField,Duration,options~Columns=30
+HEADING~Specify dose- precision is 2
+NOTE~Range is 3.25 to 7.75
+RadiationTherapy:dose,textField,Dose,Rules~range-min=3.25&max=7.75
+NOTE~Dose units -max length 5
+RadiationTherapy:doseUnits,textArea,Dose Units,options~Columns=10:Rows=4
+
+Display_Label:Radiotherapy,show=false
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]
+HealthAnnotations:agent,listBox,Radiation Therapy Agent,options~IsMultiSelect=true:NoOfRows=1,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/radiotherapyAgent.txt,PermVal_Options~IsOrdered=false
+
+Display_Label:Radiotherapy added,show=false
+instance:ClinicalAnnotations[1]->HealthAnnotations[2]
+NOTE~added second instance in edit category
+HealthAnnotations:agent,listBox,Radiation Therapy Agent,options~IsMultiSelect=true:NoOfRows=1,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/radiotherapyAgent.txt,PermVal_Options~IsOrdered=false
+
+
+Display_Label:Physician Information,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1],ClinicalAnnotations[1]->History[1]
+NOTE~Please press ctrl to select more than one hospital
+PhysicianInformation:physicianName,textField,Doctor,options~IsReadOnly=true,defaultValue=Dr. Vimal
+PhysicianInformation:hospitals,listBox,Hospital Name,options~IsMultiSelect=true:NoOfRows=3
+NOTE~Range specified in model
+NOTE~Min=01/01/2000 Max=01/01/2010
+History:recordDate,datePicker,Record Date
+
+Display_Label:Chemotherapy,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Physician Information:multiline
+ClinicalAnnotations:visitDate,datePicker,Visit Date
+subcategory:Radiotherapy:single
+subcategory:Radiotherapy added:multiline
+subcategory:Radiation Dose:multiline
+ClinicalAnnotations:comments,textArea,Comments,options~Columns=50:Rows=5

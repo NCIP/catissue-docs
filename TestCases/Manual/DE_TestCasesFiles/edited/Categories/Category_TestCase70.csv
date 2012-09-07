@@ -1,0 +1,23 @@
+Form_Definition
+
+TestCase70
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+Display_Label:Single Line Display,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+
+SingleLineDisplay:start
+NOTE~TextBox and Text Box Combination
+
+VitalInformation:bp,textField,Blood Pressure
+VitalInformation:height,textField,Height
+SingleLineDisplay:end
+
+
+Display_Label:Test Case 70,show=true
+instance:PatientInformation[1]
+subcategory:Single Line Display:single
+PatientInformation:name,textField,Name of Test Case

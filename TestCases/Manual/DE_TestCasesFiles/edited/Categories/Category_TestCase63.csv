@@ -1,0 +1,22 @@
+Form_Definition
+
+TestCase63
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation,PhysicianInformation~PatientInformation:PhysicianInformation
+
+Display_Label:Single Line Display,show=true
+instance:PatientInformation[1]->VitalInformation[1],PatientInformation[1]->PhysicianInformation[1]
+
+SingleLineDisplay:start
+NOTE~Listbox and Textbox combination in single line
+VitalInformation:bp,textField,Blood Pressure
+PhysicianInformation:hospitals,listBox,Name of Hospitals,options~IsReadOnly=false:IsMultiSelect=true,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/Hospitals.csv
+SingleLineDisplay:end
+
+
+Display_Label:Test Case 53,show=true
+instance:PatientInformation[1]
+subcategory:Single Line Display:single
+PatientInformation:name,textField,Name of Test Case

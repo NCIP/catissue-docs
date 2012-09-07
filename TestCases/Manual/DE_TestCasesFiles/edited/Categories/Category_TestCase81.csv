@@ -1,0 +1,24 @@
+Form_Definition
+
+TestCase81
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy
+
+Display_Label:Dose Information,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+
+
+SingleLineDisplay:start
+NOTE~Calculated attribute in single line display attribute
+RadiationTherapy:dose,textField,Total numner of doses
+RadiationTherapy:duration,textField, Actual duration
+RadiationTherapy:calculationResult,textField, Calculation,options~IsCalculated=true:IsReadOnly=false,defaultValue=((RadiationTherapy_1_dose)/(RadiationTherapy_1_duration))
+SingleLineDisplay:end
+
+
+Display_Label:Treatment,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Dose Information:single

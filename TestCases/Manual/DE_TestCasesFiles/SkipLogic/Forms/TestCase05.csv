@@ -1,0 +1,22 @@
+Form_Definition
+
+Skip Logic 05
+
+SkipLogic
+
+##Bug ID 13841
+
+HealthInformation~HealthInformation,SmokingHistory~HealthInformation:SmokingHistory
+
+Display_Label:Smoking History,show=false
+instance:HealthInformation[1]->SmokingHistory[1]
+SmokingHistory:smokesTobacco,comboBox,Patient smokes,Permissible_Values~Yes:No,defaultValue=No
+SmokingHistory:packsPerDay,textField,Packs per day,options~Columns=5
+
+Display_Label:SmokingHistory,show=false
+instance:HealthInformation[1]
+subcategory:Smoking History:single
+
+SkipLogicAttribute:
+instance:HealthInformation[1]->SmokingHistory[1],HealthInformation[1]->SmokingHistory[1]
+SmokingHistory[1]:smokesTobacco:Yes,dependentAttribute~SmokingHistory[1]:packsPerDay,options~IsSelectiveReadOnly=true

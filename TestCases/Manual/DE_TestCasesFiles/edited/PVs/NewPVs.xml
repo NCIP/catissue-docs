@@ -1,0 +1,41 @@
+<xmlPermissibleValues>
+	<xmlEntityGroup name="test">
+		<xmlClass-name name="PhysicianInformation">
+			<xmlDEAttribute name="physicianName">
+				<xmlPermissible-value>
+					<value><name>Pawan</name></value>
+					<value><name>Edgar</name></value>
+					<value><name>Alan</name></value>
+					<value><name>Smith</name></value>
+					<value><name>McCain</name></value>
+					<value><name>Obama</name></value>
+					<value><name>Palin</name></value>
+					<value><name>George</name></value>
+					<value><name>Bill</name></value>
+					<value><name>Sagar</name></value>
+					<value><name>Mandar</name></value>
+					<value><name>Madhumita</name></value>
+				</xmlPermissible-value>
+			</xmlDEAttribute>
+		</xmlClass-name>
+		<xmlClass-name name="VitalInformation">
+			<xmlDEAttribute name="pulse">
+				<override>true</override>
+				<xmlPermissible-value>
+					<value><name>60</name></value>
+					<value><name>56</name></value>
+					<value><name>78</name></value>
+					<value><name>90</name></value>
+					<value><name>89</name></value>
+					<value><name>91</name></value>
+					<value><name>92</name></value>
+					<value><name>93</name></value>
+					<value><name>88</name></value>
+					<value><name>72</name></value>
+					<value><name>75</name></value>
+					<value><name>79</name></value>
+				</xmlPermissible-value>
+			</xmlDEAttribute>
+		</xmlClass-name>
+	</xmlEntityGroup>
+</xmlPermissibleValues>

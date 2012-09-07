@@ -1,0 +1,25 @@
+Form_Definition
+
+TestCase58
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+## calculation of attributes of 1st instance
+Display_Label:Used Attributes,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+VitalInformation:bp,textField,Blood Pressure
+VitalInformation:height,textField,Height (in cm)
+
+Display_Label:Calculation,show=true
+instance:PatientInformation[1]->VitalInformation[2]
+
+NOTE~Simple Calculation (A+B)
+VitalInformation:bmi,textField,BMI (Calculation),options~IsCalculated=true:IsReadOnly=false,defaultValue=((VitalInformation_1_bp)+(VitalInformation_1_height))
+
+
+Display_Label:TestCase58,show=true
+instance:PatientInformation[1]
+subcategory:Used Attributes:single
+subcategory:Calculation:single

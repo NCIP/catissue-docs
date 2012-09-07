@@ -1,0 +1,31 @@
+Form_Definition
+
+Category_special_character_Original
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,History~ClinicalAnnotations:History,Hazards~ClinicalAnnotations:History:Hazards,SmokingHistory~ClinicalAnnotations:History:Hazards:SmokingHistory,Alcohol~ClinicalAnnotations:History:Hazards:Alcohol,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,Diagnosis~ClinicalAnnotations:LabInfo:Diagnosis,PrimaryDiagnosis~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis,Infections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections,ViralInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:ViralInfections,BacterialInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:BacterialInfections,FungalInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:FungalInfections,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,Chemotherapy~ClinicalAnnotations:HealthAnnotations:Chemotherapy,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy
+
+
+Display_Label:",,~D:i:::a,,g~no~~,:sis",show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]
+Diagnosis:diagnosis,checkBox,Diagnosis Done
+NOTE~Date and Time format tag in UML
+Diagnosis:diagnosisDate,datePicker,Date of Diagnosis
+
+Display_Label:Diagnosis4,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]->PrimaryDiagnosis[1]
+NOTE~Result should be a password
+PrimaryDiagnosis:result,textField,Result,options~Columns=25,IsPassword=true,defaultValue=Hemant
+PrimaryDiagnosis:testPerformed,checkBox,Tests have been performed before diagnosis
+
+Display_Label:Diagnosis3,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]->PrimaryDiagnosis[1]->Infections[1]
+Infections:infections,checkBox,Infections,defaultValue=true
+
+Display_Label:Diagnosis2,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]->PrimaryDiagnosis[1]->Infections[1]->ViralInfections[1],ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]->PrimaryDiagnosis[1]->Infections[1]->BacterialInfections[1],ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]->PrimaryDiagnosis[1]->Infections[1]->FungalInfections[1]
+BacterialInfections:nameOfBacteria,radioButton,Bacteria
+FungalInfections:nameOfFungus,comboBox,Fungus
+ViralInfections:nameOfVirus,listBox,Virus

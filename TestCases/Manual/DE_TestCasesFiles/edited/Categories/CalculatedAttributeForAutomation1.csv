@@ -1,0 +1,105 @@
+Form_Definition
+
+Calculated Attributes For Automation
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,VitalInformation~ClinicalAnnotations:VitalInformation,History~ClinicalAnnotations:History,Hazards~ClinicalAnnotations:History:Hazards
+
+
+Display_Label:1 Attributes of same class in complex formula,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[1]
+VitalInformation:height,textField,Height of participant
+VitalInformation:weight,textField,Weight of participant
+VitalInformation:bmi,textField,Body Mass Index,options~IsCalculated=true,defaultValue=((VitalInformation_1_weight)/((VitalInformation_1_height)*(VitalInformation_1_height)))
+
+
+Display_Label:2 Attributes of different class in a simple formula,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->History[1]->Hazards[1]
+VitalInformation:height,textField,Height of participant
+Hazards:noYearsExposed,textField,Years of exposed to carcinogen
+VitalInformation:bmi,textField,Average exposure,options~IsCalculated=true,defaultValue=((VitalInformation_2_height)/(Hazards_1_noYearsExposed))
+
+
+Display_Label:3 Attributes of same class and default value,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[3]
+VitalInformation:height,textField,Height of participant(in cm),defaultValue=168
+VitalInformation:weight,textField,Weight of participant(in kg),defaultVaule=65
+VitalInformation:bmi,textField,Body Mass Index,options~IsCalculated=true,defaultValue=((VitalInformation_3_weight)/((VitalInformation_3_height)*(VitalInformation_3_height)))
+
+
+Display_Label:4 Calculated attribute as visible related attribute,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[4]
+VitalInformation:height,textField,Height of participant(in cm)
+VitalInformation:weight,textField,Weight of participant(in kg)
+VitalInformation:bmi,textField,Body Mass Index,options~IsCalculated=true:IsReadOnly=true,defaultValue=((VitalInformation_4_weight)/((VitalInformation_4_height)*(VitalInformation_4_height)))
+
+
+
+Display_Label:5 Calculated attribute as a required attribute,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[5]
+VitalInformation:height,textField,Height of participant(in cm)
+VitalInformation:weight,textField,Weight of participant(in kg)
+VitalInformation:bmi,textField,Body Mass Index,options~IsCalculated=true,Rules~required,defaultValue=((VitalInformation_5_weight)/((VitalInformation_5_height)*(VitalInformation_5_height)))
+
+
+
+Display_Label:6 Calculated attribute in single line display,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[6]
+SingleLineDisplay:start
+VitalInformation:height,textField,Height of participant(in cm)
+VitalInformation:weight,textField,Weight of participant(in kg)
+VitalInformation:bmi,textField,Body Mass Index,options~IsCalculated=true,defaultValue=((VitalInformation_6_weight)/((VitalInformation_6_height)*(VitalInformation_6_height)))
+SingleLineDisplay:end
+
+
+Display_Label:7 Calculated attribute with different UI properties,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[7]
+VitalInformation:height,textField,Height of participant(in cm),options~Columns=10
+VitalInformation:weight,textField,Weight of participant(in kg),options~Columns=5
+VitalInformation:bmi,textField,Body Mass Index,options~IsCalculated=true:Columns=15,defaultValue=((VitalInformation_7_weight)/((VitalInformation_7_height)*(VitalInformation_7_height)))
+
+
+Display_Label:8 Calculated attribute with invisible related attribute,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[8]
+VitalInformation:height,textField,Height of participant(in cm),options~Columns=10
+VitalInformation:weight,textField,Weight of participant(in kg),options~Columns=5
+
+
+Display_Label:9 Calculated attribute with a constant value,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[9]
+NOTE~Constant value is 2 and formula is Weight of participant/2
+VitalInformation:weight,textField,Weight of participant(in kg),options~Columns=5
+VitalInformation:bmi,textField,Body Mass Index,options~IsCalculated=true:Columns=15,defaultValue=((VitalInformation_9_weight)/2)
+
+
+Display_Label:10 Calculated attribute with skip logic,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[10]
+NOTE~Weight value depends upon blood pressure 120
+VitalInformation:bp,comboBox,Blood Pressure,Permissible_Values~90:100:110:120:130:140,defaultValue=90
+VitalInformation:height,textField,Height of participant(in cm),
+VitalInformation:weight,textField,Weight of participant(in kg),options~Columns=5
+VitalInformation:bmi,textField,Body Mass Index,options~IsCalculated=true:Columns=15,defaultValue=((VitalInformation_10_weight)/((VitalInformation_10_height)*(VitalInformation_10_height)))
+
+
+
+Display_Label:Calculated Attributes For Automation,show=true
+instance:ClinicalAnnotations[1]
+subcategory:1 Attributes of same class in complex formula:single
+subcategory:2 Attributes of different class in a simple formula:single
+subcategory:3 Attributes of same class and default value:single
+subcategory:4 Calculated attribute as visible related attribute:single
+subcategory:5 Calculated attribute as a required attribute:single
+subcategory:6 Calculated attribute in single line display:single
+subcategory:7 Calculated attribute with different UI properties:single
+subcategory:8 Calculated attribute with invisible related attribute:single
+subcategory:9 Calculated attribute with a constant value:single
+subcategory:10 Calculated attribute with skip logic:single
+
+RelatedAttribute:
+instance:ClinicalAnnotations[1]->VitalInformation[8]
+VitalInformation:bmi=((VitalInformation_8_weight)/((VitalInformation_8_height)*(VitalInformation_8_height))),options~IsCalculated=true
+
+SkipLogicAttribute:
+instance:ClinicalAnnotations[1]->VitalInformation[9],ClinicalAnnotations[1]->VitalInformation[10]
+VitalInformation[10]:bp:120,dependentAttribute~VitalInformation:weight,options~IsSelectiveReadOnly=true

@@ -1,0 +1,56 @@
+<pvVersion>
+	<xmlCategory name="Renal_MedHistCongenitalAnomalies">
+		<class-name name="PastMedicalHistory">
+			<instance id="1">
+				<xmlAttribute name="diagnosis">
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>true</value>
+							</option>
+							<option>
+								<key>activationDate</key>
+								<value>08/01/2010</value>
+							</option>
+						</properties>
+						<default-value>Persistent cloaca</default-value>
+						<xmlPermissible-values>
+							<value>--Select--</value>
+							<value>Persistent cloaca</value>
+							<value>Congenital fistulae between uterus and digestive and urinary tracts</value>
+							<value>Other congenital malformations of female genitalia</value>
+							<value>Congenital absence of vagina</value>
+							<value>Doubling of vagina</value>
+							<value>Congenital rectovaginal fistula</value>
+							<value>Imperforate hymen</value>
+							<value>Other congenital malformations of vagina</value>
+							<value>Fusion of labia</value>
+							<value>Congenital malformation of clitoris</value>
+							<value>Other congenital malformations of vulva</value>
+							<value>Other specified congenital malformations of female genitalia</value>
+							<value>Congenital malformation of female genitalia - unspecified</value>
+							<value>Undescended testicle</value>
+							<value>Hypospadias</value>
+							<value>Hypospadias - balanic</value>
+							<value>Hypospadias - penile</value>
+							<value>Hypospadias - penoscrotal</value>
+							<value>Hypospadias - perineal</value>
+							<value>Congenital chordee</value>
+							<value>Other hypospadias</value>
+							<value>Hypospadias - unspecified</value>
+							<value>Other congenital malformations of male genital organs</value>
+							<value>Absence and aplasia of testis</value>
+							<value>Monorchism</value>
+							<value>Hypoplasia of testis and scrotum</value>
+							<value>Other congenital malformations of testis and scrotum</value>
+							<value>Atresia of vas deferens</value>
+							<value>Other malformations of vas deferens - epididymis - seminal vesicles and prostate</value>
+							<value>Congenital absence and aplasia of penis</value>
+						</xmlPermissible-values>
+					</pvSet>	
+				</xmlAttribute>  
+			</instance>
+		</class-name>
+	</xmlCategory>
+</pvVersion>

@@ -1,0 +1,26 @@
+Form_Definition
+
+TestCase73
+
+test
+
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+Display_Label:Vital Information,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+
+VitalInformation:height,textField, Height (in inches),defaultValue=69
+VitalInformation:weight,textField, Weight (in Kg),defaultValue=65
+##We can put this line and remove the whole subcategory below
+##VitalInformation:bmi,textField, BMI,options~IsCalculated=true:IsReadOnly=false:Columns=6,defaultValue=(VitalInformation_1_weight)/((VitalInformation_1_height)*(VitalInformation_1_height))
+
+Display_Label:BMI Calculation,show=true
+instance:PatientInformation[1]->VitalInformation[2]
+VitalInformation:bmi,textField, BMI,options~IsCalculated=true:IsReadOnly=false:Columns=6,defaultValue=(VitalInformation_1_weight)/((VitalInformation_1_height)*(VitalInformation_1_height))
+
+
+Display_Label:Health Information,show=true
+instance:PatientInformation[1]
+subcategory:Vital Information:single
+subcategory:BMI Calculation:single

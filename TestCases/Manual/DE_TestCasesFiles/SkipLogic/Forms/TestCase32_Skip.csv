@@ -1,0 +1,27 @@
+Form_Definition
+
+Skip Logic 32
+
+SkipLogic
+
+HealthInformation~HealthInformation,PhysicalExamination~HealthInformation:PhysicalExamination,Exercise~HealthInformation:Exercise
+
+Display_Label:PhysicalExamination,show=false
+instance:HealthInformation[1]->PhysicalExamination[1]
+PhysicalExamination:height,textField, Enter Height (cm)
+PhysicalExamination:weight,textField, Enter Weight (Kg)
+PhysicalExamination:bmi,textField,BMI
+
+Display_Label:Exercise History,show=false
+instance:HealthInformation[1]->Exercise[1]
+Exercise:exerciseSpecificDiet,comboBox,Exercise History,Permissible_Values~Yes:No:Unknown,defaultValue=No
+
+Display_Label:Physical Examination,show=true
+instance:HealthInformation[1]
+subcategory:Exercise History:single
+subcategory:PhysicalExamination:single
+
+
+SkipLogicAttribute:
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->PhysicalExamination[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~PhysicalExamination[1]:bmi,options~IsSelectiveReadOnly=true

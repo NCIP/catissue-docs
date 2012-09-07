@@ -1,0 +1,136 @@
+Form_Definition
+
+Skip Logic 71
+
+SkipLogic
+
+HealthInformation~HealthInformation,Exercise~HealthInformation:Exercise,Diet~HealthInformation:Exercise:Diet
+
+Display_Label:Controlling Radiobutton and dependent attribute in same subform as Enable,show=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+NOTE~This category covers the scenario where controlling attribute and dependent attribute is present in same subform. Dependent attribute from different class
+NOTE~Controlling attribute = Follow exercise specific Diet
+NOTE~Datatype = Radio button
+NOTE~Skip logic action = Enable
+Exercise:exerciseSpecificDiet,radioButton,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Diet:dietaryDetails,textField,Suggested dietary details
+Diet:plannedDiet,checkBox,Is it a balanced diet,defaultValue=false
+Diet:takesDietarySupplement,radioButton,Is it advised to take suppliment,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Diet:supplementDuration,comboBox,Suggested supplement duration,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Diet:comment,textArea,More dietary suggestions
+Diet:dietarySupplement,listBox,Dietary supplements,Permissible_Values~Protex:Fibro:CalCare:Swilder Powder:MushMuscle:Scolet,options~IsMultiSelect=true
+Diet:dietConsultant,listBox,Diet Consultant,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Diet:dietType,multiselectCheckBox,Diet Type,Permissible_Values~Asian Vegetarian:Asian Non-vegetarian:Continenetal:Japanese:Oriental:American:Italian
+Diet:dateDietStarted,datePicker,Date of diet started
+Diet:dietChart,fileUpload,Diet Chart
+
+
+Display_Label:Controlling Combobox and dependent attribute in same subform as Enable,show=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+NOTE~Controlling attribute = Follow exercise specific Diet
+NOTE~Datatype = Combo box button
+NOTE~Skip logic action = Enable
+Exercise:exerciseSpecificDiet,comboBox,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Diet:dietaryDetails,textField,Suggested dietary details
+Diet:plannedDiet,checkBox,Is it a balanced diet,defaultValue=false
+Diet:takesDietarySupplement,radioButton,Is it advised to take suppliment,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Diet:supplementDuration,comboBox,Suggested supplement duration,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Diet:comment,textArea,More dietary suggestions
+Diet:dietarySupplement,listBox,Dietary supplements,Permissible_Values~Protex:Fibro:CalCare:Swilder Powder:MushMuscle:Scolet,options~IsMultiSelect=true
+Diet:dietConsultant,listBox,Diet Consultant,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Diet:dietType,multiselectCheckBox,Diet Type,Permissible_Values~Asian Vegetarian:Asian Non-vegetarian:Continenetal:Japanese:Oriental:American:Italian
+Diet:dateDietStarted,datePicker,Date of diet started
+Diet:dietChart,fileUpload,Diet Chart
+
+
+Display_Label:Controlling Checkbox and dependent attribute in same subform as Enable,show=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+NOTE~Controlling attribute = Do you workout daily
+NOTE~Datatype = Check box
+NOTE~Skip logic action = Enable
+Exercise:doesDailyWorkout,checkBox,Do you workout daily,defaultValue=false
+Diet:dietaryDetails,textField,Suggested dietary details
+Diet:plannedDiet,checkBox,Is it a balanced diet,defaultValue=false
+Diet:takesDietarySupplement,radioButton,Is it advised to take suppliment,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Diet:supplementDuration,comboBox,Suggested supplement duration,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Diet:comment,textArea,More dietary suggestions
+Diet:dietarySupplement,listBox,Dietary supplements,Permissible_Values~Protex:Fibro:CalCare:Swilder Powder:MushMuscle:Scolet,options~IsMultiSelect=true
+Diet:dietConsultant,listBox,Diet Consultant,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Diet:dietType,multiselectCheckBox,Diet Type,Permissible_Values~Asian Vegetarian:Asian Non-vegetarian:Continenetal:Japanese:Oriental:American:Italian
+Diet:dateDietStarted,datePicker,Date of diet started
+Diet:dietChart,fileUpload,Diet Chart
+
+
+Display_Label:SkipLogic in same subform with Enable,show=true
+instance:HealthInformation[1]
+subcategory:Controlling Radiobutton and dependent attribute in same subform as Enable:multiline
+subcategory:Controlling Combobox and dependent attribute in same subform as Enable:multiline
+subcategory:Controlling Checkbox and dependent attribute in same subform as Enable:multiline
+
+SkipLogicAttribute:
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:dietaryDetails,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:plannedDiet,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:takesDietarySupplement,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:supplementDuration,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:comment,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:dietarySupplement,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:dietConsultant,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:dietType,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:dateDietStarted,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]->Diet[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[1]:dietChart,options~IsSelectiveReadOnly=true
+
+
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:dietaryDetails,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:plannedDiet,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:takesDietarySupplement,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:supplementDuration,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:comment,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:dietarySupplement,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:dietConsultant,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:dietType,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:dateDietStarted,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[1]->Diet[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Diet[2]:dietChart,options~IsSelectiveReadOnly=true
+
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:dietaryDetails,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:plannedDiet,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:takesDietarySupplement,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:supplementDuration,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:comment,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:dietarySupplement,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:dietConsultant,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:dietType,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:dateDietStarted,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[1]->Diet[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Diet[3]:dietChart,options~IsSelectiveReadOnly=true
+
+
+

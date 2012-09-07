@@ -1,0 +1,31 @@
+Form_Definition
+
+Edit Form Testing
+
+test
+
+PathologicalAnnotations~PathologicalAnnotations,History~PathologicalAnnotations:History,Hazards~PathologicalAnnotations:History:Hazards,Alcohol~PathologicalAnnotations:History:Hazards:Alcohol,SmokingHistory~PathologicalAnnotations:History:Hazards:SmokingHistory,PhysicianInformation~PathologicalAnnotations:PhysicianInformation,PhyContactInfo~PathologicalAnnotations:PhysicianInformation:PhyContactInfo
+
+##Changed attribute labels
+Display_Label:Physician Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[1]
+PhyContactInfo:phoneType,textField,Type of Phone,options~Columns=10
+PhyContactInfo:phoneNumber,textField,Number,options~Columns=20
+PhyContactInfo:extension,textField,Extension,options~Columns=30
+
+Display_Label:Patient Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[2]
+PhyContactInfo:phoneNumber,textField,Phone Number,options~Columns=10
+PhyContactInfo:extension,textField,Extension,options~Columns=20
+PhyContactInfo:phoneType,textField,Phone type,options~Columns=30
+
+Display_Label:Edit Form Testing,show=true
+instance:PathologicalAnnotations[1]
+subcategory:Patient Contact Information:single
+##NOTE~This is an added note
+PathologicalAnnotations:malignant,checkBox,Is tumor Malignant
+PathologicalAnnotations:detectionDate,datePicker,Detection Date
+##PathologicalAnnotations:tumorLocation,listBox,Location of Tumor
+##HEADING~This is an added heading
+PathologicalAnnotations:tumorSize,listBox,Size of Tumor
+subcategory:Physician Contact Information:single

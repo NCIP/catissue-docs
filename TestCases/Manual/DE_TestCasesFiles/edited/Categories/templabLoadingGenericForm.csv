@@ -1,0 +1,18 @@
+Form_Definition
+
+##CAT_DFN_ATPPLT_FRM7
+
+Generic Form to load all lab tests
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest
+
+Display_Label:Lab Test,show=false
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[1]
+LabTest:testName,comboBox,Test Name,populateFromXML=true,Rules~required
+LabTest:quantResult,textField,Result,options~Columns=5,populateFromXML=true
+
+Display_Label:Urine Tests,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Lab Test:multiline

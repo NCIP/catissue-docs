@@ -1,0 +1,28 @@
+Form_Definition
+
+TestCase61
+
+test
+
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+
+Display_Label:Used Attributes,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+VitalInformation:height,textField,Attribute 1
+VitalInformation:bmi,textField,Attribute 2
+
+
+
+Display_Label:Calculated in textfield,show=true
+instance:PatientInformation[1]->VitalInformation[2]
+
+NOTE~Addition of attributes
+VitalInformation:weight,textField,Attrubute 1 + Attribute 2,options~IsCalculated=true:IsReadOnly=false,defaultValue=((VitalInformation_1_bmi)+(VitalInformation_1_height))
+
+
+Display_Label:BMI Calculation,show=true
+instance:PatientInformation[1]
+subcategory:Used Attributes:single
+subcategory:Calculated in textfield:single

@@ -1,0 +1,16 @@
+Entity_Group
+test
+
+PhysicianInformation:hospitals,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/original/PVs/Hospitals.csv
+PhysicianInformation:physicianName,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin
+HealthAnnotations:agent,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/original/PVs/Agent.csv
+LabInfo:source,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/original/PVs/source.csv
+PrimaryDiagnosis:result,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/original/PVs/result.csv
+PrimaryDiagnosis:testPerformed,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/original/PVs/LabTestName.csv
+FungalInfections:nameOfFungus,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/original/PVs/fungai.csv
+BacterialInfections:nameOfBacteria,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/original/PVs/bacteria.csv
+######The PVs are directly specified here
+ViralInfections:nameOfVirus,Permissible_Values~Rhinovirus:HIV:Hepatitis A:Hepatitis B:Hepatitis C:Hepatitis A/B:Polio:Chicken pox:Bird Flu
+LabTest:testName,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/original/PVs/LabTestName.csv
+Hazards:hazardType,Permissible_Values~Alcohol:Tobacco:Smoke:Asbestos:Cocaine
+Hazards:noYearsExposed,Permissible_Values~12.3:32.4:2.33:4.53:7.1

@@ -1,0 +1,103 @@
+<pvVersion>
+	<xmlCategory name="Test Category_Lab Information">
+		<class-name name="LabTest">
+			<instance id="1">
+				<xmlAttribute name="testName">
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>false</value>
+							</option>
+							<option>
+								<key>activationDate</key>
+								<value>11/10/2009</value>
+							</option>
+						</properties>
+						<default-value>Allergan Test</default-value>
+						<xmlPermissible-values>
+							<value>Allergan Test</value>
+							<value>Blood Culture Test</value>
+							<value>Complete Blood Count Test</value>
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>  
+			</instance>
+			<instance id="2">
+				<xmlAttribute name="testName">
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>false</value>
+							</option>
+							<option>
+							<!-- no activation date specified  -->
+								<key>activationDate</key>
+								<value></value>	
+							</option>
+						</properties>
+						<default-value>Core Blood Test</default-value> 
+						<xmlPermissible-values>
+							<value>Antigen Immune Staining</value>
+							<value>Biomarker Test</value>
+							<value>Esophago Gastro Duodenoscopy</value>
+							<value>Fertility Test</value>
+							<value>Eye Examination</value>
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>   
+			</instance>
+			<instance id="2">
+				<xmlAttribute name="testName">
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>false</value>
+							</option>
+							<option>
+							<!--different date format  --> 
+								<key>activationDate</key>
+								<value>02-01-2010</value>
+							</option>
+						</properties>
+						<default-value>Fertility Test</default-value> 
+						<xmlPermissible-values>
+							<value>Antigen Immune Staining</value>
+							<value>Biomarker Test</value>
+							<value>Esophago Gastro Duodenoscopy</value>
+							<value>Fertility Test</value>
+							<value>Eye Examination</value>
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>   
+			</instance>
+			<instance id="2">
+				<xmlAttribute name="testName">
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>false</value>
+							</option>
+							<option>
+								<!-- invalid date --> 
+								<key>activationDate</key>
+								<value>23/34/1920</value>
+							</option>
+						</properties>
+						<default-value>Fertility Test</default-value> 
+						<xmlpermissible-values>
+							<value>Antigen Immune Staining</value>
+							<value>Biomarker Test</value>
+							<value>Esophago Gastro Duodenoscopy</value>
+							<value>Fertility Test</value>
+							<value>Eye Examination</value>
+						</xmlpermissible-values>
+					</pvSet>
+				</xmlAttribute>   
+			</instance>
+		</class-name>
+	</xmlCategory>
+</pvVersion>

@@ -1,0 +1,16 @@
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryAnnotation.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryAutocompleteDropDown.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryAutocompleteDropDownNegative.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryChemotherapy.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryChemotherapyNumberDateRange.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryClinicalReport.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryDiagnosis.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryLabInfo.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryLabReport.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryLabReportMultiline.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryMultiSelectCheckBox.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryMultiSelectCheckBoxEdit.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryPathReports.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryRadiotherapy.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/Special_character_form.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/specialcharacter.csv

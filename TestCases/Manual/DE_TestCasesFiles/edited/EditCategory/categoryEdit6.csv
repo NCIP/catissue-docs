@@ -1,0 +1,32 @@
+Form_Definition
+
+Edit Form Testing
+
+test
+
+PathologicalAnnotations~PathologicalAnnotations,History~PathologicalAnnotations:History,Hazards~PathologicalAnnotations:History:Hazards,Alcohol~PathologicalAnnotations:History:Hazards:Alcohol,SmokingHistory~PathologicalAnnotations:History:Hazards:SmokingHistory,PhysicianInformation~PathologicalAnnotations:PhysicianInformation,PhyContactInfo~PathologicalAnnotations:PhysicianInformation:PhyContactInfo
+
+##Add new note
+Display_Label:Physician Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[1]
+PhyContactInfo:phoneType,textField,Phone type is edited category
+PhyContactInfo:phoneNumber,textField,Phone Number
+PhyContactInfo:extension,textField,Extension
+
+Display_Label:Patient Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[2]
+PhyContactInfo:phoneType,textField,Phone type
+PhyContactInfo:phoneNumber,textField,Phone Number
+PhyContactInfo:extension,textField,Extension
+
+
+Display_Label:Edit Form Testing,show=true
+instance:PathologicalAnnotations[1]
+NOTE~This is an added note
+NOTE~This is category 6
+PathologicalAnnotations:detectionDate,datePicker,Date of Detection
+PathologicalAnnotations:malignant,checkBox,Malignant
+##PathologicalAnnotations:tumorLocation,listBox,Location of Tumor
+PathologicalAnnotations:tumorSize,listBox,Size is edited by mandar
+subcategory:Physician Contact Information:single
+subcategory:Patient Contact Information:single

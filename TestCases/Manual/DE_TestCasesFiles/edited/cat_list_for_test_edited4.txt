@@ -1,0 +1,4 @@
+CPUML/TestModels/TestModel_withTags/edited/Categories/Categoryforautomationofbugs.csv
+CPUML/TestModels/TestModel_withTags/edited/Categories/categoryConfigurePasteNegative.csv
+CPUML/TestModels/TestModel_withTags/edited/Categories/Category_TestCase77negative.csv
+CPUML/TestModels/TestModel_withTags/edited/Categories/Category_TestCase82negative.csv

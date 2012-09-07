@@ -1,0 +1,66 @@
+Form_Definition
+
+Automation form for bugs
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,VitalInformation~ClinicalAnnotations:VitalInformation,LabInfo~ClinicalAnnotations:LabInfo
+
+
+
+Display_Label:Basic form 2 for Skip logic(Combo boxes only),show=true
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[1]
+VitalInformation:bp,comboBox,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,comboBox,Pluse Rate,Permissible_Values~60:56:78:90:89:91:92:93,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+Display_Label:4 Skip logic- PVs of one or more attributes depends on one or more pvs of combo box,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[3],ClinicalAnnotations[1]->LabInfo[2]
+NOTE~Pvs of Pulse depends on blood pressure 100 and 120 of Basic form 2
+NOTE~Pvs of Source of Information depends on Source value Dristi Eye Centre+ of Basic form 2
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+Display_Label:Calculated Attribute to be set as default value in Skip Logic,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[4]
+NOTE~Calculation of BMI depends on blood pressure 130 of Basic form 2
+VitalInformation:height,textField, Enter Height (cm)
+VitalInformation:weight,textField, Enter Weight (Kg)
+VitalInformation:bmi,textField,Sum of height and weight,options~IsCalculated=true,defaultValue=((VitalInformation_1_weight)+(VitalInformation_1_height))
+
+
+Display_Label:Calculated attribute in the main category entity,show=true
+instance:ClinicalAnnotations[1],ClinicalAnnotations[1]->VitalInformation[1]
+VitalInformation:height,textField, Enter Height (cm)
+VitalInformation:weight,textField, Enter Weight (Kg)
+VitalInformation:bmi,textField,Sum of height and weight,options~IsCalculated=true,defaultValue=((VitalInformation_1_weight)+(VitalInformation_1_height))
+
+subcategory:Basic form 2 for Skip logic(Combo boxes only):single
+subcategory:4 Skip logic- PVs of one or more attributes depends on one or more pvs of combo box:single
+subcategory:Calculated Attribute to be set as default value in Skip Logic:single
+
+SkipLogicAttribute:
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[3]
+VitalInformation[2]:bp:100,dependentAttribute~VitalInformation[3]:pulse,Permissible_Values~60:56:78
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[3]
+VitalInformation[2]:bp:110,dependentAttribute~VitalInformation[3]:pulse,Permissible_Values~90:89:91
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[3]
+VitalInformation[2]:bp:120,dependentAttribute~VitalInformation[3]:pulse,Permissible_Values~89:91:92:93
+
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[2]
+VitalInformation[2]:pulse:60,dependentAttribute~LabInfo[2]:source,Permissible_Values~Kalavathi Surgical Hospital & Laparoscopic Centre:Rich Hospitals(Ravi Institute of child Health (P) Ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[2]
+VitalInformation[2]:pulse:56,dependentAttribute~LabInfo[2]:source,Permissible_Values~Bollineni Superspeciality Hospital:Remedy Hospitals (Albha Health care pvt ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[2]
+VitalInformation[2]:pulse:78,dependentAttribute~LabInfo[2]:source,Permissible_Values~Bollineni Superspeciality Hospital:Meena Hospital
+
+instance:ClinicalAnnotations[1]->LabInfo[1],ClinicalAnnotations[1]->LabInfo[2]
+LabInfo[1]:source:Dristi Eye Centre+,dependentAttribute~LabInfo[2]:source,Permissible_Values~Kalavathi Surgical Hospital & Laparoscopic Centre:Rich Hospitals(Ravi Institute of child Health (P) Ltd)
+
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[4]
+VitalInformation[2]:bp:130,dependentAttribute~VitalInformation[4]:bmi,options~IsSelectiveReadOnly=false,defaultValue=((VitalInformation_4_weight)+(VitalInformation_4_height))
+
+
+
+

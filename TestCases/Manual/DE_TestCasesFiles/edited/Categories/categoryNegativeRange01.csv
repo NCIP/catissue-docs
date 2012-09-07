@@ -1,0 +1,36 @@
+Form_Definition
+
+Test Category_Negative_Range_for_age_01
+
+test
+
+Annotations~Annotations,History~Annotations:History,Hazards~Annotations:History:Hazards,SmokingHistory~Annotations:History:Hazards:SmokingHistory,Alcohol~Annotations:History:Hazards:Alcohol
+
+Display_Label:Hazards,show=false
+instance:Annotations[1]->History[1]->Hazards[1],Annotations[1]->History[1]->Hazards[1]->SmokingHistory[1],Annotations[1]->History[1]->Hazards[1]->Alcohol[1]
+HEADING~EDITED HAZARD
+NOTE~this is edited category. Default Value changed
+Hazards:hazardType,listBox,Hazard Types Edited,defaultValue=Smoke
+Hazards:noYearsExposed,comboBox,Number of years exposed Edited,PermVal_Options~IsOrdered=false
+SmokingHistory:packsPerDay,textField,Packs per day
+Alcohol:drinksPerWeek,textField,Drinks per week Edited
+
+Display_Label:Hazards2,show=false
+instance:Annotations[1]->History[1]->Hazards[2],Annotations[1]->History[1]->Hazards[2]->SmokingHistory[2],Annotations[1]->History[1]->Hazards[2]->Alcohol[2]
+HEADING~EDITED HAZARD
+NOTE~this is edited category
+Hazards:hazardType,listBox,Hazard Types Edited,defaultValue=Cocaine
+Hazards:noYearsExposed,comboBox,Number of years exposed Edited,PermVal_Options~IsOrdered=false
+SmokingHistory:packsPerDay,textField,EditedPacks per day
+Alcohol:drinksPerWeek,textField,Drinks per week Edited
+
+Display_Label:Patient Information,show=true
+instance:Annotations[1]
+NOTE~URL set to true in category
+NOTE~this is a edited category so URL set back to false
+Annotations:name,textField,Name,options~Columns=71:IsUrl=false,defaultValue=www.google.com
+Annotations:age,textField,Age Edited,Rules~range-min=-10&max=10
+NOTE~Password set back to true editeing the  over-ridden tag in UML back to normal
+Annotations:insuranceAmount,textField,Insurance Ammount Edited,options~IsPassword=true
+subcategory:Hazards:single
+subcategory:Hazards2:single

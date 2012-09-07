@@ -1,0 +1,47 @@
+Form_Definition
+
+##CAT_DFN_ATPPLT_FRM1
+
+Instance-based single message form
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest
+
+Display_Label:Albumin,show=false
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[1]
+LabTest:quantResult,textField,Result,options~Columns=5,populateFromXML=true
+LabTest:resultUnit,comboBox,Units,defaultValue=--Select--,PermVal_Options~IsOrdered=false,populateFromXML=true
+
+Display_Label:Alkaline phosphatase,show=false
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[2]
+LabTest:quantResult,textField,Result,options~Columns=5,populateFromXML=true
+LabTest:resultUnit,comboBox,Units,defaultValue=--Select--,PermVal_Options~IsOrdered=false,populateFromXML=true
+
+Display_Label:ALT,show=false
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[3]
+LabTest:quantResult,textField,Result,options~Columns=5,populateFromXML=true
+LabTest:resultUnit,comboBox,Units,defaultValue=--Select--,PermVal_Options~IsOrdered=false,populateFromXML=true
+
+Display_Label:ABO Rh Factor,show=false
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[4]
+LabTest:quantResult,textField,Result,options~Columns=5,populateFromXML=true
+LabTest:resultUnit,comboBox,Units,defaultValue=--Select--,PermVal_Options~IsOrdered=false,populateFromXML=true
+
+Display_Label:BMP/CMP,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Albumin:single
+subcategory:Alkaline phosphatase:single
+subcategory:ALT:single
+subcategory:ABO Rh Factor:single
+
+
+RelatedAttribute:
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[1]
+LabTests:testName=Albumin,populateFromXML=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[2]
+LabTests:testName=Alkaline phosphatase,populateFromXML=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[3]
+LabTests:testName=ALT,populateFromXML=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[4]
+LabTests:testName=ABO/Rh Factor,populateFromXML=true

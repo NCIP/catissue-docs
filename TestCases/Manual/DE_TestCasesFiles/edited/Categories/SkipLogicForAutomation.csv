@@ -1,0 +1,217 @@
+Form_Definition
+
+Skip logic for Automation
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,PhysicianInformation~ClinicalAnnotations:PhysicianInformation,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,VitalInformation~ClinicalAnnotations:VitalInformation
+
+Display_Label:1 Skip logic- One attribute depends upon one radio button value of same sub form,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1],ClinicalAnnotations[1]->LabInfo[1]->LabTest[1]
+NOTE~Qualitative Results depends on Physician name as Pawan
+PhysicianInformation:physicianName,radioButton,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Edgar
+LabTest:qualResult,textField,Qualitative Result
+
+
+Display_Label:2 Skip logic- One attribute depends upon more than one radio button value of same sub form,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[2],ClinicalAnnotations[1]->LabInfo[1]->LabTest[2]
+NOTE~Qualitative Results depends on Physician name as Pawan Edgar or Alan
+PhysicianInformation:physicianName,radioButton,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Smith
+LabTest:qualResult,textField,Qualitative Result
+
+
+Display_Label:3 Skip logic- More than one attribute depends upon one radio button value of same sub form,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[3],ClinicalAnnotations[1]->LabInfo[1]->LabTest[3]
+NOTE~Qualitative Results Quantitative Results and Test agent depends on Physician name as Pawan
+PhysicianInformation:physicianName,radioButton,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Smith
+LabTest:qualResult,textField,Qualitative Result
+LabTest:quantResult,textField,Quantitative Result
+LabTest:testAgent,textField,Test Agent
+
+
+Display_Label:4 Skip logic- Different attributes depends upon differnt radio button value of same sub form,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[4],ClinicalAnnotations[1]->LabInfo[1]->LabTest[4]
+NOTE~Qualitative Results depends on Physician name as Pawan
+NOTE~Quantitative Results depends on Physician name as Edgar
+NOTE~Test Agent depends on Physician name as Alan
+PhysicianInformation:physicianName,radioButton,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Smith
+LabTest:qualResult,textField,Qualitative Result
+LabTest:quantResult,textField,Quantitative Result
+LabTest:testAgent,textField,Test Agent
+
+
+
+Display_Label:5 Skip logic- One attribute depends upon one combo box value of same sub form,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[5],ClinicalAnnotations[1]->LabInfo[1]->LabTest[5]
+NOTE~Qualitative Results depends on Physician name as Pawan
+PhysicianInformation:physicianName,comboBox,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Edgar
+LabTest:qualResult,textField,Qualitative Result
+
+
+
+Display_Label:6 Skip logic- One attribute depends upon more than combo box value of same sub form,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[6],ClinicalAnnotations[1]->LabInfo[1]->LabTest[6]
+NOTE~Qualitative Results depends on Physician name as Pawan Edgar or Alan
+PhysicianInformation:physicianName,comboBox,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Smith
+LabTest:qualResult,textField,Qualitative Result
+
+
+Display_Label:7 Skip logic- More than one attribute depends upon one radio button value of same sub form,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[7],ClinicalAnnotations[1]->LabInfo[1]->LabTest[7]
+NOTE~Qualitative Results Quantitative Results and Test agent depends on Physician name as Pawan
+PhysicianInformation:physicianName,comboBox,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Smith
+LabTest:qualResult,textField,Qualitative Result
+LabTest:quantResult,textField,Quantitative Result
+LabTest:testAgent,textField,Test Agent
+
+
+Display_Label:8 Skip logic- Different attributes depends upon differnt combo box value of same sub form,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[8],ClinicalAnnotations[1]->LabInfo[1]->LabTest[8]
+NOTE~Qualitative Results depends on Physician name as Pawan
+NOTE~Quantitative Results depends on Physician name as Edgar
+NOTE~Test Agent depends on Physician name as Alan
+PhysicianInformation:physicianName,comboBox,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Smith
+LabTest:qualResult,textField,Qualitative Result
+LabTest:quantResult,textField,Quantitative Result
+LabTest:testAgent,textField,Test Agent
+
+
+Display_Label:9 Skip logic- PVs of an attribute depends on one radio button value,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[1]
+NOTE~Set of PVs of Pulse Rate depends on PV 100 of Blood Pressure
+VitalInformation:bp,radioButton,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+
+
+Display_Label:10 Skip logic- PVs of an attribute depends on set of radio button values,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[2]
+NOTE~Set of PVs of Pulse Rate depends on PVs 100 110 and 120 of Blood Pressure
+VitalInformation:bp,radioButton,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+
+
+Display_Label:11 Skip logic- PVs of an attribute depends on one combo box value,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[3]
+NOTE~Set of PVs of Pulse Rate depends on PV 100 of Blood Pressure
+VitalInformation:bp,comboBox,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+
+
+Display_Label:12 Skip logic- PVs of an attribute depends on set of combo box values,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[4]
+NOTE~Set of PVs of Pulse Rate depends on PVs 100 110 and 120 of Blood Pressure
+VitalInformation:bp,comboBox,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+
+
+
+Display_Label:13 Skip logic- PVs of different attributes depends on combo box values,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->LabInfo[1]
+NOTE~Pulse pvs depends on blood pressure 100 and 110
+NOTE~Source of Information values depends on blood pressure 120 and 130
+VitalInformation:bp,comboBox,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+Display_Label:14 Skip logic- One attribute depends on one or more radio buttons of different sub form,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[6],ClinicalAnnotations[1]->LabInfo[2]
+NOTE~Pulse pvs depends on blood pressure 100 and 110 of form 13
+NOTE~Source of Information values depends on blood pressure 120 and 130 of form 13
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+
+Display_Label:Skip logic for Automation,show=false
+instance:ClinicalAnnotations[1]
+subcategory:1 Skip logic- One attribute depends upon one radio button value of same sub form:single
+subcategory:2 Skip logic- One attribute depends upon more than one radio button value of same sub form:single
+subcategory:3 Skip logic- More than one attribute depends upon one radio button value of same sub form:single
+subcategory:4 Skip logic- Different attributes depends upon differnt radio button value of same sub form:single
+subcategory:5 Skip logic- One attribute depends upon one combo box value of same sub form:single
+subcategory:6 Skip logic- One attribute depends upon more than combo box value of same sub form:single
+subcategory:7 Skip logic- More than one attribute depends upon one radio button value of same sub form:single
+subcategory:8 Skip logic- Different attributes depends upon differnt combo box value of same sub form:single
+subcategory:9 Skip logic- PVs of an attribute depends on one radio button value:single
+subcategory:10 Skip logic- PVs of an attribute depends on set of radio button values:single
+subcategory:11 Skip logic- PVs of an attribute depends on one combo box value:single
+subcategory:12 Skip logic- PVs of an attribute depends on set of combo box values:single
+subcategory:13 Skip logic- PVs of different attributes depends on combo box values:single
+subcategory:14 Skip logic- One attribute depends on one or more radio buttons of different sub form:single
+
+
+
+SkipLogicAttribute:
+
+instance:ClinicalAnnotations[1]->PhysicianInformation[1],ClinicalAnnotations[1]->LabInfo[1]->LabTest[1]
+PhysicianInformation[1]:physicianName:Pawan,dependentAttribute~LabTest[1]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[2],ClinicalAnnotations[1]->LabInfo[1]->LabTest[2]
+PhysicianInformation[2]:physicianName:Pawan,dependentAttribute~LabTest[2]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[2],ClinicalAnnotations[1]->LabInfo[1]->LabTest[2]
+PhysicianInformation[2]:physicianName:Edgar,dependentAttribute~LabTest[2]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[2],ClinicalAnnotations[1]->LabInfo[1]->LabTest[2]
+PhysicianInformation[2]:physicianName:Alan,dependentAttribute~LabTest[2]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[3],ClinicalAnnotations[1]->LabInfo[1]->LabTest[3]
+PhysicianInformation[3]:physicianName:Pawan,dependentAttribute~LabTest[3]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[3],ClinicalAnnotations[1]->LabInfo[1]->LabTest[3]
+PhysicianInformation[3]:physicianName:Pawan,dependentAttribute~LabTest[3]:quantResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[3],ClinicalAnnotations[1]->LabInfo[1]->LabTest[3]
+PhysicianInformation[3]:physicianName:Pawan,dependentAttribute~LabTest[3]:testAgent,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[4],ClinicalAnnotations[1]->LabInfo[1]->LabTest[4]
+PhysicianInformation[4]:physicianName:Pawan,dependentAttribute~LabTest[4]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[4],ClinicalAnnotations[1]->LabInfo[1]->LabTest[4]
+PhysicianInformation[4]:physicianName:Edgar,dependentAttribute~LabTest[4]:quantResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[4],ClinicalAnnotations[1]->LabInfo[1]->LabTest[4]
+PhysicianInformation[4]:physicianName:Alan,dependentAttribute~LabTest[4]:testAgent,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[5],ClinicalAnnotations[1]->LabInfo[1]->LabTest[5]
+PhysicianInformation[5]:physicianName:Pawan,dependentAttribute~LabTest[5]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[6],ClinicalAnnotations[1]->LabInfo[1]->LabTest[6]
+PhysicianInformation[6]:physicianName:Pawan,dependentAttribute~LabTest[6]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[6],ClinicalAnnotations[1]->LabInfo[1]->LabTest[6]
+PhysicianInformation[6]:physicianName:Edgar,dependentAttribute~LabTest[6]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[6],ClinicalAnnotations[1]->LabInfo[1]->LabTest[6]
+PhysicianInformation[6]:physicianName:Alan,dependentAttribute~LabTest[6]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[7],ClinicalAnnotations[1]->LabInfo[1]->LabTest[7]
+PhysicianInformation[7]:physicianName:Pawan,dependentAttribute~LabTest[7]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[7],ClinicalAnnotations[1]->LabInfo[1]->LabTest[7]
+PhysicianInformation[7]:physicianName:Pawan,dependentAttribute~LabTest[7]:quantResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[7],ClinicalAnnotations[1]->LabInfo[1]->LabTest[7]
+PhysicianInformation[7]:physicianName:Pawan,dependentAttribute~LabTest[7]:testAgent,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[8],ClinicalAnnotations[1]->LabInfo[1]->LabTest[8]
+PhysicianInformation[8]:physicianName:Pawan,dependentAttribute~LabTest[8]:qualResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[8],ClinicalAnnotations[1]->LabInfo[1]->LabTest[8]
+PhysicianInformation[8]:physicianName:Edgar,dependentAttribute~LabTest[8]:quantResult,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[8],ClinicalAnnotations[1]->LabInfo[1]->LabTest[8]
+PhysicianInformation[8]:physicianName:Alan,dependentAttribute~LabTest[8]:testAgent,options~IsSelectiveReadOnly=true
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->VitalInformation[1]
+VitalInformation[1]:bp:100,dependentAttribute~VitalInformation[1]:pulse,Permissible_Values~60:56:78:90
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[2]
+VitalInformation[2]:bp:100,dependentAttribute~VitalInformation[2]:pulse,Permissible_Values~60:56:78
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[2]
+VitalInformation[2]:bp:110,dependentAttribute~VitalInformation[2]:pulse,Permissible_Values~78:90:89:91
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[2]
+VitalInformation[2]:bp:120,dependentAttribute~VitalInformation[2]:pulse,Permissible_Values~91:92:93
+instance:ClinicalAnnotations[1]->VitalInformation[3],ClinicalAnnotations[1]->VitalInformation[3]
+VitalInformation[3]:bp:100,dependentAttribute~VitalInformation[3]:pulse,Permissible_Values~60:56:78:90:89
+instance:ClinicalAnnotations[1]->VitalInformation[4],ClinicalAnnotations[1]->VitalInformation[4]
+VitalInformation[4]:bp:100,dependentAttribute~VitalInformation[4]:pulse,Permissible_Values~60:56:78
+instance:ClinicalAnnotations[1]->VitalInformation[4],ClinicalAnnotations[1]->VitalInformation[4]
+VitalInformation[4]:bp:110,dependentAttribute~VitalInformation[4]:pulse,Permissible_Values~78:90:89:91
+instance:ClinicalAnnotations[1]->VitalInformation[4],ClinicalAnnotations[1]->VitalInformation[4]
+VitalInformation[4]:bp:120,dependentAttribute~VitalInformation[4]:pulse,Permissible_Values~91:92:93
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->VitalInformation[5]
+VitalInformation[5]:bp:100,dependentAttribute~VitalInformation[5]:pulse,Permissible_Values~60:56:78:90:89
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->VitalInformation[5]
+VitalInformation[5]:bp:110,dependentAttribute~VitalInformation[5]:pulse,Permissible_Values~78:90:89:91
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->LabInfo[1]
+VitalInformation[5]:bp:120,dependentAttribute~LabInfo[1]:source,Permissible_Values~Kalavathi Surgical Hospital & Laparoscopic Centre:Rich Hospitals(Ravi Institute of child Health (P) Ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->LabInfo[1]
+VitalInformation[5]:bp:130,dependentAttribute~LabInfo[1]:source,Permissible_Values~Bollineni Superspeciality Hospital:Remedy Hospitals (Albha Health care pvt ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->VitalInformation[6]
+VitalInformation[5]:bp:100,dependentAttribute~VitalInformation[6]:pulse,Permissible_Values~60:56:78:90
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->VitalInformation[6]
+VitalInformation[5]:bp:110,dependentAttribute~VitalInformation[6]:pulse,Permissible_Values~78:90:89:91
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->LabInfo[2]
+VitalInformation[5]:bp:120,dependentAttribute~LabInfo[2]:source,Permissible_Values~Kalavathi Surgical Hospital & Laparoscopic Centre:Rich Hospitals(Ravi Institute of child Health (P) Ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->LabInfo[2]
+VitalInformation[5]:bp:130,dependentAttribute~LabInfo[2]:source,Permissible_Values~Bollineni Superspeciality Hospital:Remedy Hospitals (Albha Health care pvt ltd)

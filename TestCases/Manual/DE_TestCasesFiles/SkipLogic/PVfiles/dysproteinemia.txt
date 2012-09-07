@@ -1,0 +1,16 @@
+--Select--
+Myeloma Cast Nephropathy
+Light Chain Fanconi Syndrome
+Amyloidosis - AL/AH
+AA Hereditary
+Dialysis
+Localized
+Systemic
+Monoclonal Immunoglobulin Deposition Disease (MIDD)
+Light Chain Deposition Disease (LCDD)
+Heavy Chain Deposition Disease (HCDD)
+Light And Heavy Chain Deposition Disease (LHCDD)
+Cryoglobulonemia - Fibrillary
+Cryoglobulonemia - Immunotactoid
+Waldenstorms Macroglobulinemia
+Other

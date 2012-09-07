@@ -1,0 +1,108 @@
+Form_Definition
+
+Skip Logic 58
+
+SkipLogic
+
+HealthInformation~HealthInformation,Exercise~HealthInformation:Exercise
+
+Display_Label:Controlling Radiobutton and dependent attribute in same multiline subform as PV subset,show=true
+instance:HealthInformation[1]->Exercise[1]
+NOTE~This category covers the scenario where controlling attribute and dependent attribute is present in same multiline subform
+NOTE~Controlling attribute = Follow exercise specific Diet
+NOTE~Datatype = Radio button
+NOTE~Skip logic action = PV subset
+Exercise:exerciseSpecificDiet,radioButton,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=Unknown
+Exercise:supplementRecommended,comboBox,Is suppliment recommended to you,Permissible_Values~Yes:No:Unknown
+Exercise:exercisingSince,radioButton,You are exercising from how much time,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years
+Exercise:exerciseTime,listBox,Advised exercise time,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night,options~IsMultiSelect=true
+Exercise:exerciseType,listBox,Recommended exercises,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseConsultant,multiselectCheckBox,Trainig under,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+
+
+Display_Label:Controlling combobox and dependent attribute in same multiline subform as PV subset,show=true
+instance:HealthInformation[1]->Exercise[2]
+NOTE~Controlling attribute = Follow exercise specific Diet
+NOTE~Datatype = Combo Box
+NOTE~Skip logic action = PV subset
+Exercise:exerciseSpecificDiet,comboBox,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=Unknown
+Exercise:supplementRecommended,comboBox,Is suppliment recommended to you,Permissible_Values~Yes:No:Unknown
+Exercise:exercisingSince,radioButton,You are exercising from how much time,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years
+Exercise:exerciseTime,listBox,Advised exercise time,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night,options~IsMultiSelect=true
+Exercise:exerciseType,listBox,Recommended exercises,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseConsultant,multiselectCheckBox,Trainig under,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+
+Display_Label:Controlling check Box and dependent attribute in same multiline subform as PV subset,show=true
+instance:HealthInformation[1]->Exercise[3]
+NOTE~Controlling attribute = Do you workout daily
+NOTE~Datatype = Check box
+NOTE~Skip logic action = PV subset
+Exercise:doesDailyWorkout,checkBox,Do you workout daily,defaultValue=false
+Exercise:exercisingSince,radioButton,Exercising since,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Exercise:exerciseSpecificDiet,comboBox,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:exerciseTime,listBox,Advised exercise time,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night,options~IsMultiSelect=true
+Exercise:exerciseType,listBox,Recommended exercises,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseConsultant,multiselectCheckBox,Trainig under,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+
+
+Display_Label:SkipLogic in same multiline subform with PV subset,show=true
+instance:HealthInformation[1]
+subcategory:Controlling Radiobutton and dependent attribute in same multiline subform as PV subset:multiline
+subcategory:Controlling combobox and dependent attribute in same multiline subform as PV subset:multiline
+subcategory:Controlling check Box and dependent attribute in same multiline subform as PV subset:multiline
+
+
+SkipLogicAttribute:
+
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:supplementRecommended,Permissible_Values~Yes:No:Unknown
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:No,dependentAttribute~Exercise[1]:supplementRecommended,Permissible_Values~No:Unknown
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:exercisingSince,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:No,dependentAttribute~Exercise[1]:exercisingSince,Permissible_Values~less than 5 years:5-10 years
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:exerciseTime,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:No,dependentAttribute~Exercise[1]:exerciseTime,Permissible_Values~Early morning:Evening
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:exerciseType,Permissible_Values~Yoga:Aerobics:Jogging
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:No,dependentAttribute~Exercise[1]:exerciseType,Permissible_Values~Cardio:Weight Training:Yoga:Aerobics:Jogging:Bench Press:Swimming
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:exerciseConsultant,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:No,dependentAttribute~Exercise[1]:exerciseConsultant,Permissible_Values~Dr. Stein:Dr. Goldberg
+
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:supplementRecommended,Permissible_Values~Yes:No:Unknown
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:No,dependentAttribute~Exercise[2]:supplementRecommended,Permissible_Values~No:Unknown
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:exercisingSince,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:No,dependentAttribute~Exercise[2]:exercisingSince,Permissible_Values~less than 5 years:5-10 years
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:exerciseTime,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:No,dependentAttribute~Exercise[2]:exerciseTime,Permissible_Values~Early morning:Evening
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:exerciseType,Permissible_Values~Yoga:Aerobics:Jogging
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:No,dependentAttribute~Exercise[2]:exerciseType,Permissible_Values~Cardio:Weight Training:Yoga:Aerobics:Jogging:Bench Press:Swimming
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:exerciseConsultant,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:No,dependentAttribute~Exercise[2]:exerciseConsultant,Permissible_Values~Dr. Stein:Dr. Goldberg
+
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exercisingSince,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exerciseSpecificDiet,Permissible_Values~Yes:Unknown
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exerciseTime,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exerciseType,Permissible_Values~Yoga:Aerobics:Jogging
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exerciseConsultant,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle

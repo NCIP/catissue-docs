@@ -1,0 +1,25 @@
+Form_Definition
+
+CalcAttribute_Formula_within_formula
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,VitalInformation~ClinicalAnnotations:VitalInformation,History~ClinicalAnnotations:History,Hazards~ClinicalAnnotations:History:Hazards
+
+
+Display_Label:Formula 1,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[1]
+VitalInformation:height,textField,Height of participant
+VitalInformation:weight,textField,Weight of participant
+VitalInformation:bmi,textField,Body Mass Index,options~IsCalculated=true,defaultValue=((VitalInformation_1_weight)/((VitalInformation_1_height)*(VitalInformation_1_height)))
+
+
+Display_Label:Formula 2,show=true
+instance:ClinicalAnnotations[1]->History[1]->Hazards[1]
+Hazards:noYearsExposed,textField,BMI + 4,options~IsCalculated=true,defaultValue=((VitalInformation_1_bmi)+(4))
+
+
+Display_Label:Calculated Attributes For Automation,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Formula 1:single
+subcategory:Formula 2:single

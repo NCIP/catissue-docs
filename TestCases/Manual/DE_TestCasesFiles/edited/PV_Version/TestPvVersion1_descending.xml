@@ -1,0 +1,38 @@
+<pvVersion>
+	<xmlCategory name="Test Category_Lab Information">
+		<class-name name="LabTest">
+			<instance id="1">
+				<xmlAttribute name="testName">
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>true</value>
+							</option>
+							<option>
+								<key>sort</key>
+								<value>Descending</value>
+							</option>
+							<option>
+								<key>activationDate</key>
+								<value>07/15/2010</value>
+							</option>
+
+						</properties>
+						<default-value>Allergan Test</default-value>
+						<xmlPermissible-values>
+							<value>Allergan Test</value>
+							<value>Biomarker Test</value>
+							<value>Anoscopy</value>
+							<value>Colonoscopy</value>							
+							<value>Laproscopy</value>
+							<value>RBC</value>
+							<value>WBC</value>
+							<value>pCO2</value>
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>  
+			</instance>
+		</class-name>
+	</xmlCategory>
+</pvVersion>

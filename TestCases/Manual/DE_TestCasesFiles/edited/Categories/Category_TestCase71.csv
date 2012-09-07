@@ -1,0 +1,21 @@
+Form_Definition
+
+TestCase71
+
+test
+
+PatientInformation~PatientInformation,PhysicianInformation~PatientInformation:PhysicianInformation
+
+Display_Label:Single Line Display,show=true
+instance:PatientInformation[1]->PhysicianInformation[1]
+
+SingleLineDisplay:start
+NOTE~ListBox and ListBox Combination
+PhysicianInformation:hospitals,listBox,Hospitals,options~IsMultiSelect=true,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/Hospitals.csv
+PhysicianInformation:clinics,listBox,Clinics,options~IsMultiSelect=true,Permissible_Values~ABC:BCD:CDE:DEF:EFG:FGH:GHI
+SingleLineDisplay:end
+
+Display_Label:Test Case 71,show=true
+instance:PatientInformation[1]
+subcategory:Single Line Display:single
+PatientInformation:name,textField,Name of Test Case

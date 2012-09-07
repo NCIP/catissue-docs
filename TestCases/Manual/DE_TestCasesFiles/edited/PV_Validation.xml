@@ -1,0 +1,133 @@
+<xmlPermissibleValues>
+	<xmlEntityGroup name="test">
+		<xmlClass-name name="LabTest">
+			<xmlDEAttribute name="resultUnit">
+				<override>true</override>
+				 <xmlPermissible-value>
+						<value>
+						   <name>--Select--</name>
+						   <numericCode>01</numericCode>
+						   <source>
+						   <primary-definition>
+							 <primaryConceptDefinitionSource>medcode</primaryConceptDefinitionSource>
+							 <primaryConceptCode>7221</primaryConceptCode>
+							 <primaryConceptPreferredName>preffered name --Select--</primaryConceptPreferredName>
+							 <primaryConceptDefinition>concept defination --Select--</primaryConceptDefinition>
+							 </primary-definition>
+							 <qualifier-definition>	
+								<qualifier number="1">
+								 <qualifierConceptDefinitionSource>NCI</qualifierConceptDefinitionSource>
+								 <qualifierConceptCode>C2180</qualifierConceptCode>
+								 <qualifierConceptPreferredName>Alcohol </qualifierConceptPreferredName>
+								 <qualifierConceptDefinition>A class of compounds where a hydroxyl (OH) group is attached to single bonded hydrocarbons. Alcohols are classified according to the position of the carbon atom with the attached hydroxyl group (i.e. primary alcohols are alcohols with the OH group attached to the primary carbon atom, C1).</qualifierConceptDefinition>
+								</qualifier>
+							</qualifier-definition>
+						   </source>
+						</value>
+						<value>
+						   <name>g/dL</name>
+						   <numericCode>02</numericCode>
+						   <source>
+						   <primary-definition>
+							 <primaryConceptDefinitionSource>medcode</primaryConceptDefinitionSource>
+							 <primaryConceptCode>7422</primaryConceptCode>
+							 <primaryConceptPreferredName>preffered name g/dL</primaryConceptPreferredName>
+							 <primaryConceptDefinition>concept defination g/dL</primaryConceptDefinition>
+							 </primary-definition>
+							 <qualifier-definition>	
+								<qualifier number="1">
+								 <qualifierConceptDefinitionSource>medcode</qualifierConceptDefinitionSource>
+								 <qualifierConceptCode>C2180</qualifierConceptCode>
+								 <qualifierConceptPreferredName>Alcohol </qualifierConceptPreferredName>
+								 <qualifierConceptDefinition>A class of compounds where a hydroxyl (OH) group is attached to single bonded hydrocarbons. Alcohols are classified according to the position of the carbon atom with the attached hydroxyl group (i.e. primary alcohols are alcohols with the OH group attached to the primary carbon atom, C1).</qualifierConceptDefinition>
+								</qualifier>
+								<qualifier number="1">
+								 <qualifierConceptDefinitionSource>medcode</qualifierConceptDefinitionSource>
+								 <qualifierConceptCode>C2181</qualifierConceptCode>
+								 <qualifierConceptPreferredName>Alcohol </qualifierConceptPreferredName>
+								 <qualifierConceptDefinition>A class of compounds where a hydroxyl (OH) group is attached to single bonded hydrocarbons. Alcohols are classified according to the position of the carbon atom with the attached hydroxyl group (i.e. primary alcohols are alcohols with the OH group attached to the primary carbon atom, C1).</qualifierConceptDefinition>
+								</qualifier>
+							</qualifier-definition>
+						   </source>
+						</value>
+						<value>
+						   <name>IntUnits/L</name>
+						   <numericCode>03</numericCode>
+						   <source>
+						   <primary-definition>
+							 <primaryConceptDefinitionSource>medcode</primaryConceptDefinitionSource>
+							 <primaryConceptCode>7423</primaryConceptCode>
+							 <primaryConceptPreferredName>preffered name IntUnits/L</primaryConceptPreferredName>
+							 <primaryConceptDefinition>concept defination IntUnits/L</primaryConceptDefinition>
+							 </primary-definition>
+							  <qualifier-definition>	
+								<qualifier number="1">
+								 <qualifierConceptDefinitionSource>medcode</qualifierConceptDefinitionSource>
+								 <qualifierConceptCode>C2180</qualifierConceptCode>
+								 <qualifierConceptPreferredName>Alcohol </qualifierConceptPreferredName>
+								 <qualifierConceptDefinition>A class of compounds where a hydroxyl (OH) group is attached to single bonded hydrocarbons. Alcohols are classified according to the position of the carbon atom with the attached hydroxyl group (i.e. primary alcohols are alcohols with the OH group attached to the primary carbon atom, C1).</qualifierConceptDefinition>
+								</qualifier>
+								<qualifier number="2">
+								 <qualifierConceptDefinitionSource>medcode</qualifierConceptDefinitionSource>
+								 <qualifierConceptCode>C2180</qualifierConceptCode>
+								 <qualifierConceptPreferredName>Alcohol </qualifierConceptPreferredName>
+								 <qualifierConceptDefinition>A class of compounds where a hydroxyl (OH) group is attached to single bonded hydrocarbons. Alcohols are classified according to the position of the carbon atom with the attached hydroxyl group (i.e. primary alcohols are alcohols with the OH group attached to the primary carbon atom, C1).</qualifierConceptDefinition>
+								</qualifier>
+							</qualifier-definition>
+						   </source>
+						</value>
+						<value>
+						   <name>InU/mL</name>
+						   <numericCode>4.5</numericCode>
+						   <source>
+						   <primary-definition>
+							 <primaryConceptDefinitionSource>medcode</primaryConceptDefinitionSource>
+							 <primaryConceptCode>7424</primaryConceptCode>
+							 <primaryConceptPreferredName>preffered name InU/mL</primaryConceptPreferredName>
+							 <primaryConceptDefinition>concept defination InU/mL</primaryConceptDefinition>
+							 </primary-definition>
+						   </source>
+						</value>
+						<value>
+						   <name>mcg/mL</name>
+						   <numericCode>05</numericCode>
+						   <source>
+						   <primary-definition>
+							 <primaryConceptDefinitionSource>medcode</primaryConceptDefinitionSource>
+							 <primaryConceptCode>7425</primaryConceptCode>
+							 <primaryConceptPreferredName>preffered name mcg/mL</primaryConceptPreferredName>
+							 <primaryConceptDefinition>concept defination mcg/mL</primaryConceptDefinition>
+							 </primary-definition>
+						   </source>
+						</value>
+						<value>
+						   <name>mL/min</name>
+						   <numericCode>05</numericCode>
+						   <source>
+						   <primary-definition>
+							 <primaryConceptDefinitionSource>medcode</primaryConceptDefinitionSource>
+							 <primaryConceptCode>7426</primaryConceptCode>
+							 <primaryConceptPreferredName>preffered name mL/min</primaryConceptPreferredName>
+							 <primaryConceptDefinition>concept defination mL/min</primaryConceptDefinition>
+							 </primary-definition>
+						   </source>
+						</value>
+						<value>
+						   <oldName>ng/mL/hr</oldName>
+						   <name>ngm/mL/hr<name>
+						   <numericCode>07</numericCode>
+						   <source>
+						   <primary-definition>
+							 <primaryConceptDefinitionSource>medcode</primaryConceptDefinitionSource>
+							 <primaryConceptCode>7427</primaryConceptCode>
+							 <primaryConceptPreferredName>preffered name ng/mL/hr</primaryConceptPreferredName>
+							 <primaryConceptDefinition>concept defination ng/mL/hr</primaryConceptDefinition>
+							 </primary-definition>
+						   </source>
+						</value>
+
+					</xmlPermissible-value>
+				</xmlDEAttribute>
+		</xmlClass-name>
+	</xmlEntityGroup>
+</xmlPermissibleValues>

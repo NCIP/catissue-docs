@@ -1,0 +1,80 @@
+Form_Definition
+
+Skip Logic 62
+
+SkipLogic
+
+HealthInformation~HealthInformation,Exercise~HealthInformation:Exercise
+
+Display_Label:Dependent form controlled by radio button attribute,show=true
+instance:HealthInformation[1]->Exercise[1]
+NOTE~The form is dependent on root entiry subform
+Exercise:exerciseSpecificDiet,radioButton,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:caloriesBurntDaily,textField,Calories burnt daily
+Exercise:carbsBurntDaily,textField,Carbs burnt daily
+Exercise:doesDailyWorkout,checkBox,Do you workout daily,defaultValue=false
+Exercise:exercisingSince,radioButton,Exercising since,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Exercise:supplementRecommended,comboBox,Is suppliment recommended,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:comments,textArea,Trainers Advise
+Exercise:exerciseTime,listBox,Advised exercise time,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night,options~IsMultiSelect=true
+Exercise:exerciseType,listBox,Recommended exercises,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseConsultant,multiselectCheckBox,Trainig under,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+Exercise:exerciseStartedOn,datePicker,Exercise start date
+
+
+Display_Label:Dependent form controlled by Combobox attribute,show=true
+instance:HealthInformation[1]->Exercise[2]
+NOTE~The form is dependent on root entiry subform
+Exercise:exerciseSpecificDiet,comboBox,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:caloriesBurntDaily,textField,Calories burnt daily
+Exercise:carbsBurntDaily,textField,Carbs burnt daily
+Exercise:doesDailyWorkout,checkBox,Do you workout daily,defaultValue=false
+Exercise:exercisingSince,radioButton,Exercising since,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Exercise:supplementRecommended,comboBox,Is suppliment recommended,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:comments,textArea,Trainers Advise
+Exercise:exerciseTime,listBox,Advised exercise time,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night,options~IsMultiSelect=true
+Exercise:exerciseType,listBox,Recommended exercises,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseConsultant,multiselectCheckBox,Trainig under,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+Exercise:exerciseStartedOn,datePicker,Exercise start date
+
+
+Display_Label:Dependent form controlled by checkbox attribute,show=true
+instance:HealthInformation[1]->Exercise[3]
+NOTE~The form is dependent on root entiry subform
+Exercise:doesDailyWorkout,checkBox,Do you workout daily,defaultValue=false
+Exercise:exerciseSpecificDiet,comboBox,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:caloriesBurntDaily,textField,Calories burnt daily
+Exercise:carbsBurntDaily,textField,Carbs burnt daily
+Exercise:exercisingSince,radioButton,Exercising since,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Exercise:doesWeightTraining,checkBox,Do you do waight training,defaultValue=false
+Exercise:comments,textArea,Trainers Advise
+Exercise:exerciseTime,listBox,Advised exercise time,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night,options~IsMultiSelect=true
+Exercise:exerciseType,listBox,Recommended exercises,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseConsultant,multiselectCheckBox,Trainig under,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+Exercise:exerciseStartedOn,datePicker,Exercise start date
+
+
+Display_Label:SkipLogic to control whole subform,show=true
+instance:HealthInformation[1]
+NOTE~This category covers the scenario where controlling attribute from root entity controls whole subform and action is Enable
+NOTE~Controlling attribute = Are you suffering from
+NOTE~Dependent subform = Dependent form controlled by radio button attribute
+HealthInformation:hypertensionSeen,radioButton,Are you suffering from Hypertension,Permissible_Values~Yes:No:Unknown,defaultValue=No
+NOTE~Controlling attribute = Ailment History
+NOTE~Dependent subform = Dependent form controlled by Combobox attribute
+HealthInformation:ailmentHistory,comboBox,Ailment History,Permissible_Values~Yes:No:Unknown,defaultValue=No
+NOTE~Controlling attribute = Are you taking any medicins
+NOTE~Dependent subform = Dependent form controlled by checkbox attribute
+HealthInformation:onMedication,checkBox,Are you taking any medicins,defaultValue=false
+subcategory:Dependent form controlled by radio button attribute:multiline
+subcategory:Dependent form controlled by Combobox attribute:multiline
+subcategory:Dependent form controlled by checkbox attribute:multiline
+
+SkipLogicAttribute:
+
+HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:hypertensionSeen:Yes,dependentAttribute~Exercise[1]:all,options~IsSelectiveReadOnly=true
+HealthInformation[1],HealthInformation[1]->Exercise[2]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[2]:all,options~IsSelectiveReadOnly=true
+HealthInformation[1],HealthInformation[1]->Exercise[3]
+HealthInformation[1]:onMedication:1,dependentAttribute~Exercise[3]:all,options~IsSelectiveReadOnly=true

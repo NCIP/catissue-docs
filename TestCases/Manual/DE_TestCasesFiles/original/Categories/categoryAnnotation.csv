@@ -1,0 +1,25 @@
+Form_Definition
+
+Category_Annotations
+
+test
+
+Annotations~Annotations,History~Annotations:History,Hazards~Annotations:History:Hazards,SmokingHistory~Annotations:History:Hazards:SmokingHistory,Alcohol~Annotations:History:Hazards:Alcohol
+
+Display_Label:Hazards123,show=false
+instance:Annotations[1]->History[1]->Hazards[1],Annotations[1]->History[1]->Hazards[1]->SmokingHistory[1],Annotations[1]->History[1]->Hazards[1]->Alcohol[1]
+HEADING~HAZARD
+Hazards:hazardType,listBox,Hazard Types,defaultValue=Smoke
+Hazards:noYearsExposed,comboBox,Number of years exposed,PermVal_Options~IsOrdered=false
+SmokingHistory:packsPerDay,textField,Packs per day
+Alcohol:drinksPerWeek,textField,Drinks per week
+
+
+Display_Label:Patient Information,show=true
+instance:Annotations[1]
+NOTE~URL set to true in category
+Annotations:name,textField,Name,options~Columns=71:IsUrl=true,defaultValue=www.google.com
+Annotations:age,textField,Age
+NOTE~Password set to false over-riding the IsPassword=true tag in UML
+Annotations:insuranceAmount,textField,Insurance Ammount,options~IsPassword=false
+subcategory:Hazards123:multiline

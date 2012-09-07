@@ -1,0 +1,18 @@
+Form_Definition
+
+TestCase56
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+Display_Label:Test Case 56,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+
+NOTE~Taking label into formula and calculation of constants
+VitalInformation:bp,textField,Blood Pressure
+VitalInformation:bmi,textField,Blood pressure number2,options~IsCalculated=true:IsReadOnly=false,defaultValue=((VitalInformation_1_bp)*2)
+
+Display_Label:Test Case 56,show=true
+instance:PatientInformation[1]
+subcategory:Test Case 56:single

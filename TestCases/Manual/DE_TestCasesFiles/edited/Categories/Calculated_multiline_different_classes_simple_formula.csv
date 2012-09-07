@@ -1,0 +1,21 @@
+Form_Definition
+
+Multiline subcategory simple formula calculated attributes from different classes
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,VitalInformation~ClinicalAnnotations:VitalInformation,History~ClinicalAnnotations:History,Hazards~ClinicalAnnotations:History:Hazards
+
+
+Display_Label:BMI calculation,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->History[1]->Hazards[1]
+
+NOTE~multiline sub form
+VitalInformation:height,textField, Enter Height (cm),defaultValue=50
+Hazards:noYearsExposed,textField,Body Mass Index,defaultValue=60
+VitalInformation:weight,textField, Enter Weight (Kg),options~IsCalculated=true:IsReadOnly=false,defaultValue=((VitalInformation_1_height)+(Hazards_1_noYearsExposed))
+
+
+Display_Label:Multiline subcategory simple formula calculated attributes from different classes,show=true
+instance:ClinicalAnnotations[1]
+subcategory:BMI calculation:multiline

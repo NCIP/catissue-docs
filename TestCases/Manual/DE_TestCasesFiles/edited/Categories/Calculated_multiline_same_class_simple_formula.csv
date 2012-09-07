@@ -1,0 +1,21 @@
+Form_Definition
+
+Multiline subcategory simple formula calculated attributes from same class
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,VitalInformation~ClinicalAnnotations:VitalInformation
+
+
+Display_Label:BMI calculation,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[1]
+
+NOTE~multiline sub form
+VitalInformation:height,textField, Enter Height (cm)
+VitalInformation:weight,textField, Enter Weight (Kg)
+VitalInformation:bmi,textField,Sum of height and weight,options~IsCalculated=true,defaultValue=((VitalInformation_1_weight)+(VitalInformation_1_height))
+
+
+Display_Label:Multiline subcategory simple formula calculated attributes from same class,show=true
+instance:ClinicalAnnotations[1]
+subcategory:BMI calculation:multiline

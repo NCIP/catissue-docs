@@ -1,0 +1,26 @@
+Form_Definition
+
+TestCase60
+
+test
+
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+## calculation of attributes of 1st instance and is a related attribute
+Display_Label:Used Attributes,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+VitalInformation:height,textField,Attribute 1
+VitalInformation:bmi,textField,Attribute 2
+
+
+
+Display_Label:Calculated Visible RA,show=true
+instance:PatientInformation[1]->VitalInformation[2]
+VitalInformation:weight,textField,Attrubute 1 added to Attribute 2,options~IsCalculated=true:IsReadOnly=true,defaultValue=((VitalInformation_1_bmi)+(VitalInformation_1_height))
+
+
+Display_Label:BMI Calculation,show=true
+instance:PatientInformation[1]
+subcategory:Used Attributes:single
+subcategory:Calculated Visible RA:single

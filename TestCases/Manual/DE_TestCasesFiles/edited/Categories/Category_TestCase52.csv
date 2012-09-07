@@ -1,0 +1,20 @@
+Form_Definition
+
+TestCase52
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,Chemotherapy~ClinicalAnnotations:HealthAnnotations:Chemotherapy,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy
+
+
+Display_Label:All attributes from different classes,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[1],ClinicalAnnotations[1]->HealthAnnotations[1]->Chemotherapy[1],ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+NOTE~calculation is addition of 2 attributes
+LabTest:quantResult,textField, Attribute from Class A
+Chemotherapy:duration,textField, Attribute from Class B
+RadiationTherapy:dose,textField,Attribute from Class C,options~IsCalculated=true:IsReadOnly=true,defaultValue=((LabTest_1_quantResult)+(Chemotherapy_1_duration))
+
+
+Display_Label:main,show=true
+instance:ClinicalAnnotations[1]
+subcategory:All attributes from different classes:single

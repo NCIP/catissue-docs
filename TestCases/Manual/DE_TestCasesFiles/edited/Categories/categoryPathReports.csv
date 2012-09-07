@@ -1,0 +1,18 @@
+Form_Definition
+
+Category_Pathology Reports
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,PathologyReports~ClinicalAnnotations:PathologyReports
+
+Display_Label:Hazards,show=false
+instance:ClinicalAnnotations[1]->PathologyReports[1]
+PathologyReports:pathologyReports,fileUpload,Pathology Reports
+PathologyReports:viralReports,fileUpload,Viral Reports
+
+
+Display_Label:Hazards,show=false
+instance:ClinicalAnnotations[1]
+ClinicalAnnotations:clinicalReports,fileUpload,Clinical Reports
+ClinicalAnnotations:bacterialReports,fileUpload,Clinical Reports

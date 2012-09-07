@@ -1,0 +1,42 @@
+Form_Definition
+
+TestCasse62
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+
+Display_Label:Used Attributes 1,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+VitalInformation:height,textField, Height (in cm)
+VitalInformation:weight,textField, Weight (in Kg)
+
+
+Display_Label:Used Attributes 2,show=true
+instance:PatientInformation[1]->VitalInformation[2]
+VitalInformation:height,textField, Enter Height (cm)
+VitalInformation:weight,textField, Enter Weight (Kg)
+
+
+
+Display_Label:Calculcated Invisible RA,show=true
+instance:PatientInformation[1]->VitalInformation[3]
+
+NOTE~passed averagehight and weight as invisble attribute in bmi attribute of VitalInformation
+VitalInformation:pulse,textField,One Attribute
+
+
+
+Display_Label:TestCase62,show=true
+instance:PatientInformation[1]
+subcategory:Used Attributes 1:single
+subcategory:Used Attributes 2:single
+subcategory:Calculcated Invisible RA:single
+
+
+RelatedAttribute:
+instance:PatientInformation[1]->VitalInformation[2]
+VitalInformation:bmi=(((VitalInformation_1_weight)+(VitalInformation_2_weight))/2),options~IsCalculated=true
+instance:PatientInformation[1]->VitalInformation[3]
+VitalInformation:bmi=(((VitalInformation_1_height)+(VitalInformation_2_height))/2),options~IsCalculated=true

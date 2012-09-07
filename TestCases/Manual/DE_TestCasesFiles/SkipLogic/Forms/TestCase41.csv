@@ -1,0 +1,35 @@
+Form_Definition
+
+Skip Logic 41
+
+SkipLogic
+
+HealthInformation~HealthInformation,PhysicalExamination~HealthInformation:PhysicalExamination,Exercise~HealthInformation:Exercise,PastMedicalHistory~HealthInformation:PastMedicalHistory
+
+Display_Label:PhysicalExamination,show=false
+instance:HealthInformation[1]->PhysicalExamination[1],HealthInformation[1]->PastMedicalHistory[1]
+PhysicalExamination:height,textField, Enter Height (cm)
+PhysicalExamination:weight,textField, Enter Weight (Kg)
+PhysicalExamination:bmi,textField,BMI
+PastMedicalHistory:diagnosisType,comboBox,Diagnosis Type,PermVal_Options~IsOrdered=false,defaultValue=--Select--
+PastMedicalHistory:diagnosisClass,comboBox,Diagnosis Class,PermVal_Options~IsOrdered=false,defaultValue=--Select--
+PastMedicalHistory:diagnosis,comboBox,Diagnosis,PermVal_Options~IsOrdered=false,defaultValue=--Select--
+PastMedicalHistory:otherDiagnosis,textField,Other Diagnosis,options~Columns=20
+PastMedicalHistory:dateOfDiagnosis,datePicker,Date of Diagnosis
+PastMedicalHistory:dateApproximate,checkBox,Date Approximate
+PastMedicalHistory:comment,textArea,Comments,options~Columns=30:Rows=5
+
+Display_Label:Exercise History,show=false
+instance:HealthInformation[1]->Exercise[1]
+Exercise:exerciseSpecificDiet,comboBox,Exercise History,Permissible_Values~Yes:No:Unknown,defaultValue=No
+
+Display_Label:Physical Examination,show=true
+instance:HealthInformation[1]
+subcategory:Exercise History:single
+subcategory:PhysicalExamination:single
+
+SkipLogicAttribute:
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->PhysicalExamination[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~PhysicalExamination[1]:all,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->PastMedicalHistory[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~PastMedicalHistory[1]:all,options~IsShowHide=true

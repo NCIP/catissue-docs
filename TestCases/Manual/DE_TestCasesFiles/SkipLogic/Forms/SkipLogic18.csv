@@ -1,0 +1,49 @@
+Form_Definition
+
+New Skip Logic 18
+
+SkipLogic
+
+##Controlling checkBox in root entity and dependent attributes in 1st containment - one-to-one
+##Controlling checkBox
+##PV Subset
+
+HealthInformation~HealthInformation,Exercise~HealthInformation:Exercise
+
+Display_Label:Exercise,show=true
+instance:HealthInformation[1]->Exercise[1]
+Exercise:exerciseSpecificDiet,radioButton,Exercise Specified Diet,Permissible_Values~Yes:No:Unknown
+Exercise:supplementRecommended,comboBox,Supplement Recommended,Permissible_Values~Yes:No:Unknown
+Exercise:exerciseConsultant,listBox,Exercise Consultant,options~IsMultiSelect=true:IsUsingAutoCompleteDropdown=true,defaultValue=Dr. Stein
+Exercise:exerciseType,multiselectCheckBox,Exercise Type,defaultValue=Cardio
+Exercise:exerciseTime,listBox,Exercise Time,options~IsMultiSelect=true:NoOfRows=5,defaultValue=Early morning
+
+Display_Label:Controlling checkBox and all dependent attributes in root entity,show=true
+instance:HealthInformation[1]
+NOTE~PV Subset
+NOTE~Patient on meds controls of all other attributes
+HealthInformation:onMedication,checkBox,Patient on meds
+subcategory:Exercise:single
+
+
+SkipLogicAttribute:
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~Exercise[1]:exerciseSpecificDiet,Permissible_Values~Yes:Unknown
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:0,dependentAttribute~Exercise[1]:exerciseSpecificDiet,Permissible_Values~No:Unknown
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~Exercise[1]:supplementRecommended,Permissible_Values~Yes:Unknown
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:0,dependentAttribute~Exercise[1]:supplementRecommended,Permissible_Values~No:Unknown
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~Exercise[1]:exerciseConsultant,Permissible_Values~Dr. Stein:Dr. Goldberg
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:0,dependentAttribute~Exercise[1]:exerciseConsultant,Permissible_Values~Dr. Stevenson:Dr.Starbucks,defaultValue=Dr.Starbucks
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~Exercise[1]:exerciseType,Permissible_Values~Cardio:Weight Training:Yoga
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:0,dependentAttribute~Exercise[1]:exerciseType,Permissible_Values~Jogging:Bench Press:Swimming
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:1,dependentAttribute~Exercise[1]:exerciseTime,Permissible_Values~Early morning:Late morning
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:onMedication:0,dependentAttribute~Exercise[1]:exerciseTime,Permissible_Values~Afternoon:Evening:Late evening:Night

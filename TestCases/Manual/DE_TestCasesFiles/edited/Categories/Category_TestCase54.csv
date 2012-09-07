@@ -1,0 +1,32 @@
+Form_Definition
+
+TestCase54
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy
+
+## two instances of same class for different calculations
+Display_Label:Attributes in first calculation,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+
+NOTE~First divided by second
+RadiationTherapy:dose,textField, Total doses 1
+RadiationTherapy:duration,textField, Duration 1
+RadiationTherapy:calculationResult,textField,Advised time 1,options~IsCalculated=true:IsReadOnly=false,defaultValue=((RadiationTherapy_1_dose)/(RadiationTherapy_1_duration))
+
+Display_Label:Attributes in second calculation,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[2]
+
+NOTE~First multiplied by second
+RadiationTherapy:dose,textField, Total doses 2
+RadiationTherapy:duration,textField, Duration 2
+RadiationTherapy:calculationResult,textField,Advised time 2,options~IsCalculated=true:IsReadOnly=false,defaultValue=((RadiationTherapy_2_dose)+(RadiationTherapy_2_duration))
+
+
+Display_Label:Test Case 54,show=true
+instance:ClinicalAnnotations[1]
+
+subcategory:Attributes in first calculation:single
+subcategory:Attributes in second calculation:single

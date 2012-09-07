@@ -1,0 +1,39 @@
+Form_Definition
+
+Test category - Radiation Therapy123
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,History~ClinicalAnnotations:History,Hazards~ClinicalAnnotations:History:Hazards,SmokingHistory~ClinicalAnnotations:History:Hazards:SmokingHistory,Alcohol~ClinicalAnnotations:History:Hazards:Alcohol,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,Diagnosis~ClinicalAnnotations:LabInfo:Diagnosis,PrimaryDiagnosis~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis,Infections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections,ViralInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:ViralInfections,BacterialInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:BacterialInfections,FungalInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:FungalInfections,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,Chemotherapy~ClinicalAnnotations:HealthAnnotations:Chemotherapy,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy,PhysicianInformation~ClinicalAnnotations:PhysicianInformation
+
+Display_Label:Radiation Dose,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+NOTE~Duration range is from 5 to 50.
+RadiationTherapy:duration,textField,Duration,options~Columns=30
+HEADING~Specify dose- precision is 2
+NOTE~Range is 3.25 to 7.75
+RadiationTherapy:dose,textField,Dose,Rules~range-min=3.25&max=7.75
+NOTE~Dose units -max length 5
+RadiationTherapy:doseUnits,textField,Dose Units
+
+Display_Label:Radiotherapy,show=false
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]
+HealthAnnotations:agent,listBox,Radiation Therapy Agent,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/original/PVs/radiotherapyAgent.txt,PermVal_Options~IsOrdered=false
+
+Display_Label:Physician Information,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1],ClinicalAnnotations[1]->History[1]
+NOTE~Please press ctrl to select more than one hospital
+PhysicianInformation:physicianName,textField,Doctor,options~IsReadOnly=true,defaultValue=Dr. Vimal
+PhysicianInformation:hospitals,listBox,Hospital Name,options~IsMultiSelect=true:NoOfRows=3
+NOTE~Range specified in model
+NOTE~Min=01/01/2000 Max=01/01/2010
+History:recordDate,datePicker,Record Date
+
+Display_Label:Radiation Therapy,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Physician Information:multiline
+ClinicalAnnotations:visitDate,datePicker,Visit Date
+subcategory:Radiotherapy:single
+subcategory:Radiation Dose:multiline
+ClinicalAnnotations:comments,textArea,Comments,options~Columns=50:Rows=5

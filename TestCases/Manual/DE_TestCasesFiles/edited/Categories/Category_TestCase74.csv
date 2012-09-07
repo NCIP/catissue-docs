@@ -1,0 +1,23 @@
+Form_Definition
+
+TestCase74
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,LabInfo~ClinicalAnnotations:LabInfo,Diagnosis~ClinicalAnnotations:LabInfo:Diagnosis,LabTest~ClinicalAnnotations:LabInfo:LabTest
+
+
+
+Display_Label:Date Calculation,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1],ClinicalAnnotations[1]->LabInfo[1]->LabTest[1]
+NOTE~Date Calculation
+
+Diagnosis:diagnosisDate,datePicker,Start date
+Diagnosis:followupDiagnosisDate,datePicker,End date
+
+LabTest:testDate,datePicker,date and time attribute for calculations
+
+Display_Label:Date Calculation,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Date Calculation:single

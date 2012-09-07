@@ -1,0 +1,44 @@
+Form_Definition
+
+New Skip Logic 07
+
+SkipLogic
+
+##Controlling and dependent attributes in root entity
+##Controlling radiobutton
+##PV Subset
+
+HealthInformation~HealthInformation
+
+Display_Label:Controlling radiobutton and all dependent attributes in root entity,show=true
+instance:HealthInformation[1]
+NOTE~PV Subset
+NOTE~Ailment History controls of all other attributes
+HealthInformation:ailmentHistory,radioButton,Ailment History,Permissible_Values~Yes:No:Unknown,PermVal_Options~IsOrdered=false,defaultValue=Unknown
+HealthInformation:hypertensionSeen,radioButton,High BP,Permissible_Values~Yes:No:Unknown,PermVal_Options~IsOrdered=false
+HealthInformation:occupation,comboBox,Occupation,Permissible_Values~Job:Business:Doctor:Engineer:Plumber,PermVal_Options~IsOrdered=false,defaultValue=Job
+HealthInformation:gymnasiumsVisited,listBox,Gyms,options~IsMultiSelect=true:IsUsingAutoCompleteDropdown=true,defaultValue=Gym 1
+HealthInformation:physiciansConsulted,multiselectCheckBox,Physicians Consulted,defaultValue=Dr. Stein
+HealthInformation:insuranceCompany,listBox,Insurance Company,options~IsMultiSelect=true:NoOfRows=5,defaultValue=LIC
+
+SkipLogicAttribute:
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~HealthInformation[1]:hypertensionSeen,Permissible_Values~Yes:Unknown
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:No,dependentAttribute~HealthInformation[1]:hypertensionSeen,Permissible_Values~No:Unknown
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~HealthInformation[1]:occupation,Permissible_Values~Job:Business:Doctor
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:No,dependentAttribute~HealthInformation[1]:occupation,Permissible_Values~Engineer:Plumber,defaultValue=Plumber
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~HealthInformation[1]:gymnasiumsVisited,Permissible_Values~Gym 1:Gym 2:Gym 3:Gym 4,defaultValue=Gym 1
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:No,dependentAttribute~HealthInformation[1]:gymnasiumsVisited,Permissible_Values~Gym 5:Gym 6:Gym 7:Gym 8:Gym 9
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~HealthInformation[1]:physiciansConsulted,Permissible_Values~Dr. Stein:Dr. Goldberg
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:No,dependentAttribute~HealthInformation[1]:physiciansConsulted,Permissible_Values~Dr. McDonalds:Dr. DoLittle
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~HealthInformation[1]:insuranceCompany,Permissible_Values~LIC:Tata AIG:Bajaj Alianz:Aditya Birla
+instance:HealthInformation[1],HealthInformation[1]
+HealthInformation[1]:ailmentHistory:No,dependentAttribute~HealthInformation[1]:insuranceCompany,Permissible_Values~United Insurance:ICICI Prudential:HDFC Life Insurance:HSBC Bonds

@@ -1,0 +1,147 @@
+Form_Definition
+
+Category Single Line For Automation
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,History~ClinicalAnnotations:History,VitalInformation~ClinicalAnnotations:VitalInformation,PhysicianInformation~ClinicalAnnotations:PhysicianInformation,PhyContactInfo~ClinicalAnnotations:PhysicianInformation:PhyContactInfo,PathAnnotationChild~ClinicalAnnotations:PathAnnotationChild,Hazards~ClinicalAnnotations:History:Hazards
+
+Display_Label:1 Same Class Attributes,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[1]
+SingleLineDisplay:start
+PhyContactInfo:extension,textField,Extension
+PhyContactInfo:phoneNumber,textField,Phone number
+PhyContactInfo:phoneType,textField,Phone Type
+SingleLineDisplay:end
+
+
+Display_Label:2 Different Class Attributes,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[2],ClinicalAnnotations[1]->VitalInformation[1]
+SingleLineDisplay:start
+PhyContactInfo:phoneNumber,textField,Phone number
+PhyContactInfo:phoneType,textField,Phone Type
+VitalInformation:bp,textField,Blood Pressure
+VitalInformation:pulse,textField,Pulse Rate
+SingleLineDisplay:end
+
+Display_Label:3 Define Common Properties,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[3],ClinicalAnnotations[1]->VitalInformation[2]
+SingleLineDisplay:start
+commonOptions~Columns=6
+NOTE~Common display width is 6
+PhyContactInfo:phoneNumber,textField,Phone number
+PhyContactInfo:phoneType,textField,Phone Type
+VitalInformation:bp,textField,Blood Pressure
+VitalInformation:pulse,textField,Pulse Rate
+SingleLineDisplay:end
+
+
+Display_Label:4 Define Separator,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[4],ClinicalAnnotations[1]->VitalInformation[3]
+SingleLineDisplay:start
+NOTE~Separator used is colon
+PhyContactInfo:phoneNumber,textField,Phone number
+separator:':'
+PhyContactInfo:phoneType,textField,Phone Type
+separator:':'
+VitalInformation:bp,textField,Blood Pressure
+separator:':'
+VitalInformation:pulse,textField,Pulse Rate
+SingleLineDisplay:end
+
+Display_Label:5 Define Single Label,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[5],ClinicalAnnotations[1]->VitalInformation[4]
+SingleLineDisplay:start
+NOTE~Separator used is colon
+PhyContactInfo:phoneNumber,textField,Phone number
+separator:':'
+PhyContactInfo:phoneType,textField,Phone Type,options~ShowLabel=false
+separator:':'
+VitalInformation:bp,textField,Blood Pressure,options~ShowLabel=false
+separator:':'
+VitalInformation:pulse,textField,Pulse Rate,options~ShowLabel=false
+SingleLineDisplay:end
+
+
+Display_Label:6 Define Individual Display Properties and controls,show=true
+instance:ClinicalAnnotations[1]->PathAnnotationChild[1]
+SingleLineDisplay:start
+PathAnnotationChild:detectionDateChild,datePicker,Detection Date
+PathAnnotationChild:malignantChild,checkBox,Malignant Cancer Detected
+PathAnnotationChild:tumorLocationChild,listBox,Location on Malignant Tumor,options~IsMultiSelect=false,Permissible_Values~Liver:Pancreas:Stomach:Large Intestine:Small Intestine:Brain:Kidney:Gall Bladder:Rectum:Bone:Muscle:Tissue:Heart
+PathAnnotationChild:tumorSizeChild,listBox,Size of tumor(in mm),options~IsMultiSelect=true,Permissible_Values~1.1:1.2:1.3:1.4:1.5:1.6:1.7:1.8:1.9:2.0
+SingleLineDisplay:end
+
+
+Display_Label:7 Combination of Edit box and Combo box,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[1],ClinicalAnnotations[1]->VitalInformation[5]
+SingleLineDisplay:start
+VitalInformation:pulse,textField,Pulse Rate,defaultValue=Please Enter Pulse Rate
+PhysicianInformation:physicianName,comboBox,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George,defaultValue=Pawan
+SingleLineDisplay:end
+
+
+Display_Label:8 Combination of Edit box and Radio Button,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[2],ClinicalAnnotations[1]->VitalInformation[6]
+SingleLineDisplay:start
+VitalInformation:pulse,textField,Pulse Rate,defaultValue=Please Enter Pulse Rate
+PhysicianInformation:physicianName,radioButton,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George,defaultValue=Pawan
+SingleLineDisplay:end
+
+
+Display_Label:9 Combination of Combo box and check Box,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[3],ClinicalAnnotations[1]->PathAnnotationChild[2]
+SingleLineDisplay:start
+PathAnnotationChild:malignantChild,checkBox,Malignant Cancer Detected
+PhysicianInformation:physicianName,comboBox,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George,defaultValue=Pawan
+SingleLineDisplay:end
+
+Display_Label:10 Combination of Combo box and Radio Button,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[4],ClinicalAnnotations[1]->History[1]->Hazards[1]
+SingleLineDisplay:start
+Hazards:hazardType,listBox,Hazard Type,Permissible_Values~Alcohol:Tobacco:Smoke:Asbestos:Cocaine,defaultValue=Alcohol,options~IsMultiSelect=false
+PhysicianInformation:physicianName,radioButton,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George,defaultValue=Pawan
+SingleLineDisplay:end
+
+
+Display_Label:11 Combination of Combo Box and List Box,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[5]
+SingleLineDisplay:start
+PhysicianInformation:physicianName,comboBox,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Pawan
+PhysicianInformation:hospitals,listBox,Hospital,Permissible_Values~Barnes Jewish Hospital:BJC Child Care:Kalavathi Surgical Hospital & Laparoscopic Centre:"Rich Hospitals,(Ravi Institute of child Health (P) Ltd)",options~IsMultiSelect=true
+SingleLineDisplay:end
+
+
+Display_Label:12 Combination of List Box and List Box,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[6]
+SingleLineDisplay:start
+PhysicianInformation:clinics,listBox,Clinic Name,Permissible_Values~ABC:BCD:CDE:DEF:EFG:FGH:GHI,options~IsMultiSelect=true:IsUsingAutoCompleteDropdown=true
+PhysicianInformation:hospitals,listBox,Hospital,Permissible_Values~Barnes Jewish Hospital:BJC Child Care:Kalavathi Surgical Hospital & Laparoscopic Centre:"Rich Hospitals,(Ravi Institute of child Health (P) Ltd)",options~IsMultiSelect=true
+SingleLineDisplay:end
+
+
+Display_Label:13 Combination of Read Only Combo Box and Combo Box,show=true
+instance:ClinicalAnnotations[1]->PhysicianInformation[7],ClinicalAnnotations[1]->PathAnnotationChild[3]
+SingleLineDisplay:start
+PhysicianInformation:physicianName,comboBox,Physican Name,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Pawan,options~IsReadOnly=true,defaultValue=Pawan
+PathAnnotationChild:tumorSizeChild,listBox,Size of tumor(in mm),Permissible_Values~1.1:1.2:1.3:1.4:1.5:1.6:1.7:1.8:1.9:2.0,defaultValue=1.1,options~IsMultiSelect=true
+SingleLineDisplay:end
+
+
+
+Display_Label:Category Single Line for Automation,show=true
+instance:ClinicalAnnotations[1]
+subcategory:1 Same Class Attributes:single
+subcategory:2 Different Class Attributes:single
+subcategory:3 Define Common Properties:single
+subcategory:4 Define Separator:single
+subcategory:5 Define Single Label:single
+subcategory:6 Define Individual Display Properties and controls:single
+subcategory:7 Combination of Edit box and Combo box:single
+subcategory:8 Combination of Edit box and Radio Button:single
+subcategory:9 Combination of Combo box and check Box:single
+subcategory:10 Combination of Combo box and Radio Button:single
+subcategory:11 Combination of Combo Box and List Box:single
+subcategory:12 Combination of List Box and List Box:single
+subcategory:13 Combination of Read Only Combo Box and Combo Box:single

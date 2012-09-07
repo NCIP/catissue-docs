@@ -1,0 +1,37 @@
+Form_Definition
+
+Edit Form Testing
+
+test
+
+PathologicalAnnotations~PathologicalAnnotations,History~PathologicalAnnotations:History,Hazards~PathologicalAnnotations:History:Hazards,Alcohol~PathologicalAnnotations:History:Hazards:Alcohol,SmokingHistory~PathologicalAnnotations:History:Hazards:SmokingHistory,PhysicianInformation~PathologicalAnnotations:PhysicianInformation,PhyContactInfo~PathologicalAnnotations:PhysicianInformation:PhyContactInfo
+
+##Add Multiline subclass
+Display_Label:Physician Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[1]
+PhyContactInfo:phoneType,textField,Type of Phone
+PhyContactInfo:phoneNumber,textField,Number
+PhyContactInfo:extension,textField,Extension
+
+Display_Label:Patient Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[2]
+PhyContactInfo:phoneNumber,textField,Phone Number
+PhyContactInfo:extension,textField,Extension
+PhyContactInfo:phoneType,textField,Phone type
+
+Display_Label:Hazard Information,show=true
+instance:PathologicalAnnotations[1]->History[1]->Hazards[1]
+Hazards:hazardType,listBox,Hazard Type,defaultValue=Cocaine
+Hazards:noYearsExposed,textField,Years Exposed
+
+Display_Label:Edit Form Testing,show=true
+instance:PathologicalAnnotations[1]
+subcategory:Patient Contact Information:single
+##NOTE~This is an added note
+PathologicalAnnotations:malignant,checkBox,Is tumor Malignant
+PathologicalAnnotations:detectionDate,datePicker,Detection Date
+##PathologicalAnnotations:tumorLocation,listBox,Location of Tumor
+##HEADING~This is an added heading
+PathologicalAnnotations:tumorSize,listBox,Size of Tumor
+subcategory:Physician Contact Information:single
+subcategory:Hazard Information:multiline

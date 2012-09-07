@@ -1,0 +1,17 @@
+Form_Definition
+
+Edit Form Testing
+
+test
+
+PathologicalAnnotations~PathologicalAnnotations,History~PathologicalAnnotations:History,Hazards~PathologicalAnnotations:History:Hazards,Alcohol~PathologicalAnnotations:History:Hazards:Alcohol,SmokingHistory~PathologicalAnnotations:History:Hazards:SmokingHistory,PhysicianInformation~PathologicalAnnotations:PhysicianInformation,PhyContactInfo~PathologicalAnnotations:PhysicianInformation:PhyContactInfo
+
+
+
+Display_Label:Edit Form Testing,show=true
+instance:PathologicalAnnotations[1]
+NOTE~made display label true
+PathologicalAnnotations:detectionDate,datePicker,Date of Detection
+##PathologicalAnnotations:malignant,checkBox,Malignant
+##PathologicalAnnotations:tumorLocation,listBox,Location of Tumor
+PathologicalAnnotations:tumorSize,listBox,Size,options~IsMultiSelect=true

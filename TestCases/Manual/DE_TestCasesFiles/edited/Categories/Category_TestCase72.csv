@@ -1,0 +1,24 @@
+Form_Definition
+
+TestCase72
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation
+
+Display_Label:Single Line Display,show=true
+instance:PatientInformation[1]->VitalInformation[1]
+
+SingleLineDisplay:start
+
+NOTE~ComboBox and ComboBox Combination
+
+VitalInformation:pulse,textField,Pulse,Permissible_Values~60:56:78:90:89:91:92:93,defaultValue=60
+VitalInformation:bp,textField,Blood Pressure,Permissible_Values~90:100:110:120:130:140,defaultValue=120
+SingleLineDisplay:end
+
+
+Display_Label:Test Case 72,show=true
+instance:PatientInformation[1]
+subcategory:Single Line Display:single
+PatientInformation:name,textField,Name of Test Case

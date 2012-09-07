@@ -1,0 +1,76 @@
+Form_Definition
+
+Edit Form Testing
+
+test
+
+PathologicalAnnotations~PathologicalAnnotations,History~PathologicalAnnotations:History,Hazards~PathologicalAnnotations:History:Hazards,Alcohol~PathologicalAnnotations:History:Hazards:Alcohol,SmokingHistory~PathologicalAnnotations:History:Hazards:SmokingHistory,PhysicianInformation~PathologicalAnnotations:PhysicianInformation,PhyContactInfo~PathologicalAnnotations:PhysicianInformation:PhyContactInfo
+
+##Add related attribute
+Display_Label:Physician Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]
+PhysicianInformation:hospitals,listBox,Hospital Names,options~IsMultiSelect=true:NoOfRows=5
+
+Display_Label:Physician Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[1]
+PhyContactInfo:phoneType,textField,Type of Phone
+PhyContactInfo:phoneNumber,textField,Number,optioins~IsReadOnly=true,defaultValue=24376961
+PhyContactInfo:extension,textField,Extension
+
+Display_Label:Patient Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[2]
+##textField property changed
+PhyContactInfo:phoneNumber,textField,Phone Number,options~Columns=4
+PhyContactInfo:extension,textField,Extension
+PhyContactInfo:phoneType,textField,Phone type
+
+Display_Label:Hazard Information,show=true
+instance:PathologicalAnnotations[1]->History[1]->Hazards[1]
+Hazards:hazardType,listBox,Hazard Type,defaultValue=Cocaine,PermVal_Options~IsOrdered=false
+Hazards:noYearsExposed,textField,Years Exposed
+
+Display_Label:Hazard Information2,show=true
+instance:PathologicalAnnotations[1]->History[1]->Hazards[2]
+##Hazards:hazardType,listBox,Hazard Type,defaultValue=Cocaine,PermVal_Options~IsOrdered=false
+Hazards:noYearsExposed,comboBox,Years Exposed
+
+
+Display_Label:Hazard Information3,show=true
+instance:PathologicalAnnotations[1]->History[2]->Hazards[3]
+Hazards:hazardType,listBox,Hazard Type,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/subsetHazard.txt,PermVal_Options~IsOrdered=false
+Hazards:noYearsExposed,comboBox,Years Exposed
+
+
+Display_Label:Hazard Information4,show=true
+instance:PathologicalAnnotations[1]->History[2]->Hazards[4]
+##Default value for radio button changed
+##Hazards:hazardType,radioButton,Hazard Type,defaultValue=Alochol
+##textArea property changed
+Hazards:noYearsExposed,comboBox,Years Exposed
+
+
+Display_Label:Edit Form Testing,show=true
+instance:PathologicalAnnotations[1]
+subcategory:Patient Contact Information:single
+##NOTE~This is an added note
+##PathologicalAnnotations:name,comboBox,Name
+##PathologicalAnnotations:pulse,radioButton,Pulse
+##checkBox property changed
+PathologicalAnnotations:malignant,checkBox,Is tumor Malignant,defaultValue=true
+PathologicalAnnotations:detectionDate,datePicker,Detection Date
+##PathologicalAnnotations:tumorLocation,listBox,Location of Tumor
+##HEADING~This is an added heading
+PathologicalAnnotations:comments,textArea,Comments
+PathologicalAnnotations:tumorSize,listBox,Size of Tumor
+subcategory:Physician Information:single
+subcategory:Physician Contact Information:single
+subcategory:Hazard Information:multiline
+subcategory:Hazard Information2:multiline
+subcategory:Hazard Information3:single
+subcategory:Hazard Information4:single
+
+
+
+RelatedAttribute:
+instance:PathologicalAnnotations[1]
+PathologicalAnnotations:age=54

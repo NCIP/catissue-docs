@@ -1,0 +1,29 @@
+Form_Definition
+
+Calculated attribute multiple times
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,VitalInformation~ClinicalAnnotations:VitalInformation
+
+
+Display_Label:Use attributes in calculation multiple times in same sub form,show=truae
+instance:ClinicalAnnotations[1]->VitalInformation[1]
+VitalInformation:bp,textField,Blood pressure
+VitalInformation:weight,textField,Weight of participant
+VitalInformation:height,textField,Height calculated,options~IsCalculated=true,defaultValue=((VitalInformation_1_bp)/((VitalInformation_1_weight)*(VitalInformation_1_weight)))
+VitalInformation:bmi,textField,BMI calculated,options~IsCalculated=true,defaultValue=((VitalInformation_1_bp)/((VitalInformation_1_weight)*(VitalInformation_1_weight)))
+
+
+Display_Label:Use attributes in calculation multiple times in different sub form,show=truae
+instance:ClinicalAnnotations[1]->VitalInformation[2]
+VitalInformation:height,textField,Height calculated,options~IsCalculated=true,defaultValue=((VitalInformation_1_bp)/((VitalInformation_1_weight)*(VitalInformation_1_weight)))
+VitalInformation:bmi,textField,BMI calculated,options~IsCalculated=true,defaultValue=((VitalInformation_1_bp)/((VitalInformation_1_weight)*(VitalInformation_1_weight)))
+
+
+Display_Label:Calculated Attributes For Automation,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Use attributes in calculation multiple times in same sub form:single
+subcategory:Use attributes in calculation multiple times in different sub form:single
+
+

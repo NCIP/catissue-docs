@@ -1,0 +1,25 @@
+Form_Definition
+
+TestCase39
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation,PhysicianInformation~PatientInformation:PhysicianInformation
+
+Display_Label:Single Line Display,show=true
+instance:PatientInformation[1]->VitalInformation[1],PatientInformation[1]->PhysicianInformation[1]
+
+SingleLineDisplay:start
+NOTE~Different Classes
+VitalInformation:bp,textField,Blood Pressure,options~Columns=6
+##commenting the file for testing the exact use case
+##VitalInformation:height,textField,Height,options~Columns=6
+##VitalInformation:pulse,textField,Pulsse Rate,options~Columns=6
+PhysicianInformation:physicianName,textField,Physician Name,options~Columns=6
+SingleLineDisplay:end
+
+
+Display_Label:Test Case 39,show=true
+instance:PatientInformation[1]
+subcategory:Single Line Display:single
+PatientInformation:name,textField,TestCase number

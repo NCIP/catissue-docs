@@ -1,0 +1,23 @@
+Form_Definition
+
+Form Multiselect Add Details
+
+test
+
+PatientInformation~PatientInformation,History~PatientInformation:History,Hazards~PatientInformation:History:Hazards,SmokingHistory~PatientInformation:History:Hazards:SmokingHistory,Alcohol~PatientInformation:History:Hazards:Alcohol
+
+
+
+Display_Label:Hazard Details,show=false
+instance:PatientInformation[1]->History[1]->Hazards[1]->SmokingHistory[1],PatientInformation[1]->History[1]->Hazards[1]->Alcohol[1]
+SmokingHistory:packsPerDay,textField,Packs Per Day,options~Columns=10
+Alcohol:drinksPerWeek,textField,Drinks per week,options~Columns=10
+
+Display_Label:Hazard,show=false
+instance:PatientInformation[1]->History[1]->Hazards[1]
+Hazards:hazardType,listBox,Hazard Type,options~IsMultiSelect=true:IsUsingAutoCompleteDropdown=true
+subcategory:Hazard Details:single
+
+Display_Label:Hazard Information,show=false
+instance:PatientInformation[1]
+subcategory:Hazard:single

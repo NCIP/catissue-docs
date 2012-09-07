@@ -1,0 +1,21 @@
+Form_Definition
+
+Multiline subcategory calculated attributes from same class visible RA
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,VitalInformation~ClinicalAnnotations:VitalInformation
+
+
+Display_Label:BMI calculation,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[1]
+
+NOTE~multiline sub form
+VitalInformation:height,textField, Enter Height (cm)
+VitalInformation:weight,textField, Enter Weight (Kg),defaultValue=60,options~IsReadOnly=true
+VitalInformation:bmi,textField,Sum of height and weight,options~IsCalculated=true:IsReadOnly=true,defaultValue=((VitalInformation_1_weight)+(VitalInformation_1_height))
+
+
+Display_Label:Multiline subcategory calculated attributes from same class visible RA,show=true
+instance:ClinicalAnnotations[1]
+subcategory:BMI calculation:multiline

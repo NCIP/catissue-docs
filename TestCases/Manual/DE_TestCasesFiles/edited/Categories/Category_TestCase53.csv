@@ -1,0 +1,21 @@
+Form_Definition
+
+TestCase53
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy
+
+
+Display_Label:More than one attributes,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+
+NOTE~all attributes from same class
+RadiationTherapy:dose,textField, Total doses
+RadiationTherapy:duration,textField, Duration
+RadiationTherapy:calculationResult,textField,Advised time,options~IsCalculated=true:IsReadOnly=false,defaultValue=((RadiationTherapy_1_dose)/(RadiationTherapy_1_duration))
+
+Display_Label:More than one attributes,show=true
+instance:ClinicalAnnotations[1]
+subcategory:More than one attributes:single

@@ -1,0 +1,29 @@
+Entity_Group
+
+SkipLogic
+
+OccupationProfile:occupation,Permissible_Values~Job:Business:Doctor:Engineer:Plumber
+SmokingHistory:smokesTobacco,Permissible_Values~Yes:No:Unknown:Yes but quitting now:Yes daily
+PastMedicalHistory:diagnosisClass,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/DiagnosisClass.txt
+PastMedicalHistory:diagnosisType,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/DiagnosisType.txt
+PastMedicalHistory:diagnosis,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/ClinicalDiagnosis.txt
+PastMedicalHistory:diagnosisType,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/DiagnosisType_pv.txt
+HealthInformation:hypertensionSeen,Permissible_Values~Yes:No:Unknown
+HealthInformation:ailmentHistory,Permissible_Values~Yes:No:Unknown
+HealthInformation:gymnasiumsVisited,Permissible_Values~Gym 1:Gym 2:Gym 3:Gym 4:Gym 5:Gym 6:Gym 7:Gym 8:Gym 9:Gym 10
+HealthInformation:physiciansConsulted,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+HealthInformation:healthInsuranceAvailable,Permissible_Values~Yes:No:Unknown
+HealthInformation:insuranceCompany,Permissible_Values~LIC:Tata AIG:Bajaj Alianz:Aditya Birla:United Insurance:ICICI Prudential:HDFC Life Insurance:HSBC Bonds
+Exercise:exerciseSpecificDiet,Permissible_Values~Yes:No:Unknown
+Exercise:exerciseType,Permissible_Values~Cardio:Weight Training:Yoga:Aerobics:Jogging:Bench Press:Swimming
+Exercise:exerciseConsultant,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+Exercise:prescribedDietarySupplement,Permissible_Values~Protex:Fibro:CalCare:Swilder Powder:MushMuscle:Scolet
+Exercise:supplementRecommended,Permissible_Values~Yes:No:Unknown
+Exercise:exercisingSince,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years
+Exercise:exerciseTime,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night
+Diet:dietarySupplement,Permissible_Values~Protex:Fibro:CalCare:Swilder Powder:MushMuscle:Scolet
+Diet:supplementDuration,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years
+Diet:takesDietarySupplement,Permissible_Values~Yes:No:Unknown
+Diet:dietCheckUpDuration,Permissible_Values~Annual:Binneal:Monthly:Weekly
+Diet:dietConsultant,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+Diet:dietType,Permissible_Values~Asian Vegetarian:Asian Non-vegetarian:Continenetal:Japanese:Oriental:American:Italian

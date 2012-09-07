@@ -1,0 +1,42 @@
+<xmlPermissibleValues>
+	<xmlEntityGroup name="test">
+		<xmlClass-name name="ViralInfections">
+				<xmlDEAttribute name="nameOfVirus">
+				  	<xmlPermissible-value>
+						<value>
+						   <name>Rhinovirus</name>
+						   <numericCode>01</numericCode>
+						   <source>
+						      <primary-definition>
+    							 <primaryConceptDefinitionSource>NCI</primaryConceptDefinitionSource>
+    							 <primaryConceptCode>C0035473</primaryConceptCode>
+    							 <primaryConceptPreferredName>Rhinovirus</primaryConceptPreferredName>
+    							 <primaryConceptDefinition>A genus of single-stranded positive sense RNA viruses containing a single RNA molecule. The viral particles are not enveloped and are icosahedral in structure</primaryConceptDefinition>
+    							</primary-definition>
+    							<qualifier-definition>
+        							 <qualifier number="1">
+        								 <qualifierConceptDefinitionSource>NCI</qualifierConceptDefinitionSource>
+        								 <qualifierConceptCode>C0042776</qualifierConceptCode>
+        								 <qualifierConceptPreferredName>Virus</qualifierConceptPreferredName>
+        								 <qualifierConceptDefinition> A term for a group of infectious agents which with few exceptions are usually not visible through the light microscope.</qualifierConceptDefinition>
+        							 </qualifier>
+        					</qualifier-definition>
+        			 </source>
+						   <source>
+						   <primary-definition>
+    							 <primaryConceptDefinitionSource>Snomed CT</primaryConceptDefinitionSource>
+    							 <primaryConceptCode>90389005</primaryConceptCode>
+    							 <primaryConceptPreferredName>Genus Rhinovirus</primaryConceptPreferredName>
+    							 <primaryConceptDefinition></primaryConceptDefinition>
+    						</primary-definition>
+							</source> 
+						</value>
+						<value><name>HIV</name></value>
+    				<value><name>Hepatitis A</name></value>
+    				<value><name>Polio</name></value>
+    				<value><name>Chicken pox</name></value>
+					</xmlPermissible-value>
+				</xmlDEAttribute>
+		</xmlClass-name>
+	</xmlEntityGroup>
+</xmlPermissibleValues>

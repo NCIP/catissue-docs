@@ -1,0 +1,28 @@
+<pvVersion>
+	<category>
+		<category-name>Test Category_Lab Information</category-name>
+		<class-name name="LabTest">
+			<instance id="1">
+				<attribute>
+					<name>testName</name>
+					<PermVal_Options>
+						<option>
+							<key>isOrdered</key>
+							<value>true</value>
+						</option>
+						<option>
+							<key>activationDate</key>
+							<value>10/05/2004</value>
+						</option>
+					</PermVal_Options>
+					<default-value>Allergan Test</default-value>
+					<permissible-values>
+						<value>Allergan Test</value>
+						<value>Blood Culture Test</value>
+						<value>Complete Blood Count Test</value>
+					</permissible-values>
+				</attribute>  
+			</instance>
+		</class-name>
+	</category>
+</pvVersion>

@@ -1,0 +1,41 @@
+--Select--
+Autoimmune
+Cystic kidney disease
+Dysproteinemia
+Hypertension
+CKD
+Nephropathy
+Glomerulopathy
+Nephrolithiasis
+Vasculitis
+Renal Disease in Pregnancy
+Thrombotic Microangiopathy
+Urinary Tract Infection
+Neoplasia
+Tubules
+Vascular
+Cysts
+Bacterial Infection
+Viral Infection
+Fungal Infection
+Protozoan Infection
+Mycobacterial Infection
+Parasitic Infection
+Immunologic
+Metabolic
+Idiopathic
+Allo-antibody Disease Of Allograft
+Other Infection
+Acute Tubulo-interstitial Nephritis
+Chronic Tubulo-interstitial Nephritis
+Crescentic AntGBM
+Crescentic Immune Complex
+Crescentic Pauci Immune
+FSGS
+MPGN
+Basement Membrane Abnormalities
+Lupus Nephritis
+Fibrillary Glomerulopathy Immunoglobulin Derived Fibrils
+Fibrillary Glomerulopathy NonImmunoglobulin Derived Fibrils
+Urogenital Anomalies
+Nonurogenital Anomalies

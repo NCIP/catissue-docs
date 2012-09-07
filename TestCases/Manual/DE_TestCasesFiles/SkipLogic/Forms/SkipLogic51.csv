@@ -1,0 +1,141 @@
+Form_Definition
+
+Skip Logic 51
+
+SkipLogic
+
+HealthInformation~HealthInformation,Exercise~HealthInformation:Exercise
+
+Display_Label:Controlling Radiobutton and dependent attribute in same subform as Show hide,show=true
+instance:HealthInformation[1]->Exercise[1]
+NOTE~This category covers the scenario where controlling attribute and dependent attribute is present in same subform
+NOTE~Controlling attribute = Follow exercise specific Diet
+NOTE~Datatype = Radio button
+NOTE~Skip logic action = Show hide
+Exercise:exerciseSpecificDiet,radioButton,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:caloriesBurntDaily,textField,Calories burnt daily
+Exercise:carbsBurntDaily,textField,Carbs burnt daily
+Exercise:doesDailyWorkout,checkBox,Do you workout daily,defaultValue=false
+Exercise:exercisingSince,radioButton,Exercising since,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Exercise:supplementRecommended,comboBox,Is suppliment recommended,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:comments,textArea,Trainers Advise
+Exercise:exerciseTime,listBox,Advised exercise time,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night,options~IsMultiSelect=true
+Exercise:exerciseType,listBox,Recommended exercises,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseConsultant,multiselectCheckBox,Trainig under,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+Exercise:exerciseStartedOn,datePicker,Exercise start date
+Exercise:workoutChart,fileUpload,Chart for daily workout
+
+
+Display_Label:Controlling combobox and dependent attribute in same subform as Show hide,show=true
+instance:HealthInformation[1]->Exercise[2]
+NOTE~Controlling attribute = Follow exercise specific Diet
+NOTE~Datatype = Combo box button
+NOTE~Skip logic action = Show hide
+Exercise:exerciseSpecificDiet,comboBox,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:caloriesBurntDaily,textField,Calories burnt daily
+Exercise:carbsBurntDaily,textField,Carbs burnt daily
+Exercise:doesDailyWorkout,checkBox,Do you workout daily,defaultValue=false
+Exercise:exercisingSince,radioButton,Exercising since,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Exercise:supplementRecommended,comboBox,Is suppliment recommended,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:comments,textArea,Trainers Advise
+Exercise:exerciseTime,listBox,Advised exercise time,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night,options~IsMultiSelect=true
+Exercise:exerciseType,listBox,Recommended exercises,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseConsultant,multiselectCheckBox,Trainig under,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+Exercise:exerciseStartedOn,datePicker,Exercise start date
+Exercise:workoutChart,fileUpload,Chart for daily workout
+
+Display_Label:Controlling checkbox and dependent attribute in same subform as Show hide,show=true
+instance:HealthInformation[1]->Exercise[3]
+NOTE~Controlling attribute = Do you workout daily
+NOTE~Datatype = Check box
+NOTE~Skip logic action = Show hide
+Exercise:doesDailyWorkout,checkBox,Do you workout daily,defaultValue=false
+Exercise:exerciseSpecificDiet,comboBox,Follow exercise specific Diet,Permissible_Values~Yes:No:Unknown,defaultValue=No
+Exercise:caloriesBurntDaily,textField,Calories burnt daily
+Exercise:carbsBurntDaily,textField,Carbs burnt daily
+Exercise:exercisingSince,radioButton,Exercising since,Permissible_Values~less than 5 years:5-10 years:15years:20 years:more than 25 years,defaultValue=less than 5 years
+Exercise:doesWeightTraining,checkBox,Do you do waight training,defaultValue=false
+Exercise:comments,textArea,Trainers Advise
+Exercise:exerciseTime,listBox,Advised exercise time,Permissible_Values~Early morning:Late morning:Afternoon:Evening:Late evening:Night,options~IsMultiSelect=true
+Exercise:exerciseType,listBox,Recommended exercises,options~IsMultiSelect=true:NoOfRows=4:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseConsultant,multiselectCheckBox,Trainig under,Permissible_Values~Dr. Stein:Dr. Goldberg:Dr. Stevenson:Dr.Starbucks:Dr. McDonalds:Dr. DoLittle
+Exercise:exerciseStartedOn,datePicker,Exercise start date
+Exercise:workoutChart,fileUpload,Chart for daily workout
+
+Display_Label:SkipLogic in same subform with show hide,show=true
+instance:HealthInformation[1]
+subcategory:Controlling Radiobutton and dependent attribute in same subform as Show hide:single
+subcategory:Controlling combobox and dependent attribute in same subform as Show hide:single
+subcategory:Controlling checkbox and dependent attribute in same subform as Show hide:single
+
+SkipLogicAttribute:
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:caloriesBurntDaily,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:carbsBurntDaily,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:doesDailyWorkout,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:exercisingSince,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:supplementRecommended,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:comments,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:exerciseTime,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:exerciseType,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:exerciseConsultant,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:exerciseStartedOn,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[1],HealthInformation[1]->Exercise[1]
+Exercise[1]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[1]:workoutChart,options~IsShowHide=true
+
+
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:caloriesBurntDaily,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:carbsBurntDaily,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:doesDailyWorkout,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:exercisingSince,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:supplementRecommended,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:comments,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:exerciseTime,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:exerciseType,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:exerciseConsultant,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:exerciseStartedOn,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[2],HealthInformation[1]->Exercise[2]
+Exercise[2]:exerciseSpecificDiet:Yes,dependentAttribute~Exercise[2]:workoutChart,options~IsShowHide=true
+
+
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exerciseSpecificDiet,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:caloriesBurntDaily,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:carbsBurntDaily,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:doesWeightTraining,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exercisingSince,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:comments,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exerciseTime,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exerciseType,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exerciseConsultant,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:exerciseStartedOn,options~IsShowHide=true
+instance:HealthInformation[1]->Exercise[3],HealthInformation[1]->Exercise[3]
+Exercise[3]:doesDailyWorkout:1,dependentAttribute~Exercise[3]:workoutChart,options~IsShowHide=true

@@ -1,0 +1,27 @@
+Form_Definition
+
+TestCase59
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation,PhysicianInformation~PatientInformation:PhysicianInformation,PhyContactInfo~PatientInformation:PhysicianInformation:PhyContactInfo
+
+## calculation of attributes of 1st instance and used a third attribute
+Display_Label:Used Attributes,show=true
+instance:PatientInformation[1]->VitalInformation[1],PatientInformation[1]->PhysicianInformation[1]->PhyContactInfo[1]
+VitalInformation:bp,textField,Blood Pressure
+VitalInformation:height,textField,Height (in cm)
+VitalInformation:weight,textField,Weight (in Kg)
+PhyContactInfo:extension,textField,Extension
+
+Display_Label:Calculation,show=true
+instance:PatientInformation[1]->VitalInformation[2]
+
+NOTE~Calculation Using Mathematical Operations
+VitalInformation:bmi,textField,BMI (Calculation),options~IsCalculated=true:IsReadOnly=false,defaultValue=((((VitalInformation_1_bp)*(PhyContactInfo_1_extension))-((VitalInformation_1_height)+(VitalInformation_1_weight)))/2)
+
+
+Display_Label:TestCase59,show=true
+instance:PatientInformation[1]
+subcategory:Used Attributes:single
+subcategory:Calculation:single

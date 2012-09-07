@@ -1,0 +1,22 @@
+Form_Definition
+
+TestCase46
+
+test
+
+PatientInformation~PatientInformation,VitalInformation~PatientInformation:VitalInformation,PhysicianInformation~PatientInformation:PhysicianInformation
+
+Display_Label:Single Line Display,show=true
+instance:PatientInformation[1]->VitalInformation[1],PatientInformation[1]->PhysicianInformation[1]
+
+SingleLineDisplay:start
+NOTE~Single line display and default permissible values after subsetting the PV
+VitalInformation:pulse,comboBox,Pulse Rate,Permissible_Values~60:56:78:90:89:91:92:93,defaultValue=60
+PhysicianInformation:physicianName,comboBox,Name of Physician,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill,defaultValue=Pawan
+SingleLineDisplay:end
+
+
+Display_Label:Test Case 46,show=true
+instance:PatientInformation[1]
+subcategory:Single Line Display:single
+PatientInformation:name,textField,Name of Test Case

@@ -1,0 +1,58 @@
+<pvVersion>
+	<xmlCategory name="Skip logic for Automation">
+		<class-name name="PhysicianInformation">
+			<instance id="ALL">
+				<xmlAttribute name="physicianName">
+					<pvSet>
+						<properties>
+							<option>
+								<key>isOrdered</key>
+								<value>true</value>
+							</option>
+							<option>
+								<key>activationDate</key>
+								<value>10/10/2004</value>
+							</option>
+						</properties>
+						<default-value>Edgar</default-value>
+						<xmlPermissible-values>
+							<value>Palin</value>
+							<value>Alan</value>
+							<value>Edgar</value>
+							<value>Madhumita</value>
+							<value>Sagar</value>
+							<value>Mandar</value>
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>  
+			</instance>
+		</class-name>
+		<class-name name="VitalInformation">
+			<instance id="1">
+				<xmlAttribute name="pulse">
+					<pvSet>
+						<properties>
+							<option>
+								<key>sort</key>
+								<value>Descending</value>
+							</option>
+							<option>
+								<key>activationDate</key>
+								<value>10/10/2009</value>
+							</option>
+						</properties>
+						<default-value>60</default-value>
+						<xmlPermissible-values>
+							<value>88</value>
+							<value>72</value>
+							<value>75</value>
+							<value>60</value>
+							<value>78</value>
+							<value>79</value>
+						</xmlPermissible-values>
+					</pvSet>
+				</xmlAttribute>  
+			</instance>
+		</class-name>
+	</xmlCategory>
+</pvVersion>

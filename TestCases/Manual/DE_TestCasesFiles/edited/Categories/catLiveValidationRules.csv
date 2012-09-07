@@ -1,0 +1,57 @@
+Form_Definition
+
+Rules - Live Validation Form
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,History~ClinicalAnnotations:History,Hazards~ClinicalAnnotations:History:Hazards,SmokingHistory~ClinicalAnnotations:History:Hazards:SmokingHistory,Alcohol~ClinicalAnnotations:History:Hazards:Alcohol,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,Diagnosis~ClinicalAnnotations:LabInfo:Diagnosis,PrimaryDiagnosis~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis,Infections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections,ViralInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:ViralInfections,BacterialInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:BacterialInfections,FungalInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:FungalInfections,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,Chemotherapy~ClinicalAnnotations:HealthAnnotations:Chemotherapy,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy,LabReports~ClinicalAnnotations:LabInfo:LabTest:LabReports,PathologyReports~ClinicalAnnotations:PathologyReports
+
+Display_Label:Sub form 1,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->Chemotherapy[1],ClinicalAnnotations[1]->History[1]->Hazards[1]->SmokingHistory[1],ClinicalAnnotations[1]->History[1]->Hazards[1],ClinicalAnnotations[1]->History[1]->Hazards[1]->Alcohol[1]
+NOTE~20_Live_Validation_Min_Max_Range_Integer - Range 5 to 10
+Chemotherapy:duration,textField,Duration,Rules~range-min=5&max=10
+NOTE~21_Live_Validation_Min_Max_Range_Long - Range 100 to 1000
+SmokingHistory:packsPerDay,textField,Packs per day,Rules~range-min=100&max=1000
+NOTE~22_Live_Validation_Min_Max_Range_Float - Range 15.2 to 27.3
+Hazards:noYearsExposed,textField,No of years exposed,Rules~range-min=15.2&max=27.3
+NOTE~23_Live_Validation_Min_Max_Range_Double - range 500.122 to 765.324
+Alcohol:drinksPerWeek,textField,Drinks per week,Rules~range-min=500.122&max=765.324
+
+Display_Label:Sub form 2,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+NOTE~24_Live_Validation_Precision_Double
+RadiationTherapy:duration,textField,Duration
+NOTE~25_Live_Validation_Precision_Float
+RadiationTherapy:dose,textField,Dose
+
+Display_Label:Sub form 3,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->Chemotherapy[2]
+NOTE~26_Live_Validation_date_future_tag
+##Chemotherapy:startDate,datePicker,Start Date,Rules~allowfuturedate
+NOTE~27_Live_Validation_date_past_and_present_tag
+##Chemotherapy:endDate,datePicker,End Date,Rules~allowPastAndPresentDateOnly
+NOTE~28_Live_Validation_date_invalid_date_separator
+NOTE~29_Live_Validation_Min_Max_Range_Date - Range from 01-01-2007 to 01-09-2008
+Chemotherapy:dueDate,datePicker,Due Date,Rules~range-min=01-01-2007&max=01-09-2008
+
+
+Display_Label:Sub form 4,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[1]
+LabTest:testAgent,textField,Agent
+NOTE~19_Live_Validation_Max_Length_100
+LabTest:testName,textField,Name,Rules~required
+LabTest:testDate,datePicker,Date
+LabTest:qualResult,textField,Qual Result
+LabTest:quantResult,textField,Quant Result
+LabTest:resultUnit,textField,Units
+
+Display_Label:Live Validation Form,show=true
+instance:ClinicalAnnotations[1]
+ClinicalAnnotations:age,textField,Age
+ClinicalAnnotations:clinicalReports,fileupload,Clinical Reports
+ClinicalAnnotations:comments,textArea,Comments
+ClinicalAnnotations:sequence,textField,Sequence
+subcategory:Sub form 1:single
+subcategory:Sub form 2:single
+subcategory:Sub form 3:multiline

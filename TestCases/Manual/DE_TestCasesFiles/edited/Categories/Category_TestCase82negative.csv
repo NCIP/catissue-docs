@@ -1,0 +1,29 @@
+Form_Definition
+
+TestCase82_negative
+
+test
+
+
+PatientInformation~PatientInformation,PhysicianInformation~PatientInformation:PhysicianInformation
+
+
+Display_Label:String for Calculation,show=true
+instance:PatientInformation[1]->PhysicianInformation[1]
+NOTE~Calculated attribute with string datatype
+## category should not be imported successfully
+PhysicianInformation:physicianName,textField, Physicians Name
+PhysicianInformation:hospitals,textField, Hospital Name
+
+
+
+Display_Label:Result String,show=False
+instance:PatientInformation[1]
+NOTE~Actual Calculation
+PatientInformation:name,textField, Result,options~IsCalculated=true:IsReadOnly=false:Columns=6,defaultValue=(PhysicianInformation_1_physicianName+PhysicianInformation_1_hospitals)
+
+
+Display_Label:Result String,show=true
+instance:PatientInformation[2]
+subcategory:String for Calculation:single
+subcategory:Result String:single

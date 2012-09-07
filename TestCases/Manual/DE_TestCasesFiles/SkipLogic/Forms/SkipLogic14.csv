@@ -1,0 +1,71 @@
+Form_Definition
+
+New Skip Logic 14
+
+SkipLogic
+
+##Controlling in root entity and dependent in 1st containment - one-to-one
+##Controlling comboBox
+##Enable Disable
+
+HealthInformation~HealthInformation,Exercise~HealthInformation:Exercise
+
+Display_Label:Exercise,show=true
+instance:HealthInformation[1]->Exercise[1]
+Exercise:caloriesBurntDaily,textField,Calories Burnt Daily,options~Columns=10
+Exercise:carbsBurntDaily,textField,Carbs Burnt Daily,options~Columns=10
+Exercise:comments,textArea,Comments,options~Columns=20:Rows=2
+Exercise:doesDailyWorkout,checkBox,Works out daily
+Exercise:doesWeightTraining,checkBox,Weight Training
+Exercise:exerciseConsultant,listBox,Exercise Consultant,options~IsMultiSelect=true:IsUsingAutoCompleteDropdown=true
+Exercise:exerciseSpecificDiet,comboBox,Exercise Specific Diet
+Exercise:exerciseStartedOn,datePicker,Start Date
+Exercise:exerciseTime,listBox,Exercise Time,options~IsMultiSelect=true:NoOfRows=3
+Exercise:exerciseType,multiselectCheckBox,exercise Type
+Exercise:exercisingSince,radioButton,Exercising Since
+Exercise:fatBurntDaily,textField,Calories Burnt Daily,options~Columns=10
+Exercise:minOfExercise,textField,Calories Burnt Daily,options~Columns=10
+Exercise:prescribedDietarySupplement,radioButton,Prescribed Dietary Supplement
+Exercise:supplementRecommended,comboBox,Aupplement Recommended
+Exercise:workoutChart,fileUpload,Workout Chart
+
+Display_Label:Controlling in root entity and dependent in 1st containment,show=true
+instance:HealthInformation[1]
+NOTE~Enable Disable
+NOTE~Ailment History controls of all attributes in Exercise
+HealthInformation:ailmentHistory,comboBox,Ailment History,Permissible_Values~Yes:No:Unknown,PermVal_Options~IsOrdered=false,defaultValue=Unknown
+subcategory:Exercise:single
+
+SkipLogicAttribute:
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:caloriesBurntDaily,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:carbsBurntDaily,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:comments,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:doesDailyWorkout,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseSpecificDiet,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:doesWeightTraining,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseConsultant,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseStartedOn,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseTime,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exerciseType,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:exercisingSince,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:fatBurntDaily,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:minOfExercise,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:prescribedDietarySupplement,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:supplementRecommended,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->Exercise[1]
+HealthInformation[1]:ailmentHistory:Yes,dependentAttribute~Exercise[1]:workoutChart,options~IsSelectiveReadOnly=true

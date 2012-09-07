@@ -1,0 +1,38 @@
+Form_Definition
+
+Skip Logic 11
+
+SkipLogic
+
+##Bug ID 14546
+
+HealthInformation~HealthInformation,PastMedicalHistory~HealthInformation:PastMedicalHistory
+
+
+Display_Label:Diagnosis,show=false
+instance:HealthInformation[1]->PastMedicalHistory[1]
+PastMedicalHistory:diagnosisClass,comboBox,Diagnosis Class,PermVal_Options~IsOrdered=false,defaultValue=--Select--
+PastMedicalHistory:diagnosis,comboBox,Diagnosis,PermVal_Options~IsOrdered=false,defaultValue=--Select--
+PastMedicalHistory:otherDiagnosis,textField,Other Diagnosis,options~Columns=20
+PastMedicalHistory:dateOfDiagnosis,datePicker,Date of Diagnosis
+PastMedicalHistory:dateApproximate,checkBox,Date Approximate
+PastMedicalHistory:comment,textArea,Comments,options~Columns=30:Rows=5
+
+
+Display_Label:Renal Diagnosis,show=true
+instance:HealthInformation[1]
+subcategory:Diagnosis:multiline
+
+SkipLogicAttribute:
+instance:HealthInformation[1]->PastMedicalHistory[1],HealthInformation[1]->PastMedicalHistory[1]
+PastMedicalHistory[1]:diagnosisClass:Autoimmune,dependentAttribute~PastMedicalHistory[1]:diagnosis,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/autoImmuneDiagnosis.txt
+instance:HealthInformation[1]->PastMedicalHistory[1],HealthInformation[1]->PastMedicalHistory[1]
+PastMedicalHistory[1]:diagnosisClass:Cystic kidney disease,dependentAttribute~PastMedicalHistory[1]:diagnosis,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/cysticKidneyDisease.txt
+instance:HealthInformation[1]->PastMedicalHistory[1],HealthInformation[1]->PastMedicalHistory[1]
+PastMedicalHistory[1]:diagnosisClass:Dysproteinemia,dependentAttribute~PastMedicalHistory[1]:diagnosis,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/dysproteinemia.txt
+instance:HealthInformation[1]->PastMedicalHistory[1],HealthInformation[1]->PastMedicalHistory[1]
+PastMedicalHistory[1]:diagnosisClass:Hypertension,dependentAttribute~PastMedicalHistory[1]:diagnosis,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/hypertension.txt
+instance:HealthInformation[1]->PastMedicalHistory[1],HealthInformation[1]->PastMedicalHistory[1]
+PastMedicalHistory[1]:diagnosisClass:CKD,dependentAttribute~PastMedicalHistory[1]:diagnosis,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/ckd.txt
+instance:HealthInformation[1]->PastMedicalHistory[1],HealthInformation[1]->PastMedicalHistory[1]
+PastMedicalHistory[1]:diagnosis:Other,dependentAttribute~PastMedicalHistory[1]:otherDiagnosis,options~IsSelectiveReadOnly=true

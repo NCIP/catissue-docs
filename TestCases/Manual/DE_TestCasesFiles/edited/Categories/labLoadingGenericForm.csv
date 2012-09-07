@@ -1,0 +1,20 @@
+Form_Definition
+
+##CAT_DFN_ATPPLT_FRM7
+
+Generic Form to load all lab tests
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest
+
+Display_Label:Lab Test,show=false
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[1]
+LabTest:testName,comboBox,Test Name,populateFromXML=true,defaultValue=--Select--,Rules~required,Permissible_Values~Albumin:Alkaline phosphatase:ALT:ABO/Rh Factor,defaultValue=Albumin
+LabTest:quantResult,textField,Result,options~Columns=5,populateFromXML=true
+LabTest:resultUnit,comboBox,Units,defaultValue=--Select--,PermVal_Options~IsOrdered=false,populateFromXML=true
+
+
+Display_Label:Urine Tests,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Lab Test:multiline

@@ -1,0 +1,168 @@
+Form_Definition
+
+Skip logic for Automation 2
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,PhysicianInformation~ClinicalAnnotations:PhysicianInformation,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,VitalInformation~ClinicalAnnotations:VitalInformation
+
+
+Display_Label:Basic form 1 for Skip logic(Radio buttons only),show=true
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->LabInfo[1]
+VitalInformation:bp,radioButton,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,radioButton,Pluse Rate,Permissible_Values~60:56:78:90:89:91:92:93,defaultValue=60
+LabInfo:source,radioButton,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+Display_Label:Basic form 2 for Skip logic(Combo boxes only),show=true
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[2]
+VitalInformation:bp,comboBox,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,comboBox,Pluse Rate,Permissible_Values~60:56:78:90:89:91:92:93,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+
+Display_Label:1 Skip logic- More than 1 attribute depends on one or more radio button pvs of different sub form,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[3],ClinicalAnnotations[1]->LabInfo[3]
+NOTE~Pulse depends on blood pressure 100 110 and 120 of Basic form 1
+NOTE~Source of Information depends on pulse 60 56 and 78 of Basic form 1
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+Display_Label:2 Skip logic- More than 1 attribute depends on one or more combo box values of different sub form,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[4],ClinicalAnnotations[1]->LabInfo[4]
+NOTE~Pulse depends on blood pressure 100 110 and 120 of Basic form 2
+NOTE~Source of Information depends on pulse 60 56 and 78 of Basic form 2
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+
+
+
+Display_Label:3 Skip logic- PVs of one or more attributes depends on one or more pvs of radio button,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[5],ClinicalAnnotations[1]->LabInfo[5]
+NOTE~Pvs of Pulse depends on blood pressure 100 110 and 120 of Basic form 1
+NOTE~Pvs of Source of Information depends on pulse 60 56 and 78 of Basic form 1
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+Display_Label:4 Skip logic- PVs of one or more attributes depends on one or more pvs of combo box,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[6],ClinicalAnnotations[1]->LabInfo[6]
+NOTE~Pvs of Pulse depends on blood pressure 100 and 120 of Basic form 2
+NOTE~Pvs of Source of Information depends on pulse 60 56 and 78 of Basic form 2
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+Display_Label:5 Skip Logic- Default values as per Skip logic,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[7]
+NOTE~For Pulse=56 from Basic form 2 the default value is 1 of Basic form 2
+NOTE~For Pulse=60 from Basic form 2 the default value is 2 of Basic form 2
+NOTE~For Pulse=78 from Basic form 2 the default value is 3 of Basic form 2
+VitalInformation:height,textField,Height
+
+
+
+
+Display_Label:6 Skip Logic- Sub form show hide depends uponpvs of another subform,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[8]
+NOTE~Form 6 depends upon pulse rate 60 56 and 78 of Basic form 2
+VitalInformation:pulse,comboBox,Pluse Rate
+
+
+
+
+Display_Label:Skip logic for Automation 2,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Basic form 1 for Skip logic(Radio buttons only):single
+subcategory:Basic form 2 for Skip logic(Combo boxes only):single
+subcategory:1 Skip logic- More than 1 attribute depends on one or more radio button pvs of different sub form:single
+subcategory:2 Skip logic- More than 1 attribute depends on one or more combo box values of different sub form:single
+subcategory:3 Skip logic- PVs of one or more attributes depends on one or more pvs of radio button:single
+subcategory:4 Skip logic- PVs of one or more attributes depends on one or more pvs of combo box:single
+subcategory:5 Skip Logic- Default values as per Skip logic:single
+subcategory:6 Skip Logic- Sub form show hide depends uponpvs of another subform:single
+
+
+
+
+
+SkipLogicAttribute:
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->VitalInformation[3]
+VitalInformation[1]:bp:100,dependentAttribute~VitalInformation[3]:pulse,Permissible_Values~60:56:78
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->VitalInformation[3]
+VitalInformation[1]:bp:110,dependentAttribute~VitalInformation[3]:pulse,Permissible_Values~90:89:91
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->VitalInformation[3]
+VitalInformation[1]:bp:120,dependentAttribute~VitalInformation[3]:pulse,Permissible_Values~89:91:92:93
+
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->LabInfo[3]
+VitalInformation[1]:pulse:60,dependentAttribute~LabInfo[3]:source,Permissible_Values~Kalavathi Surgical Hospital & Laparoscopic Centre:Rich Hospitals(Ravi Institute of child Health (P) Ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->LabInfo[3]
+VitalInformation[1]:pulse:56,dependentAttribute~LabInfo[3]:source,Permissible_Values~Bollineni Superspeciality Hospital:Remedy Hospitals (Albha Health care pvt ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->LabInfo[3]
+VitalInformation[1]:pulse:78,dependentAttribute~LabInfo[3]:source,Permissible_Values~Dristi Eye Centre+:Meena Hospital
+
+
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[4]
+VitalInformation[2]:bp:100,dependentAttribute~VitalInformation[4]:pulse,Permissible_Values~60:56:78
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[4]
+VitalInformation[2]:bp:110,dependentAttribute~VitalInformation[4]:pulse,Permissible_Values~90:89:91
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[4]
+VitalInformation[2]:bp:120,dependentAttribute~VitalInformation[4]:pulse,Permissible_Values~89:91:92:93
+
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[4]
+VitalInformation[2]:pulse:60,dependentAttribute~LabInfo[4]:source,Permissible_Values~Kalavathi Surgical Hospital & Laparoscopic Centre:Rich Hospitals(Ravi Institute of child Health (P) Ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[4]
+VitalInformation[2]:pulse:56,dependentAttribute~LabInfo[4]:source,Permissible_Values~Bollineni Superspeciality Hospital:Remedy Hospitals (Albha Health care pvt ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[4]
+VitalInformation[2]:pulse:78,dependentAttribute~LabInfo[4]:source,Permissible_Values~Dristi Eye Centre+:Meena Hospital
+
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->VitalInformation[5]
+VitalInformation[1]:bp:100,dependentAttribute~VitalInformation[5]:pulse,Permissible_Values~60:56:78
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->VitalInformation[5]
+VitalInformation[1]:bp:110,dependentAttribute~VitalInformation[5]:pulse,Permissible_Values~90:89:91
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->VitalInformation[5]
+VitalInformation[1]:bp:120,dependentAttribute~VitalInformation[5]:pulse,Permissible_Values~89:91:92:93
+
+
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->LabInfo[5]
+VitalInformation[1]:pulse:60,dependentAttribute~LabInfo[5]:source,Permissible_Values~Kalavathi Surgical Hospital & Laparoscopic Centre:Rich Hospitals(Ravi Institute of child Health (P) Ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->LabInfo[5]
+VitalInformation[1]:pulse:56,dependentAttribute~LabInfo[5]:source,Permissible_Values~Bollineni Superspeciality Hospital:Remedy Hospitals (Albha Health care pvt ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->LabInfo[5]
+VitalInformation[1]:pulse:78,dependentAttribute~LabInfo[5]:source,Permissible_Values~Dristi Eye Centre+:Meena Hospital
+
+
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[6]
+VitalInformation[2]:bp:100,dependentAttribute~VitalInformation[6]:pulse,Permissible_Values~60:56:78
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[6]
+VitalInformation[2]:bp:110,dependentAttribute~VitalInformation[6]:pulse,Permissible_Values~90:89:91
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[6]
+VitalInformation[2]:bp:120,dependentAttribute~VitalInformation[6]:pulse,Permissible_Values~89:91:92:93
+
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[6]
+VitalInformation[2]:pulse:60,dependentAttribute~LabInfo[6]:source,Permissible_Values~Kalavathi Surgical Hospital & Laparoscopic Centre:Rich Hospitals(Ravi Institute of child Health (P) Ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[6]
+VitalInformation[2]:pulse:56,dependentAttribute~LabInfo[6]:source,Permissible_Values~Bollineni Superspeciality Hospital:Remedy Hospitals (Albha Health care pvt ltd)
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[6]
+VitalInformation[2]:pulse:78,dependentAttribute~LabInfo[6]:source,Permissible_Values~Dristi Eye Centre+:Meena Hospital
+
+
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[7]
+VitalInformation[2]:pulse:56,dependentAttribute~VitalInformation[7]:height,options~IsSelectiveReadOnly=true,defaultValue=1
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[7]
+VitalInformation[2]:pulse:60,dependentAttribute~VitalInformation[7]:height,options~IsSelectiveReadOnly=true,defaultValue=2
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[7]
+VitalInformation[2]:pulse:78,dependentAttribute~VitalInformation[7]:height,options~IsSelectiveReadOnly=true,defaultValue=3
+
+
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[8]
+VitalInformation[2]:pulse:56,dependentAttribute~VitalInformation[8]:all,options~IsShowHide=true
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[8]
+VitalInformation[2]:pulse:60,dependentAttribute~VitalInformation[8]:all,options~IsShowHide=true
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[8]
+VitalInformation[2]:pulse:78,dependentAttribute~VitalInformation[8]:all,options~IsShowHide=true
+

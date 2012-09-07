@@ -1,0 +1,5 @@
+ant import_xmi -Dfilename=CPUML/TestModels/TestModel_withTags/edited/test.xmi -Dhookentity=edu.wustl.catissuecore.domain.Participant -DmainContainerList=CPUML/TestModels/TestModel_withTags/edited/main.csv -Dpackage=annotations
+ant import_permissible_values -Dpv.dir=CPUML -DpermissibleValuesFile=CPUML/TestModels/TestModel_withTags/edited/TestModel_pv.csv
+ant create_category -DcategoryFileDir=CPUML -DcategoryFormNamesFile=CPUML/TestModels/TestModel_withTags/edited/cat_list_for_test_edited1.txt
+ant create_category -DcategoryFileDir=CPUML -DcategoryFormNamesFile=CPUML/TestModels/TestModel_withTags/edited/cat_list_for_test_edited2.txt
+ant create_category -DcategoryFileDir=CPUML -DcategoryFormNamesFile=CPUML/TestModels/TestModel_withTags/edited/cat_list_for_test_edited3.txt

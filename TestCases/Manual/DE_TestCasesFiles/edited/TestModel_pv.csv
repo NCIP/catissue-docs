@@ -1,0 +1,30 @@
+Entity_Group
+test
+
+
+PhysicianInformation:hospitals,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/Hospitals.csv
+PhysicianInformation:clinics,Permissible_Values~ABC:BCD:CDE:DEF:EFG:FGH:GHI
+PhysicianInformation:physicianName,Permissible_Values~Pawan:Edgar:Alan:Smith:McCain:Obama:Palin:George:Bill
+HealthAnnotations:agent,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/Agent.csv
+LabInfo:source,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/source.csv
+PrimaryDiagnosis:result,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/result.csv
+PrimaryDiagnosis:testPerformed,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/LabTestName.csv
+FungalInfections:nameOfFungus,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/fungai.csv
+BacterialInfections:nameOfBacteria,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/bacteria.csv
+##The PVs are directly specified here
+ViralInfections:nameOfVirus,Permissible_Values~Rhinovirus:HIV:Hepatitis A:Hepatitis B:Hepatitis C:Hepatitis A/B:Polio:Chicken pox:Bird Flu:Leprosy:Neuronal Virus
+LabTest:testName,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/LabTestName.csv
+Hazards:hazardType,Permissible_Values~Alcohol:Tobacco:Smoke:Asbestos:Cocaine
+override_pv=true
+Hazards:noYearsExposed,Permissible_Values~32.4:12.3:2.33:7.1:4.53
+PathologicalAnnotations:tumorLocation,Permissible_Values~Liver:Pancreas:Stomach:Large Intestine:Small Intestine:Brain:Kidney:Gall Bladder:Rectum:Bone:Muscle:Tissue:Heart
+PatientInformation:name,Permissible_Values~Pawan:Vimal:Shailesh:Hemant:Yogesh:Mandar:Prasanna
+VitalInformation:pulse,Permissible_Values~60:56:78:90:89:91:92:93
+VitalInformation:bp,Permissible_Values~90:100:110:120:130:140
+PathologicalAnnotations:tumorSize,Permissible_Values~1.1:1.2:1.3:1.4:1.5:1.6:1.7:1.8:1.9:2.0
+PathAnnotationChild:tumorSizeChild,Permissible_Values~1.1:1.2:1.3:1.4:1.5:1.6:1.7:1.8:1.9:2.0
+PathAnnotationChild:tumorLocationChild,Permissible_Values~Liver:Pancreas:Stomach:Large Intestine:Small Intestine:Brain:Kidney:Gall Bladder:Rectum:Bone:Muscle:Tissue:Heart
+GermCount:bacterialCount,Permissible_Values~1:2:3:4:5:6:7:8:9:10
+GermCount:protozoanCount,Permissible_Values~1:2:3:4:5:6:7:8:9:10
+GermCount:viralCount,Permissible_Values~1:2:3:4:5:6:7:8:9:10
+GermCount:totalCount,Permissible_Values~1:2:3:4:5:6:7:8:9:10

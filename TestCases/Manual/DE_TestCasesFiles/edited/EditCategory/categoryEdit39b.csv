@@ -1,0 +1,109 @@
+Form_Definition
+
+Edit Form Testing
+
+test
+
+PathologicalAnnotations~PathologicalAnnotations,History~PathologicalAnnotations:History,Hazards~PathologicalAnnotations:History:Hazards,Alcohol~PathologicalAnnotations:History:Hazards:Alcohol,SmokingHistory~PathologicalAnnotations:History:Hazards:SmokingHistory,PhysicianInformation~PathologicalAnnotations:PhysicianInformation,PhyContactInfo~PathologicalAnnotations:PhysicianInformation:PhyContactInfo
+
+##Add related attribute
+Display_Label:Physician Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]
+PhysicianInformation:hospitals,listBox,Hospital Names,options~IsMultiSelect=true:NoOfRows=5
+
+Display_Label:Physician Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[1]
+PhyContactInfo:phoneType,textField,Type of Phone
+##Changed Visible RA to Invisible RA
+##PhyContactInfo:phoneNumber,textField,Number,optioins~IsReadOnly=true,defaultValue=12345678
+PhyContactInfo:extension,textField,Extension
+
+Display_Label:Patient Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[2]
+##textField property changed
+##Adding into Single Line Display
+SingleLineDisplay:start
+##Changing attribute properties from Columns=4 to Columns=8
+PhyContactInfo:phoneNumber,textField,Phone Number,options~Columns=8
+##Deleting Separator
+##separator:':'
+##Changing attribute properties from nothing to readonly=true
+PhyContactInfo:extension,textField,Extension,options~IsReadOnly=true,defaultValue=12345678
+##separator:':'
+##Changing attribute properties from nothing to password=true
+PhyContactInfo:phoneType,textField,Phone type,options~IsPassword=true
+SingleLineDisplay:end
+
+Display_Label:Hazard Information,show=true
+instance:PathologicalAnnotations[1]->History[1]->Hazards[1]
+##Hazards:hazardType,comboBox,Hazard Type,defaultValue=Cocaine,PermVal_Options~IsOrdered=false
+Hazards:noYearsExposed,comboBox,Years Exposed
+
+Display_Label:Hazard Information2,show=true
+instance:PathologicalAnnotations[1]->History[1]->Hazards[2]
+##Hazards:hazardType,listBox,Hazard Type,defaultValue=Cocaine,PermVal_Options~IsOrdered=false
+Hazards:noYearsExposed,comboBox,Years Exposed
+
+
+Display_Label:Hazard Information3,show=true
+instance:PathologicalAnnotations[1]->History[2]->Hazards[3]
+##Hazards:hazardType,comboBox,Hazard Type,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/subsetHazard.txt,defaultValue=Cocaine,PermVal_Options~IsOrdered=false
+Hazards:noYearsExposed,comboBox,Years Exposed
+
+
+Display_Label:Hazard Information4,show=true
+instance:PathologicalAnnotations[1]->History[2]->Hazards[4]
+##Default value for radio button changed
+##Hazards:hazardType,radioButton,Hazard Type,defaultValue=Alochol
+##textArea property changed
+Hazards:noYearsExposed,comboBox,Years Exposed
+
+##Adding new subcategory for calculated attribute
+Display_Label:Hazard Information5,show=true
+instance:PathologicalAnnotations[1]->History[2]->Hazards[5]
+Hazards:noYearsExposed,textField,Years Exposed
+
+Display_Label:Edit Form Testing,show=true
+instance:PathologicalAnnotations[1]
+subcategory:Patient Contact Information:single
+##NOTE~This is an added note
+##PathologicalAnnotations:pulse,radioButton,Pulse
+##checkBox property changed
+PathologicalAnnotations:malignant,checkBox,Is tumor Malignant,defaultValue=true
+PathologicalAnnotations:detectionDate,datePicker,Detection Date
+##Reactivated List box field for Single Line Display
+##Adding List Box and Text Field into Single Line Display
+SingleLineDisplay:start
+##Change the multiselect attribute using IsUsingAutoCompleteDropdown=true to IsUsingAutoCompleteDropdown=false
+PathologicalAnnotations:tumorLocation,listBox,Location of Tumor,options~IsUsingAutoCompleteDropdown=false,Permissible_Values~Liver:Pancreas:Stomach:Large Intestine:Small Intestine:Brain:Kidney:Gall Bladder:Rectum:Bone:Muscle:Tissue:Heart
+##HEADING~This is an added heading
+##PathologicalAnnotations:comments,textArea,Comments
+PathologicalAnnotations:tumorSize,listBox,Size of Tumor
+##Reactivated Combo box for single line display
+PathologicalAnnotations:name,comboBox,Name
+SingleLineDisplay:end
+
+##Previously invisible Related Attribute
+##Making it as visible attribute for next test case
+##Calculated attribute using a visible RA
+PathologicalAnnotations:age,textField,Age
+
+subcategory:Physician Information:single
+##Changing subcategory of single line display from single to multiline
+subcategory:Physician Contact Information:multiline
+##Changing subcategory from multiline to single line
+subcategory:Hazard Information:single
+subcategory:Hazard Information2:multiline
+subcategory:Hazard Information3:single
+subcategory:Hazard Information4:single
+##Added for calculated attribute
+subcategory:Hazard Information5:single
+##Calculated attribute for existing attributes
+##Edited Existing Calculated attribute
+##Editing Actual Formula (((Hazards_5_noYearsExposed)+(Hazards_5_noYearsExposed))/2)
+PathologicalAnnotations:insuranceAmount,textField,Insurance Amount,options~IsPassword=false:IsCalculated=true:IsReadOnly=false,defaultValue=((Hazards_5_noYearsExposed)*2)
+
+RelatedAttribute:
+instance:PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[1]
+##Changed Visible RA to Invisible RA
+PhyContactInfo:phoneNumber=((123456)/2),options~IsCalculated=true

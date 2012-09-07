@@ -1,0 +1,104 @@
+Form_Definition
+
+Live Validation Form
+
+test
+
+
+ClinicalAnnotations~ClinicalAnnotations,History~ClinicalAnnotations:History,Hazards~ClinicalAnnotations:History:Hazards,SmokingHistory~ClinicalAnnotations:History:Hazards:SmokingHistory,Alcohol~ClinicalAnnotations:History:Hazards:Alcohol,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,Diagnosis~ClinicalAnnotations:LabInfo:Diagnosis,PrimaryDiagnosis~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis,Infections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections,ViralInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:ViralInfections,BacterialInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:BacterialInfections,FungalInfections~ClinicalAnnotations:LabInfo:Diagnosis:PrimaryDiagnosis:Infections:FungalInfections,HealthAnnotations~ClinicalAnnotations:HealthAnnotations,Chemotherapy~ClinicalAnnotations:HealthAnnotations:Chemotherapy,RadiationTherapy~ClinicalAnnotations:HealthAnnotations:RadiationTherapy,LabReports~ClinicalAnnotations:LabInfo:LabTest:LabReports,PathologyReports~ClinicalAnnotations:PathologyReports
+
+Display_Label:Sub form 1,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->Chemotherapy[1]
+NOTE~01_Correct_validation_for_Text_field_Integer
+Chemotherapy:duration,textField,Duration
+NOTE~07_Correct_validation_for_date
+Chemotherapy:startDate,datePicker,Start Date
+
+Display_Label:Sub form 2,show=true
+instance:ClinicalAnnotations[1]->History[1]->Hazards[1]->SmokingHistory[1],ClinicalAnnotations[1]->History[1]->Hazards[1],ClinicalAnnotations[1]->History[1]->Hazards[1]->Alcohol[1]
+NOTE~15_Live_validation_on_consecutive_fileds
+NOTE~02_Correct_validation_for_Text_field_Long
+SmokingHistory:packsPerDay,textField,Packs per day
+NOTE~03_Correct_validation_for_Text_field_Float
+Hazards:noYearsExposed,textField,No of years exposed
+NOTE~04_Correct_validation_for_Text_field_Double
+Alcohol:drinksPerWeek,textField,Drinks per week
+NOTE~11_Validation_for_auto-complete_list_box
+Hazards:hazardType,listBox,Hazard Type,options~IsMultiSelect=true:IsUsingAutoCompleteDropdown=true
+
+Display_Label:Sub form 3,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]->PrimaryDiagnosis[1]->Infections[1]->ViralInfections[1],ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]->PrimaryDiagnosis[1]->Infections[1]->FungalInfections[1]
+NOTE~12_Validation_for_radio_button
+FungalInfections:nameOfFungus,radioButton,Fungus
+NOTE~09_Validation_for_Combo_box
+ViralInfections:nameOfVirus,comboBox,Virus
+
+Display_Label:Sub form 4,show=true
+ClinicalAnnotations[1]->History[1]->Hazards[2]
+NOTE~10_Validation_for_non-auto-complete_list_box
+Hazards:hazardType,listBox,Hazard Type,options~IsMultiSelect=true:NoOfRows=5
+
+Display_Label:Sub form 5,show=true
+ClinicalAnnotations[1]->History[1]->Hazards[3]
+NOTE~13_Validation_for_multi-select_checkbox
+Hazards:hazardType,multiselectCheckBox,Hazard Type
+
+Display_Label:Sub form 6,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->Diagnosis[1]
+NOTE~14_Validation_for_checkbox
+Diagnosis:diagnosis,checkBox,Diagnosis Done
+
+Display_Label:Sub form 7,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->Chemotherapy[2]
+SingleLineDisplay:start
+NOTE~16_a_Live_validation_on_Single_Line_Display
+Chemotherapy:duration,textField,Duration
+Chemotherapy:startDate,datePicker,Start Date
+SingleLineDisplay:end
+
+Display_Label:Sub form 8,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->RadiationTherapy[1]
+SingleLineDisplay:start
+NOTE~16_b_Live_validation_on_Single_Line_Display
+RadiationTherapy:dose,textField,Dose
+RadiationTherapy:duration,textField,Duration
+SingleLineDisplay:end
+
+Display_Label:Sub form 9,show=true
+instance:ClinicalAnnotations[1]->HealthAnnotations[1]->Chemotherapy[3]
+SingleLineDisplay:start
+NOTE~16_c_Live_validation_on_Single_Line_Display
+Chemotherapy:startDate,datePicker,Start Date
+Chemotherapy:endDate,datePicker,End Date
+Chemotherapy:duration,textField,Duration
+SingleLineDisplay:end
+
+Display_Label:Sub form 10,show=true
+instance:ClinicalAnnotations[1]->LabInfo[1]->LabTest[1]
+NOTE~17_Live_validation_on_Add-more Sub-form
+LabTest:testAgent,textField,Agent
+LabTest:testDate,datePicker,Date
+LabTest:qualResult,textField,Qual Result
+LabTest:quantResult,textField,Quant Result
+LabTest:resultUnit,textField,Units
+
+Display_Label:Live Validation Form,show=true
+instance:ClinicalAnnotations[1]
+NOTE~01_Correct_validation_for_Text_field_Integer
+ClinicalAnnotations:age,textField,Age
+NOTE~08_Validation_for_File_Upload
+ClinicalAnnotations:clinicalReports,fileupload,Clinical Reports
+NOTE~06_Correct_validation_for_Text_area_String
+ClinicalAnnotations:comments,textArea,Comments
+NOTE~05_Correct_validation_for_Text_field_String
+ClinicalAnnotations:sequence,textField,Sequence
+subcategory:Sub form 1:single
+subcategory:Sub form 2:single
+subcategory:Sub form 3:single
+subcategory:Sub form 4:single
+subcategory:Sub form 5:single
+subcategory:Sub form 6:single
+subcategory:Sub form 7:single
+subcategory:Sub form 8:single
+subcategory:Sub form 9:single
+subcategory:Sub form 10:multiline

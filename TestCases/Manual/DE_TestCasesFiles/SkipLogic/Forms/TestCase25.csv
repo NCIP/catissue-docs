@@ -1,0 +1,29 @@
+Form_Definition
+
+Skip Logic 25
+
+SkipLogic
+
+HealthInformation~HealthInformation,PastMedicalHistory~HealthInformation:PastMedicalHistory
+
+
+Display_Label:Diagnosis,show=false
+instance:HealthInformation[1]->PastMedicalHistory[1]
+PastMedicalHistory:diagnosisClass,comboBox,Diagnosis Class,PermVal_Options~IsOrdered=false,defaultValue=--Select--
+PastMedicalHistory:diagnosis,comboBox,Diagnosis,PermVal_Options~IsOrdered=false,defaultValue=--Select--
+PastMedicalHistory:otherDiagnosis,textField,Other Diagnosis,options~Columns=20
+PastMedicalHistory:dateOfDiagnosis,datePicker,Date of Diagnosis
+PastMedicalHistory:dateApproximate,checkBox,Date Approximate
+PastMedicalHistory:comment,textArea,Comments,options~Columns=30:Rows=5
+
+
+Display_Label:Renal Diagnosis,show=true
+instance:HealthInformation[1]
+HealthInformation:ailmentHistory,comboBox,Ailment History,Permissible_Values~Yes:No,defaultValue=No
+subcategory:Diagnosis:single
+
+SkipLogicAttribute:
+instance:HealthInformation[1],HealthInformation[1]->PastMedicalHistory[1]
+HealthInformation:ailmentHistory:Yes,dependentAttribute~PastMedicalHistory[1]:diagnosis,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/autoImmuneDiagnosis.txt,options~IsSelectiveReadOnly=true
+instance:HealthInformation[1],HealthInformation[1]->PastMedicalHistory[1]
+HealthInformation:ailmentHistory:No,dependentAttribute~PastMedicalHistory[1]:diagnosis,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/SkipLogic/PVfiles/cysticKidneyDisease.txt,options~IsSelectiveReadOnly=true

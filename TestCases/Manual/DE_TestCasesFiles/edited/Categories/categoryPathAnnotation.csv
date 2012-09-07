@@ -1,0 +1,59 @@
+Form_Definition
+
+Test Category_Pathological Annotation
+
+test
+
+
+PathologicalAnnotations~PathologicalAnnotations,History~PathologicalAnnotations:History,Hazards~PathologicalAnnotations:History:Hazards,SmokingHistory~PathologicalAnnotations:History:Hazards:SmokingHistory,Alcohol~PathologicalAnnotations:History:Hazards:Alcohol,PhysicianInformation~PathologicalAnnotations:PhysicianInformation,PhyContactInfo~PathologicalAnnotations:PhysicianInformation:PhyContactInfo,VitalInformation~PathologicalAnnotations:VitalInformation
+
+Display_Label:Hazards,show=true
+instance:PathologicalAnnotations[1]->History[1]->Hazards[1]
+NOTE~Hazard type is edited to multiselect in the edited model
+Hazards:hazardType,listBox,Hazard Types
+Hazards:noYearsExposed,textField,Number of Years Exposed
+
+Display_Label:Physician Contact Information,show=true
+instance:PathologicalAnnotations[1]->PhysicianInformation[1],PathologicalAnnotations[1]->PhysicianInformation[1]->PhyContactInfo[1]
+PhysicianInformation:physicianName,textField,Physician Name,defaultValue=Dr. Yogesh
+PhysicianInformation:hospitals,listBox,Hospitals,PermVal_Options~IsOrdered=false
+NOTE~The attributes below are all from a new class added while editing XMI
+PhyContactInfo:phoneType,textField,Type of phone
+PhyContactInfo:phoneNumber,textField,Phone Number
+PhyContactInfo:extension,textField,Extension
+
+
+Display_Label:visit_info,show=true
+instance:PathologicalAnnotations[1]->VitalInformation[1]
+HEADING~Vital Information
+NOTE~This is the same form with a heading and not a different sub-form
+
+VitalInformation:height,textField,Height
+VitalInformation:pulse,textField,Heart Rate
+VitalInformation:bp,textField,Blood Pressure
+VitalInformation:weight,textField,Weight
+
+Display_Label:Pathological Annotations,show=true
+instance:PathologicalAnnotations[1]
+PathologicalAnnotations:detectionDate,datePicker,Date of Detection
+PathologicalAnnotations:malignant,checkBox,Is tissue malignant?
+PathologicalAnnotations:tumorLocation,listBox,Location of tumor tissue
+PathologicalAnnotations:tumorSize,listBox,Size
+NOTE~Please specify some comments on how brillinat Vimal is. Text area is with default width and height.
+PathologicalAnnotations:comments,textArea,Comments
+HEADING~Vital Information
+NOTE~This is the same form with a heading and not a different sub-form
+PathologicalAnnotations:visitDate,datePicker,Visit Date
+PathologicalAnnotations:age,textField,Age
+NOTE~Here password is set to true in model
+PathologicalAnnotations:insuranceAmount,textField,Insurance Amount
+PathologicalAnnotations:name,textField,Fill in your name
+
+subcategory:Hazards:single
+subcategory:Physician Contact Information:multiline
+subcategory:visit_info:single
+
+
+
+
+

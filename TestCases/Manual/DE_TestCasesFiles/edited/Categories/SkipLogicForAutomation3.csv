@@ -1,0 +1,57 @@
+Form_Definition
+
+Skip logic for Automation 3
+
+test
+
+ClinicalAnnotations~ClinicalAnnotations,PhysicianInformation~ClinicalAnnotations:PhysicianInformation,LabInfo~ClinicalAnnotations:LabInfo,LabTest~ClinicalAnnotations:LabInfo:LabTest,VitalInformation~ClinicalAnnotations:VitalInformation
+
+
+
+Display_Label:Basic form 1 for Skip logic (Radio buttons),show=true
+instance:ClinicalAnnotations[1]->VitalInformation[1]
+NOTE~Subform 1 Skip logic depends upon Blood Pressure value 100
+VitalInformation:bp,radioButton,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,radioButton,Pluse Rate,Permissible_Values~60:56:78:90:89:91:92:93,defaultValue=60
+
+
+Display_Label:Basic form 2 for Skip logic (Combo boxes),show=true
+instance:ClinicalAnnotations[1]->VitalInformation[2]
+NOTE~Subform 2 Skip logic depends upon Blood Pressure value 100
+VitalInformation:bp,comboBox,Blood Pressure,Permissible_Values~90:100:110:120:130:140
+VitalInformation:pulse,comboBox,Pluse Rate,Permissible_Values~60:56:78:90:89:91:92:93,defaultValue=60
+
+
+Display_Label:1 Skip logic- Show Hide Form having multiple classes depends upone radio button pvs,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[3],ClinicalAnnotations[1]->LabInfo[1]
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+
+Display_Label:2 Skip logic- Show Hide Form having multiple classes depends upone combo box pvs,show=true
+instance:ClinicalAnnotations[1]->VitalInformation[4],ClinicalAnnotations[1]->LabInfo[2]
+VitalInformation:pulse,comboBox,Pluse Rate,defaultValue=60
+LabInfo:source,comboBox,Source of Information,Permissible_Values_File~CPUML/TestModels/TestModel_withTags/edited/PVs/sourceShort.csv,defaultValue=Meena Hospital
+
+
+
+Display_Label:Skip logic for Automation 3,show=true
+instance:ClinicalAnnotations[1]
+subcategory:Basic form 1 for Skip logic (Radio buttons):single
+subcategory:Basic form 2 for Skip logic (Combo boxes):single
+subcategory:1 Skip logic- Show Hide Form having multiple classes depends upone radio button pvs:single
+subcategory:2 Skip logic- Show Hide Form having multiple classes depends upone combo box pvs:single
+
+
+
+SkipLogicAttribute:
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->VitalInformation[3]
+VitalInformation[1]:bp:100,dependentAttribute~VitalInformation[3]:all,options~IsShowHide=true
+instance:ClinicalAnnotations[1]->VitalInformation[1],ClinicalAnnotations[1]->LabInfo[1]
+VitalInformation[1]:bp:100,dependentAttribute~LabInfo[1]:all,options~IsShowHide=true
+
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->VitalInformation[4]
+VitalInformation[2]:bp:100,dependentAttribute~VitalInformation[4]:all,options~IsShowHide=true
+instance:ClinicalAnnotations[1]->VitalInformation[2],ClinicalAnnotations[1]->LabInfo[2]
+VitalInformation[2]:bp:100,dependentAttribute~LabInfo[2]:all,options~IsShowHide=true

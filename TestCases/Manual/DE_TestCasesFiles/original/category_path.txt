@@ -1,0 +1,7 @@
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryChemotherapy.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryRadiotherapy.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryLabInfo.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryDiagnosis.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryAnnotation.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryAutocompleteDropDown.csv
+CPUML/TestModels/TestModel_withTags/original/Categories/categoryAutocompleteDropDownNegative.csv
