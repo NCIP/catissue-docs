@@ -1,17 +1,15 @@
-Welcome to the <PROJECTNAME> Project!
+Welcome to the caTissue Docs Project!
 =====================================
 
-<PROJECTNAME> is an Open Source project the provides the functionalities of <...>
-It is written in <PROGRAMMING LANGUAGE> using <BASED_TECHNOLOGIES>.
-The goal of <PROJECTNAME> is to <...>.
 
-<PROJECTNAME> is distributed under the BSD 3-Clause License.
+The caTissue Docs is distributed under the BSD 3-Clause License.
 Please see the NOTICE and LICENSE files for details.
 
-You will find more details about <PROJECTNAME> in the following links:
+You will find more details about the caTissue Docs project in the following links:
+ * [Documentation](https://wiki.nci.nih.gov/x/uJT9AQ)
+ * [Docs Repository] (https://github.com/NCIP/catissue-core)
+ * [Community Forums] (https://cabig-kc.nci.nih.gov/Biospecimen/forums/)
+ * [Knowledge Center] (https://wiki.nci.nih.gov/x/rAEYAw)
 
-    *  <PROJECTNAME_HOME_URL>
-    *  <MAILING_LIST_SUBSCRIPTION_PAGE_URL>
-    *  <ISSUE_TRACKER_URL>
-    *  <DOCUMENTATION_PAGES_URL>
-    *  https://github.com/NCIP/<PROJECTNAME>
+Please join us in further developing and improving the caTissue Docs project.
+
