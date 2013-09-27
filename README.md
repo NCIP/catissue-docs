@@ -1,6 +1,8 @@
 Welcome to the caTissue Docs Project!
 =====================================
 
+The caTissue Docs repository contains the documentation related to [caTissue Core] (https://github.com/NCIP/catissue-core)
+and other [caTissue related projects] (http://ncip.github.io/group.html?name=caTissue).
 
 The caTissue Docs is distributed under the BSD 3-Clause License.
 Please see the NOTICE and LICENSE files for details.
